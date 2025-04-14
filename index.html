@@ -6,62 +6,92 @@
     <title>Mark Sluis Training</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="fw-bold">Mark Sluis Training</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="trainingen.html">Trainingen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="inschrijven.html">Inschrijven</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <span>Mark Sluis Training</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trainingen.html">Trainingen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inschrijven.html">Inschrijven</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Hero Banner -->
-    <header class="hero-section">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-md-6">
-                    <h1 class="display-4 fw-bold text-white">Mark Sluis Training</h1>
-                    <p class="lead text-white">Professionele trainingen voor jong en oud</p>
-                    <a href="trainingen.html" class="btn btn-primary btn-lg">Bekijk Trainingen</a>
+<section class="hero-banner">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 banner-content-wrapper">
+                <div class="banner-content">
+                    <h1 class="banner-title">Mark Sluis <span>Training</span></h1>
+                    <p class="banner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="banner-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>06-12345678</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@marksluistraining.nl</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 banner-image-wrapper">
+                <div class="banner-image">
+                    <img src="img/training-3.jpg" alt="Mark Sluis Training" class="img-fluid">
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</section>
 
     <!-- Intro Section -->
-    <section class="py-5 bg-light" id="intro">
+    <section class="intro-section bg-dark">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-heading">Professionele training voor alle niveaus</h2>
-                    <hr class="divider my-4">
-                    <p class="text-muted mb-5">
-                        Mark Sluis Training biedt hoogwaardige sporttrainingen aan voor alle leeftijden en niveaus. 
-                        Of je nu een beginner bent of een ervaren sporter, wij hebben de juiste training voor jou. 
-                        Onze focus ligt op persoonlijke ontwikkeling, techniek en plezier in sport.
-                    </p>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="intro-image">
+                        <img src="img/training-2.jpg" alt="Professionele keeperstraining" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="intro-content">
+                        <h2 class="section-heading">Professionele keeperstraining voor alle niveaus</h2>
+                        <div class="divider"></div>
+                        <p class="mb-4 text-light">
+                            Mark Sluis Training biedt hoogwaardige keeperstrainingen aan voor alle leeftijden en niveaus. 
+                            Of je nu een beginner bent of een ervaren keeper, wij hebben de juiste training voor jou.
+                        </p>
+                        <p class="mb-4 text-light">
+                            Onze focus ligt op persoonlijke ontwikkeling, techniek en plezier in sport. Met jarenlange ervaring 
+                            in het trainen van keepers, zorgen wij voor een optimale leeromgeving.
+                        </p>
+                        <a href="trainingen.html" class="btn btn-primary">Meer informatie</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,119 +102,117 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h2 class="section-heading text-white">Onze Trainingen</h2>
-                    <hr class="divider light my-4">
+                    <h2 class="section-heading">Onze Trainingen</h2>
+                    <div class="divider mx-auto"></div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="img/training-1.jpg" class="card-img-top" alt="Jeugdtraining">
-                        <div class="card-body">
-                            <h5 class="card-title">Jeugdtraining</h5>
-                            <p class="card-text">Speciale trainingen voor jonge sporters om hun vaardigheden te ontwikkelen.</p>
+                <div class="col-md-4">
+                    <div class="training-card">
+                        <div class="training-card-img">
+                            <img src="img/training-1.jpg" alt="Jeugdtraining">
+                        </div>
+                        <div class="training-card-body">
+                            <h5 class="training-card-title">Jeugdtraining</h5>
+                            <p class="training-card-text">Speciale keeperstrainingen voor jonge sporters om hun vaardigheden te ontwikkelen.</p>
                             <a href="trainingen.html#jeugd" class="btn btn-primary">Meer Info</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="img/training-2.jpg" class="card-img-top" alt="Volwassenentraining">
-                        <div class="card-body">
-                            <h5 class="card-title">Volwassenentraining</h5>
-                            <p class="card-text">Trainingen op maat voor volwassenen van alle niveaus.</p>
+                <div class="col-md-4">
+                    <div class="training-card">
+                        <div class="training-card-img">
+                            <img src="img/training-4.jpg" alt="Volwassenentraining">
+                        </div>
+                        <div class="training-card-body">
+                            <h5 class="training-card-title">Volwassenentraining</h5>
+                            <p class="training-card-text">Keeperstrainingen op maat voor volwassenen van alle niveaus.</p>
                             <a href="trainingen.html#volwassenen" class="btn btn-primary">Meer Info</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="img/training-3.jpg" class="card-img-top" alt="Teamtraining">
-                        <div class="card-body">
-                            <h5 class="card-title">Teamtraining</h5>
-                            <p class="card-text">Speciale trainingen voor teams om samen beter te presteren.</p>
+                <div class="col-md-4">
+                    <div class="training-card">
+                        <div class="training-card-img">
+                            <img src="img/training-5.jpg" alt="Teamtraining">
+                        </div>
+                        <div class="training-card-body">
+                            <h5 class="training-card-title">Teamtraining</h5>
+                            <p class="training-card-text">Speciale trainingen voor keepers binnen teams om samen beter te presteren.</p>
                             <a href="trainingen.html#team" class="btn btn-primary">Meer Info</a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-12 text-center">
-                    <a href="trainingen.html" class="btn btn-outline-light btn-lg">Alle Trainingen Bekijken</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Me Section -->
-    <section class="py-5 bg-light" id="over-mij">
+    <section class="profile-section bg-secondary" id="over-mij">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
+                <div class="col-12 text-center mb-5">
                     <h2 class="section-heading">Over Mij</h2>
-                    <hr class="divider my-4">
+                    <div class="divider mx-auto"></div>
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-4 text-center">
-                    <div class="profile-image-container">
-                        <img src="img/mark-sluis.jpg" alt="Mark Sluis" class="img-fluid rounded-circle profile-image">
-                    </div>
-                    <div class="social-icons mt-3">
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                    <div class="social-icons justify-content-start mt-4">
                         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <h3>Mark Sluis</h3>
-                    <p class="text-muted">
-                        Als ervaren trainer met meer dan 10 jaar ervaring in de sportwereld, ben ik gepassioneerd over het helpen van mensen om hun sportieve doelen te bereiken. 
-                        Mijn trainingsfilosofie is gebaseerd op persoonlijke aandacht, technische ontwikkeling en plezier in sport.
-                    </p>
-                    <p class="text-muted">
-                        Ik heb gewerkt met sporters van alle leeftijden en niveaus, van beginners tot professionals. 
-                        Mijn doel is om iedereen te helpen het beste uit zichzelf te halen, ongeacht hun startniveau.
-                    </p>
-                    <p class="text-muted">
-                        Naast mijn werk als trainer, ben ik ook actief als spreker en adviseur voor sportclubs en -organisaties.
-                    </p>
+                <div class="col-lg-4 text-center">
+                    <div class="profile-image-container">
+                        <img src="img/profile.jpg" alt="Mark Sluis" class="profile-image">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Form -->
-    <section class="py-5 bg-dark" id="contact">
+    <section class="contact-section bg-dark" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-heading text-white">Neem contact met ons op</h2>
-                    <hr class="divider light my-4">
-                    <p class="text-white mb-5">
-                        Heb je vragen of opmerkingen? Vul het onderstaande formulier in en we nemen zo snel mogelijk contact met je op.
-                    </p>
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-heading">Neem contact met ons op</h2>
+                    <div class="divider mx-auto"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
                     <form>
-                        <div class="row mb-3">
-                            <div class="col-md-6 mb-3 mb-md-0">
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-4 mb-md-0">
                                 <input type="text" class="form-control" placeholder="Naam" required>
                             </div>
                             <div class="col-md-6">
                                 <input type="email" class="form-control" placeholder="Email" required>
                             </div>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-4">
                             <input type="text" class="form-control" placeholder="Onderwerp">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-4">
                             <textarea class="form-control" rows="5" placeholder="Bericht" required></textarea>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg">Versturen</button>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Versturen</button>
                         </div>
                     </form>
                 </div>
@@ -193,44 +221,56 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-4">
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-3 mb-md-0">
+                <div class="col-md-4 mb-4 mb-md-0">
                     <h5>Contact</h5>
                     <p>
-                        <i class="fas fa-map-marker-alt"></i> Sportlaan 123<br>
+                        <i class="fas fa-map-marker-alt me-2"></i> Sportlaan 123<br>
                         1234 AB Amsterdam<br>
-                        <i class="fas fa-phone"></i> 06-12345678<br>
-                        <i class="fas fa-envelope"></i> info@marksluis.nl
+                        <i class="fas fa-phone me-2"></i> 06-12345678<br>
+                        <i class="fas fa-envelope me-2"></i> info@marksluistraining.nl
                     </p>
                 </div>
-                <div class="col-md-4 mb-3 mb-md-0">
+                <div class="col-md-4 mb-4 mb-md-0">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="trainingen.html">Trainingen</a></li>
-                        <li><a href="inschrijven.html">Inschrijven</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="trainingen.html">Trainingen</a></li>
+                        <li class="mb-2"><a href="inschrijven.html">Inschrijven</a></li>
+                        <li class="mb-2"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h5>Volg ons</h5>
-                    <div class="social-icons">
+                    <div class="social-icons justify-content-start">
                         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <p class="small">© Copyright Mark Sluis Training 2023</p>
-                </div>
-            </div>
         </div>
     </footer>
+    
+    <div class="copyright text-center">
+        <div class="container">
+            <p class="mb-0">www.hkunlimited.nl</p>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add scrolled class to navbar when scrolling
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

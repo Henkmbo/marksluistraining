@@ -6,15 +6,90 @@
     <title>Trainingen - Mark Sluis Training</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .training-header {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/training-3.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .training-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            height: 30%;
+            background-color: var(--primary);
+            clip-path: polygon(100% 0, 0 100%, 100% 100%);
+        }
+        
+        .training-section {
+            padding: 5rem 0;
+        }
+        
+        .training-section:nth-child(even) {
+            background-color: var(--secondary);
+        }
+        
+        .training-image {
+            position: relative;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .training-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30%;
+            height: 30%;
+            background-color: var(--primary);
+            clip-path: polygon(100% 0, 0 0, 100% 100%);
+        }
+        
+        .feature-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .feature-list li i {
+            color: var(--primary);
+            margin-right: 0.5rem;
+            margin-top: 0.25rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <span class="fw-bold">Mark Sluis Training</span>
+                <span>Mark Sluis Training</span>
             </a>
+            <div class="contact-info d-none d-lg-flex">
+                <div>
+                    <i class="fas fa-phone"></i> 06-12345678
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i> info@marksluistraining.nl
+                </div>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,189 +112,192 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 text-center">
-                    <h1 class="display-4 fw-bold text-white">Onze Trainingen</h1>
-                    <p class="lead text-white">Ontdek alle trainingsmogelijkheden</p>
-                </div>
-            </div>
+    <!-- Header -->
+    <header class="training-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Onze Trainingen</h1>
+            <p class="lead">Ontdek de verschillende trainingsmogelijkheden die wij aanbieden</p>
         </div>
     </header>
 
-    <!-- Training Details -->
-    <section class="py-5" id="jeugd">
+    <!-- Jeugdtraining Section -->
+    <section class="training-section" id="jeugd">
         <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-md-6">
-                    <img src="img/training-1.jpg" alt="Jeugdtraining" class="img-fluid rounded shadow">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="training-image">
+                        <img src="img/training-1.jpg" alt="Jeugdtraining" class="img-fluid">
+                    </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <h2 class="section-heading">Jeugdtraining</h2>
-                    <hr class="divider my-4">
+                    <div class="divider"></div>
                     <p>
-                        Onze jeugdtrainingen zijn speciaal ontwikkeld voor jonge sporters tussen 6 en 16 jaar. 
-                        We focussen op het ontwikkelen van fundamentele vaardigheden, teamwork en sportplezier.
+                        Onze jeugdtrainingen zijn speciaal ontwikkeld voor jonge keepers die hun vaardigheden willen verbeteren. 
+                        We bieden trainingen aan voor verschillende leeftijdscategorieën, van 6 tot 18 jaar.
                     </p>
-                    <h4>Wat we aanbieden:</h4>
-                    <ul>
-                        <li>Techniektraining voor beginners (6-10 jaar)</li>
-                        <li>Gevorderde techniektraining (11-16 jaar)</li>
-                        <li>Teamspel en tactiek</li>
-                        <li>Conditietraining aangepast aan leeftijd</li>
+                    <h5 class="mt-4 text-primary">Wat leer je?</h5>
+                    <ul class="feature-list list-unstyled mb-4">
+                        <li><i class="fas fa-check"></i> Basistechnieken van het keepen</li>
+                        <li><i class="fas fa-check"></i> Positiespel en voetenwerk</li>
+                        <li><i class="fas fa-check"></i> Duiken en vangen</li>
+                        <li><i class="fas fa-check"></i> Uitkomen en meevoetballen</li>
+                        <li><i class="fas fa-check"></i> Mentale weerbaarheid</li>
                     </ul>
-                    <h4>Praktische informatie:</h4>
-                    <p>
-                        <strong>Wanneer:</strong> Woensdagmiddag en zaterdagochtend<br>
-                        <strong>Duur:</strong> 60-90 minuten per sessie<br>
-                        <strong>Kosten:</strong> €75 per maand
-                    </p>
-                    <a href="inschrijven.html" class="btn btn-primary">Nu Inschrijven</a>
+                    <h5 class="text-primary">Leeftijdsgroepen</h5>
+                    <ul class="feature-list list-unstyled mb-4">
+                        <li><i class="fas fa-check"></i> Mini's (6-8 jaar)</li>
+                        <li><i class="fas fa-check"></i> Pupillen (9-12 jaar)</li>
+                        <li><i class="fas fa-check"></i> Junioren (13-16 jaar)</li>
+                        <li><i class="fas fa-check"></i> Senioren (17-18 jaar)</li>
+                    </ul>
+                    <a href="inschrijven.html" class="btn btn-primary">Inschrijven</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-5 bg-light" id="volwassenen">
+    <!-- Volwassenentraining Section -->
+    <section class="training-section" id="volwassenen">
         <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-md-6 order-md-2">
-                    <img src="img/training-2.jpg" alt="Volwassenentraining" class="img-fluid rounded shadow">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <div class="training-image">
+                        <img src="img/training-2.jpg" alt="Volwassenentraining" class="img-fluid">
+                    </div>
                 </div>
-                <div class="col-md-6 order-md-1">
+                <div class="col-lg-6 order-lg-1">
                     <h2 class="section-heading">Volwassenentraining</h2>
-                    <hr class="divider my-4">
+                    <div class="divider"></div>
                     <p>
-                        Onze trainingen voor volwassenen zijn geschikt voor alle niveaus, van beginners tot gevorderden. 
-                        We bieden een combinatie van techniek, tactiek, conditie en kracht.
+                        Onze trainingen voor volwassenen zijn geschikt voor keepers van alle niveaus, van beginners tot gevorderden. 
+                        We bieden zowel individuele trainingen als groepstrainingen aan.
                     </p>
-                    <h4>Wat we aanbieden:</h4>
-                    <ul>
-                        <li>Basis techniektraining</li>
-                        <li>Gevorderde techniek en tactiek</li>
-                        <li>Sport-specifieke conditietraining</li>
-                        <li>Krachttraining voor sporters</li>
-                        <li>Persoonlijke coaching</li>
+                    <h5 class="mt-4 text-primary">Wat leer je?</h5>
+                    <ul class="feature-list list-unstyled mb-4">
+                        <li><i class="fas fa-check"></i> Geavanceerde keeperstechnieken</li>
+                        <li><i class="fas fa-check"></i> Tactisch inzicht en spelhervatting</li>
+                        <li><i class="fas fa-check"></i> Fysieke training en conditie</li>
+                        <li><i class="fas fa-check"></i> Mentale weerbaarheid en focus</li>
+                        <li><i class="fas fa-check"></i> Specifieke situatietraining</li>
                     </ul>
-                    <h4>Praktische informatie:</h4>
-                    <p>
-                        <strong>Wanneer:</strong> Maandag-, woensdag- en vrijdagavond<br>
-                        <strong>Duur:</strong> 90 minuten per sessie<br>
-                        <strong>Kosten:</strong> €85 per maand
-                    </p>
-                    <a href="inschrijven.html" class="btn btn-primary">Nu Inschrijven</a>
+                    <h5 class="text-primary">Trainingsopties</h5>
+                    <ul class="feature-list list-unstyled mb-4">
+                        <li><i class="fas fa-check"></i> Individuele training (1-op-1)</li>
+                        <li><i class="fas fa-check"></i> Kleine groepstraining (2-4 personen)</li>
+                        <li><i class="fas fa-check"></i> Teamtraining (5+ personen)</li>
+                    </ul>
+                    <a href="inschrijven.html" class="btn btn-primary">Inschrijven</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-5" id="team">
+    <!-- Teamtraining Section -->
+    <section class="training-section" id="team">
         <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-md-6">
-                    <img src="img/training-3.jpg" alt="Teamtraining" class="img-fluid rounded shadow">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="training-image">
+                        <img src="img/training-3.jpg" alt="Teamtraining" class="img-fluid">
+                    </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <h2 class="section-heading">Teamtraining</h2>
-                    <hr class="divider my-4">
+                    <div class="divider"></div>
                     <p>
-                        Onze teamtrainingen zijn ontworpen om sportteams naar een hoger niveau te tillen. 
-                        We werken aan teamcohesie, tactiek, communicatie en sport-specifieke vaardigheden.
+                        Onze teamtrainingen zijn speciaal ontwikkeld voor voetbalclubs die hun keepers willen laten trainen door een specialist. 
+                        We komen naar uw club toe en verzorgen trainingen op maat.
                     </p>
-                    <h4>Wat we aanbieden:</h4>
-                    <ul>
-                        <li>Tactische teamtraining</li>
-                        <li>Teambuilding en communicatie</li>
-                        <li>Positie-specifieke training</li>
-                        <li>Wedstrijdvoorbereiding</li>
-                        <li>Video-analyse</li>
+                    <h5 class="mt-4 text-primary">Wat bieden we?</h5>
+                    <ul class="feature-list list-unstyled mb-4">
+                        <li><i class="fas fa-check"></i> Keeperstraining voor alle keepers van de club</li>
+                        <li><i class="fas fa-check"></i> Advies voor trainers over keeperstraining</li>
+                        <li><i class="fas fa-check"></i> Ontwikkelingsplannen voor keepers</li>
+                        <li><i class="fas fa-check"></i> Periodieke evaluaties en feedback</li>
+                        <li><i class="fas fa-check"></i> Flexibele trainingstijden</li>
                     </ul>
-                    <h4>Praktische informatie:</h4>
-                    <p>
-                        <strong>Wanneer:</strong> In overleg met het team<br>
-                        <strong>Duur:</strong> 90-120 minuten per sessie<br>
-                        <strong>Kosten:</strong> €120 per sessie voor het hele team
-                    </p>
-                    <a href="inschrijven.html" class="btn btn-primary">Nu Inschrijven</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5 bg-light" id="privé">
-        <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-md-6 order-md-2">
-                    <img src="img/training-4.jpg" alt="Privétraining" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-md-6 order-md-1">
-                    <h2 class="section-heading">Privétraining</h2>
-                    <hr class="divider my-4">
-                    <p>
-                        Onze privétrainingen bieden een op maat gemaakt programma dat volledig is afgestemd op jouw persoonlijke doelen en behoeften. 
-                        Ideaal voor sporters die snel vooruitgang willen boeken of specifieke aspecten willen verbeteren.
-                    </p>
-                    <h4>Wat we aanbieden:</h4>
-                    <ul>
-                        <li>Persoonlijke techniektraining</li>
-                        <li>Individuele tactische ontwikkeling</li>
-                        <li>Op maat gemaakte conditietraining</li>
-                        <li>Mentale coaching</li>
-                        <li>Video-analyse en feedback</li>
+                    <h5 class="text-primary">Voordelen</h5>
+                    <ul class="feature-list list-unstyled mb-4">
+                        <li><i class="fas fa-check"></i> Specialistische training voor alle keepers</li>
+                        <li><i class="fas fa-check"></i> Consistente trainingsmethode</li>
+                        <li><i class="fas fa-check"></i> Kostenefficiënt voor clubs</li>
+                        <li><i class="fas fa-check"></i> Flexibele planning</li>
                     </ul>
-                    <h4>Praktische informatie:</h4>
-                    <p>
-                        <strong>Wanneer:</strong> In overleg, flexibele tijden<br>
-                        <strong>Duur:</strong> 60 minuten per sessie<br>
-                        <strong>Kosten:</strong> €65 per sessie
-                    </p>
-                    <a href="inschrijven.html" class="btn btn-primary">Nu Inschrijven</a>
+                    <a href="index.html#contact" class="btn btn-primary">Neem contact op</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-4">
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-3 mb-md-0">
+                <div class="col-md-4 mb-4 mb-md-0">
                     <h5>Contact</h5>
                     <p>
-                        <i class="fas fa-map-marker-alt"></i> Sportlaan 123<br>
+                        <i class="fas fa-map-marker-alt me-2"></i> Sportlaan 123<br>
                         1234 AB Amsterdam<br>
-                        <i class="fas fa-phone"></i> 06-12345678<br>
-                        <i class="fas fa-envelope"></i> info@marksluis.nl
+                        <i class="fas fa-phone me-2"></i> 06-12345678<br>
+                        <i class="fas fa-envelope me-2"></i> info@marksluistraining.nl
                     </p>
                 </div>
-                <div class="col-md-4 mb-3 mb-md-0">
+                <div class="col-md-4 mb-4 mb-md-0">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="trainingen.html">Trainingen</a></li>
-                        <li><a href="inschrijven.html">Inschrijven</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="trainingen.html">Trainingen</a></li>
+                        <li class="mb-2"><a href="inschrijven.html">Inschrijven</a></li>
+                        <li class="mb-2"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h5>Volg ons</h5>
-                    <div class="social-icons">
+                    <div class="social-icons justify-content-start">
                         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <p class="small">© Copyright Mark Sluis Training 2023</p>
-                </div>
-            </div>
         </div>
     </footer>
+    
+    <div class="copyright text-center">
+        <div class="container">
+            <p class="mb-0">© Copyright Mark Sluis Training 2023</p>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add scrolled class to navbar when scrolling
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add scrolled class to navbar when scrolling
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
