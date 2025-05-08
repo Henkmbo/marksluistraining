@@ -291,6 +291,7 @@
     position: relative;
     overflow: hidden;
     border: 5px solid var(--primary);
+    border-radius: 5%;
   }
   
   .intro-image img {
