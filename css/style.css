@@ -358,32 +358,142 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Profile Section */
 .profile-section {
-  padding: 6rem 0;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
+.profile-section p {
+  font-size: 1.18rem;
+  color: #f8f8f8;
+  margin-bottom: 1.4rem;
+  line-height: 1.8;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.profile-section p i {
+  font-size: 1.4rem;
+  margin-top: 0.1em;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.profile-section h4 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Profielfoto mooi rond en gecentreerd */
 .profile-image-container {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
-  overflow: hidden;
-  border: 5px solid var(--primary);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto 1.5rem auto;
+  
+  padding-right: 60px;
   border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.social-icons {
+  justify-content: center;
+  margin-top: 1.2rem;
 }
 
 .profile-image {
-  width: 100%;
-  height: 100%;
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
   object-fit: cover;
+  display: block;
 }
 
+/* --- Diploma lijst met lijn --- */
+.diploma-list {
+  list-style: none;
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.diploma-list::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(var(--primary), transparent 90%);
+  border-radius: 2px;
+}
+
+.diploma-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  position: relative;
+  padding-left: 0.5rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  transition: box-shadow 0.2s;
+}
+
+.diploma-item:hover {
+  box-shadow: 0 2px 12px rgba(212,175,55,0.12);
+}
+
+.diploma-item i {
+  font-size: 1.3rem;
+  margin-right: 0.7rem;
+  color: var(--primary);
+  background: #232526;
+  border-radius: 50%;
+  padding: 0.35rem;
+  border: 2px solid var(--primary);
+}
+
+.diploma-year {
+  font-weight: 700;
+  color: var(--primary);
+  margin-right: 0.7rem;
+  min-width: 48px;
+  font-size: 1.05rem;
+}
+
+.diploma-item span:last-child {
+  color: #fff;
+  font-size: 1.07rem;
+}
+
+/* --- Social Icons --- */
 .social-icons {
-
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  
 }
+
+.social-icon-lg {
+  display: flex;
+}
+
+.social-icon-lg .social-icon {
+  margin: 5px;
+  gap: 1.2rem;
+}
+
+
+/* --- einde verbetering --- */
+
+
 
 .icon-text {
   padding-bottom: 20px;
