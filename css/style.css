@@ -688,6 +688,11 @@ footer .social-icon:hover {
   pointer-events: none;
 }
 
+.trainingen {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .training-card-body {
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   flex: 1 1 auto;
