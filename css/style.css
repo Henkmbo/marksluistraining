@@ -116,29 +116,70 @@ body {
 /* Hero Banner */
 .hero-banner {
   position: relative;
-  background-color: var(--dark);
+  background-color: #111111;
   overflow: hidden;
   padding: 0;
-  margin-top: 76px;
+  
 }
 
 .banner-content-wrapper {
   position: relative;
-  padding: 6rem 3rem;
   z-index: 2;
+  padding-left: 10rem;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
 }
 
-.banner-content-wrapper::after {
+.banner-image-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 8%;
+  bottom: 0;
+  width: 15%;           /* Volledige breedte */
+  height: 4%;          /* Pas aan voor de gewenste hoogte van de hoek */
+  background-color: var(--primary);
+  transform: skewX(15deg); /* Zelfde skew als de afbeelding */
+  z-index: 2;            /* Boven de afbeelding */
+  pointer-events: none;
+}
+
+.wrapper-2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 6%;
+  width: 3%;
+  height: 25%;
+  background-color: var(--primary);
+  transform: skewX(15deg); /* Zelfde skew als de afbeelding */
+  z-index: 1;    
+}
+
+.wrapper-3::after {
   content: "";
   position: absolute;
   top: 0;
-  right: -100px;
-  width: 200px;
-  height: 100%;
+  right: 6%;
+  width: 3%;
+  height: 25%;
   background-color: var(--primary);
-  transform: skewX(-15deg);
-  z-index: -1;
+  transform: skewX(15deg); /* Zelfde skew als de afbeelding */
+  z-index: 1;    
 }
+
+.wrapper-4::after {
+  content: "";
+  position: absolute;
+  right: 8%;
+  top: 0;
+  width: 15%;           /* Volledige breedte */
+  height: 4%;          /* Pas aan voor de gewenste hoogte van de hoek */
+  background-color: var(--primary);
+  transform: skewX(15deg); /* Zelfde skew als de afbeelding */
+  z-index: 2;            /* Boven de afbeelding */
+  pointer-events: none;   
+}
+
 
 .banner-title {
   font-size: 3.5rem;
@@ -182,22 +223,23 @@ body {
 .banner-image-wrapper {
   position: relative;
   height: 600px;
-  overflow: hidden;
+  
 }
 
-.banner-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.banner-img {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
 }
+
+.banner-img 
 
 .banner-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  
 }
 
 .banner-image::before {
@@ -218,7 +260,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 
@@ -721,3 +763,4 @@ footer .social-icon:hover {
   font-weight: 500;
   font-size: 1rem;
 }
+
