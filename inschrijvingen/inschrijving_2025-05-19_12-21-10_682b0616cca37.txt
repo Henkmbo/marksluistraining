@@ -1,0 +1,31 @@
+NIEUWE INSCHRIJVING - MARK SLUIS TRAINING
+
+PERSOONLIJKE GEGEVENS:
+Naam: henk
+Geboortedatum: 2204-02-01
+Adres: fda
+Postcode: jjdsjf
+Woonplaats: jfdsj
+Telefoonnummer: jdfsj
+E-mail: test@Test.nl
+
+GESELECTEERDE ACTIVITEITEN:
+- Workshop
+
+MEDISCHE INFORMATIE:
+Heeft medische aandoeningen: nee
+Gebruikt medicatie: ja
+Details: test
+
+OUDER/VERZORGER INFORMATIE:
+Naam: sdf
+Telefoonnummer: sdf
+E-mail: test@Test.nl
+
+TOESTEMMINGEN:
+Toestemming voor foto's en video's: nee
+Akkoord met algemene voorwaarden: Ja
+
+--
+Deze inschrijving is verzonden op 19-05-2025 12:21:08
+IP-adres: ::1

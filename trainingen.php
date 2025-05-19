@@ -15,7 +15,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
                 <span>Mark Sluis Training</span>
             </a>
             <div class="contact-info d-none d-lg-flex">
@@ -32,16 +32,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="trainingen.html">Trainingen</a>
+                        <a class="nav-link active" href="trainingen.php">Trainingen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="inschrijven.html">Inschrijven</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact</a>
+                        <a class="nav-link" href="inschrijven.php">Inschrijven</a>
                     </li>
                 </ul>
             </div>
@@ -91,7 +88,7 @@
                         <li><i class="fas fa-check"></i> Trainingsduur: 1 uur (korter mogelijk)</li>
                         <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagmiddag, vrijdagmiddag, zondag overdag</li>
                     </ul>
-                    <a href="inschrijven.html" class="btn btn-primary">Inschrijven</a>
+                    <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
                 </div>
             </div>
           class="btn btn-primary">Inschrijven</a>
@@ -133,7 +130,7 @@
                         <li><i class="fas fa-check"></i> Trainingsduur: 1 uur (korter mogelijk)</li>
                         <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagmiddag, vrijdagmiddag, zondag overdag</li>
                     </ul>
-                    <a href="inschrijven.html" class="btn btn-primary">Inschrijven</a>
+                    <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
                 </div>
             </div>
         </div>
@@ -169,7 +166,7 @@
                         <li><i class="fas fa-check"></i> Trainingsduur: 1 uur</li>
                         <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagmiddag, vrijdagmiddag, zondag overdag</li>
                     </ul>
-                    <a href="inschrijven.html" class="btn btn-primary">Inschrijven</a>
+                    <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
                 </div>
             </div>
         </div>
@@ -205,7 +202,7 @@
                         <li><i class="fas fa-check"></i> Trainingsduur: 45 minuten</li>
                         <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagochtend 9.15-10.00</li>
                     </ul>
-                    <a href="inschrijven.html" class="btn btn-primary">Inschrijven</a>
+                    <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
                 </div>
             </div>
         </div>
@@ -238,7 +235,7 @@
                         <li><i class="fas fa-check"></i> Trainingsduur: 1 uur</li>
                         <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagavond 19.00-20.00</li>
                     </ul>
-                    <a href="inschrijven.html" class="btn btn-primary">Inschrijven</a>
+                    <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
                 </div>
             </div>
         </div>
@@ -270,7 +267,7 @@
                         <li><i class="fas fa-check"></i> Het feestje duurt 1,5 uur. Tussendoor is er een pauze met een vrij spelmoment</li>
                         <li><i class="fas fa-check"></i> Optioneel zijn medailles voor alle deelnemers en een beker voor de jarige. Kosten hiervoor zijn 240 euro</li>
                     </ul>
-                    <a href="inschrijven.html" class="btn btn-primary">Inschrijven</a>
+                    <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
                 </div>
             </div>
         </div>
@@ -295,7 +292,7 @@
                         Ik zorg voor meer beweging, wat bijdraagt aan de fysieke gezondheid van kinderen, en ondersteunen tegelijkertijd de sociaal-emotionele ontwikkeling. Door deze workshops en trainingen verbeter ik de groepsdynamiek, stimuleren ik samenwerking en weerbaarheid, en help ik kinderen met het ontwikkelen van belangrijke vaardigheden die hen helpen om zelfverzekerd en sociaal vaardig te zijn.
                     </p>
                     <div class="mt-4">
-                        <a href="index.html#contact" class="btn btn-primary">Neem vrijblijvend contact op</a>
+                        <a href="index.php#contact" class="btn btn-primary">Neem vrijblijvend contact op</a>
                     </div>
                 </div>
             </div>
@@ -318,9 +315,9 @@
                 <div class="col-md-4 mb-4 mb-md-0">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html">Home</a></li>
-                        <li class="mb-2"><a href="trainingen.html">Trainingen</a></li>
-                        <li class="mb-2"><a href="inschrijven.html">Inschrijven</a></li>
+                        <li class="mb-2"><a href="index.php">Home</a></li>
+                        <li class="mb-2"><a href="trainingen.php">Trainingen</a></li>
+                        <li class="mb-2"><a href="inschrijven.php">Inschrijven</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
