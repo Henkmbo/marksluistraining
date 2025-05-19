@@ -1,15 +1,14 @@
-&lt;!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inschrijven - Mark Sluis Training</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <style>
         .registration-header {
             position: relative;
@@ -24,29 +23,19 @@
             text-align: center;
             overflow: hidden;
         }
-        
-        .registration-header::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 50%;
-            height: 30%;
-            background-color: var(--primary);
-            clip-path: polygon(100% 0, 0 100%, 100% 100%);
-        }
+    
         
         .form-section {
             padding: 5rem 0;
         }
-        
-        .form-container {
+          .form-container {
             background-color: var(--secondary);
-            border-radius: 0;
+            border-radius: 8px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
             padding: 2rem;
             position: relative;
             overflow: hidden;
+            border: 1px solid #333;
         }
         
         .form-container::after {
@@ -107,10 +96,9 @@
     </style>
 </head>
 <body>
-    &lt;
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
                 <span>Mark Sluis Training</span>
             </a>
             <div class="contact-info d-none d-lg-flex">
@@ -127,31 +115,25 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="trainingen.html">Trainingen</a>
+                        <a class="nav-link" href="trainingen.php">Trainingen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="inschrijven.html">Inschrijven</a>
+                        <a class="nav-link active" href="inschrijven.php">Inschrijven</a>
                     </li>
 
                 </ul>
             </div>
         </div>
     </nav>
-
-    &lt;
     <header class="registration-header">
         <div class="container">
             <h1 class="display-4 fw-bold">Inschrijven</h1>
             <p class="lead">Schrijf je in voor een van onze trainingen</p>
         </div>
     </header>
-
-    &lt;
-
-    &lt;
  <section class="form-section" id="inschrijfformulier">
         <div class="container">
             <div class="section-header">
@@ -162,8 +144,7 @@
                     Wij nemen zo snel mogelijk contact met je op om je inschrijving te bevestigen.
                 </p>
             </div>
-            
-            <div class="form-container">
+              <div class="form-container">
                 <div id="success-message" class="success-message" style="display: none;">
                     <div class="success-icon">
                         <i class="fas fa-check-circle"></i>
@@ -174,6 +155,8 @@
                 </div>
                 
                 <form id="registrationForm">
+                    <!-- EmailJS will handle the form submission -->
+                    <div id="form-status" class="alert" style="display: none;"></div>
                     <!-- Persoonlijke Gegevens -->
                     <div class="form-section-block">
                         <h3 class="form-section-title">Persoonlijke Gegevens</h3>
@@ -266,33 +249,13 @@
                                 <input type="checkbox" class="form-check-input" id="activity-kinderfeestje" name="activities[]" value="Kinderfeestje">
                                 <label class="form-check-label" for="activity-kinderfeestje">Kinderfeestje</label>
                             </div>
-                            
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="activity-andere" name="activities[]" value="Andere">
-                                <label class="form-check-label" for="activity-andere">Andere</label>
-                            </div>
                         </div>
                         <div class="error-message" id="activities-error"></div>
-                        
-                        <div class="form-row" id="workshop-details-container" style="display: none;">
-                            <div class="form-group">
-                                <label for="workshopDetails">Specificeer workshop</label>
-                                <input type="text" class="form-control" id="workshopDetails" name="workshopDetails">
-                            </div>
-                        </div>
-                        
-                        <div class="form-row" id="other-activity-container" style="display: none;">
-                            <div class="form-group">
-                                <label for="otherActivity">Specificeer andere activiteit</label>
-                                <input type="text" class="form-control" id="otherActivity" name="otherActivity">
-                            </div>
-                        </div>
                     </div>
-                    
-                    <!-- Gezondheid en Medische Gegevens -->
+                      <!-- Gezondheid en Medische Gegevens -->
                     <div class="form-section-block">
                         <h3 class="form-section-title">Gezondheid en Medische Gegevens</h3>
-                        <p>Indien van toepassing, vul hieronder je medische informatie in die relevant is voor deelname aan de activiteit.</p>
+                        <p class="form-text">Indien van toepassing, vul hieronder je medische informatie in die relevant is voor deelname aan de activiteit.</p>
                         
                         <div class="form-row">
                             <div class="form-group">
@@ -317,8 +280,7 @@
                                 <textarea class="form-control" id="medicalDetails" name="medicalDetails" rows="3"></textarea>
                             </div>
                         </div>
-                        
-                        <div class="form-row">
+                          <div class="form-row">
                             <div class="form-group">
                                 <label>Gebruik je medicijnen die invloed kunnen hebben op deelname? <span class="required">*</span></label>
                                 <div class="radio-group">
@@ -371,33 +333,7 @@
                         </div>
                     </div>
                     
-                    <!-- Betaling -->
-                    <div class="form-section-block">
-                        <h3 class="form-section-title">Betaling</h3>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>Betalingsmethode: <span class="required">*</span></label>
-                                <div class="radio-group">
-                                    <div class="form-radio">
-                                        <input type="radio" id="payment-ideal" name="paymentMethod" value="ideal" checked required>
-                                        <label for="payment-ideal">iDEAL</label>
-                                    </div>
-                                    <div class="form-radio">
-                                        <input type="radio" id="payment-bank" name="paymentMethod" value="bankoverschrijving" required>
-                                        <label for="payment-bank">Bankoverschrijving</label>
-                                    </div>
-                                    <div class="form-radio">
-                                        <input type="radio" id="payment-cash" name="paymentMethod" value="contant" required>
-                                        <label for="payment-cash">Contant</label>
-                                    </div>
-                                </div>
-                                <div class="error-message" id="paymentMethod-error"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Toestemmingen en Verklaringen -->
+                      <!-- Toestemmingen en Verklaringen -->
                     <div class="form-section-block">
                         <h3 class="form-section-title">Toestemmingen en Verklaringen</h3>
                         
@@ -420,11 +356,10 @@
                         </div>
                         
                         <div class="form-row">
-                            <div class="form-group">
-                                <div class="form-check">
+                            <div class="form-group">                                <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="termsAgreed" name="termsAgreed" required>
                                     <label class="form-check-label" for="termsAgreed">
-                                        Ik ga akkoord met de <a href="#" class="terms-link">algemene voorwaarden</a> van Mark Sluis Training
+                                        Ik ga akkoord met de <a href="voorwaarden.php" class="terms-link" target="_blank">algemene voorwaarden</a> van Mark Sluis Training
                                     </label>
                                     <div class="error-message" id="termsAgreed-error"></div>
                                 </div>
@@ -461,9 +396,9 @@
                 <div class="col-md-4 mb-4 mb-md-0">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html">Home</a></li>
-                        <li class="mb-2"><a href="trainingen.html">Trainingen</a></li>
-                        <li class="mb-2"><a href="inschrijven.html">Inschrijven</a></li>
+                        <li class="mb-2"><a href="index.php">Home</a></li>
+                        <li class="mb-2"><a href="trainingen.php">Trainingen</a></li>
+                        <li class="mb-2"><a href="inschrijven.php">Inschrijven</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -482,19 +417,23 @@
         <div class="container">
             <p class="mb-0">© Copyright Mark Sluis Training 2023</p>
         </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </div>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 <script type="text/javascript">
    (function(){
-      emailjs.init({
-        publicKey: "qiYHCFZYiQAZnBtk4",
-      });
+      try {
+        emailjs.init({
+          publicKey: "qiYHCFZYiQAZnBtk4",
+        });
+        console.log("EmailJS initialized successfully");
+      } catch (error) {
+        console.error("EmailJS initialization failed:", error);
+      }
    })();
-</script>    <script src="./js/script.js"></script>
+</script>
+    <script src="./js/script.js"></script>
     <script>
         // Add scrolled class to navbar when scrolling
         window.addEventListener('scroll', function() {
