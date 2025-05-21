@@ -1,0 +1,30 @@
+NIEUWE INSCHRIJVING - MARK SLUIS TRAINING
+
+PERSOONLIJKE GEGEVENS:
+Naam: sdfas
+Geboortedatum: 2222-02-12
+Adres: sdfa
+Postcode: adf
+Woonplaats: adf
+Telefoonnummer: afd
+E-mail: test@test.com
+
+GESELECTEERDE ACTIVITEITEN:
+- Bootcamp
+
+MEDISCHE INFORMATIE:
+Heeft medische aandoeningen: nee
+Gebruikt medicatie: nee
+
+OUDER/VERZORGER INFORMATIE:
+Naam: sdfs
+Telefoonnummer: dfs
+E-mail: gerwin@test.nl
+
+TOESTEMMINGEN:
+Toestemming voor foto's en video's: ja
+Akkoord met algemene voorwaarden: Ja
+
+--
+Deze inschrijving is verzonden op 21-05-2025 07:10:49
+IP-adres: ::1

@@ -13,18 +13,13 @@
 </head>
 <body>
     <!-- Navigation -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.php">
                 <span>Mark Sluis Training</span>
             </a>
             <div class="contact-info d-none d-lg-flex">
-                <div>
-                    <i class="fas fa-phone"></i> 06-42266609
-                </div>
-                <div>
-                    <i class="fas fa-envelope"></i> info@marksluistraining.nl
-                </div>
+                
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +39,7 @@
                 </ul>
             </div>
         </div>
-    </nav> -->
+    </nav> 
 
     <!-- Hero Banner -->
     <section class="hero-banner">
