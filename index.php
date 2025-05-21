@@ -161,7 +161,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
-                            <img src="img/training-5.jpg" alt="Peutervoetbal" class="img-fluid">
+                            <img src="img/peuters.jpg" alt="Peutervoetbal" class="img-fluid">
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
@@ -189,7 +189,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
-                            <img src="img/training-3.jpg" alt="Kinderfeestjes" class="img-fluid">
+                            <img src="img/kinderfeestje.jpg" alt="Kinderfeestjes" class="img-fluid">
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
