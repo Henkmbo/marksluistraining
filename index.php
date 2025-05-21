@@ -15,7 +15,7 @@
     <!-- Navigation -->
     <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
                 <span>Mark Sluis Training</span>
             </a>
             <div class="contact-info d-none d-lg-flex">
@@ -32,13 +32,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="trainingen.html">Trainingen</a>
+                        <a class="nav-link" href="trainingen.php">Trainingen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="inschrijven.html">Inschrijven</a>
+                        <a class="nav-link" href="inschrijven.php">Inschrijven</a>
                     </li>
 
                 </ul>
@@ -115,7 +115,7 @@
                         <p class="mb-4 text-light fs-5">
                             Hier draait het om méér dan alleen trainen—het is een plek waar je groeit en met plezier sterker wordt!
                         </p>
-                        <a href="trainingen.html" class="btn btn-primary btn-lg ">Meer informatie</a>
+                        <a href="trainingen.php" class="btn btn-primary btn-lg ">Meer informatie</a>
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
                         <div class="training-card-body card-body">
                             <h5 class="training-card-title card-title">Weerbaarheidstraining</h5>
                             <p class="training-card-text card-text">Rots & Water training en Boksend Opvoeden voor kinderen van 5-12 jaar.</p>
-                            <a href="trainingen.html#weerbaarheid" class="btn btn-primary">Meer Info</a>
+                            <a href="trainingen.php#weerbaarheid" class="btn btn-primary">Meer Info</a>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                         <div class="training-card-body card-body">
                             <h5 class="training-card-title card-title">Voetbaltraining</h5>
                             <p class="training-card-text card-text">Persoonlijke en doelgerichte voetbal- en keeperstraining voor alle niveaus.</p>
-                            <a href="trainingen.html#voetbal" class="btn btn-primary">Meer Info</a>
+                            <a href="trainingen.php#voetbal" class="btn btn-primary">Meer Info</a>
                         </div>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                         <div class="training-card-body card-body">
                             <h5 class="training-card-title card-title">Peutervoetbal</h5>
                             <p class="training-card-text card-text">Samen groeien door beweging voor de allerkleinsten met actieve ouderbetrokkenheid.</p>
-                            <a href="trainingen.html#peuter" class="btn btn-primary">Meer Info</a>
+                            <a href="trainingen.php#peuter" class="btn btn-primary">Meer Info</a>
                         </div>
                     </div>
                 </div>
@@ -182,7 +182,7 @@
                         <div class="training-card-body card-body">
                             <h5 class="training-card-title card-title">Fit door Voetbal</h5>
                             <p class="training-card-text card-text">De ultieme combinatie van voetbal en bootcamp voor een betere conditie en techniek.</p>
-                            <a href="trainingen.html#fit" class="btn btn-primary">Meer Info</a>
+                            <a href="trainingen.php#fit" class="btn btn-primary">Meer Info</a>
                         </div>
                     </div>
                 </div>
@@ -195,7 +195,7 @@
                         <div class="training-card-body card-body">
                             <h5 class="training-card-title card-title">Kinderfeestjes</h5>
                             <p class="training-card-text card-text">Sportieve en thematische feestjes op maat voor een onvergetelijke verjaardag.</p>
-                            <a href="trainingen.html#feestje" class="btn btn-primary">Meer Info</a>
+                            <a href="trainingen.php#feestje" class="btn btn-primary">Meer Info</a>
                         </div>
                     </div>
                 </div>
@@ -387,9 +387,9 @@
                 <div class="col-md-3 mb-4 mb-md-0">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li class="py-2"><a href="index.html">Home</a></li>
-                        <li class="py-2"><a href="trainingen.html">Trainingen</a></li>
-                        <li class="py-2"><a href="inschrijven.html">Inschrijven</a></li>
+                        <li class="py-2"><a href="index.php">Home</a></li>
+                        <li class="py-2"><a href="trainingen.php">Trainingen</a></li>
+                        <li class="py-2"><a href="inschrijven.php">Inschrijven</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
