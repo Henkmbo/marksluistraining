@@ -77,10 +77,13 @@ body {
 }
 
 /* Navigation */
+
+
 .navbar {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #111111;
   transition: all 0.3s ease;
   padding: 1rem;
+  z-index: 49;
 }
 
 .navbar-brand {
@@ -230,6 +233,7 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 0;
+  z-index: 50;
 }
 
 .banner-img 
