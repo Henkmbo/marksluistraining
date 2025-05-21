@@ -9,7 +9,289 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #d4af37;
+            --primary-dark: #c09c2c;
+            --secondary: #1a1a1a;
+            --light: #ffffff;
+            --dark: #000000;
+            --gray: #333333;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            color: var(--light);
+            background-color: var(--dark);
+        }
+
+        .section-heading {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .divider {
+            width: 50px;
+            border-top: 3px solid var(--primary);
+            margin: 1.5rem 0;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: var(--dark);
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            color: var(--dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-primary {
+            color: var(--primary) !important;
+        }
+
+        /* Navigation */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.95);
+            transition: all 0.3s ease;
+            padding: 1rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary) !important;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            margin: 0 0.5rem;
+            color: var(--light) !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary) !important;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--light);
+            font-size: 0.9rem;
+        }
+
+        .contact-info i {
+            color: var(--primary);
+        }
+
+        /* Header */
+        .training-header {
+            background-color: var(--secondary);
+            padding: 8rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .training-header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+            z-index: 1;
+        }
+
+        .training-header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .training-header h1 {
+            color: var(--primary);
+        }
+
+        .training-header p {
+            color: var(--light);
+            max-width: 600px;
+        }
+
+        /* Training Section */
+        .training-section {
+            padding: 5rem 0;
+        }
+
+
+        .training-image {
+            position: relative;
+            height: 100%;
+            min-height: 300px;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .training-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .training-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-list i {
+            color: var(--primary);
+            margin-right: 0.75rem;
+            margin-top: 0.25rem;
+        }
+
+        /* Category Navigation */
+        .category-nav {
+            background-color: var(--secondary);
+            position: sticky;
+            top: 76px;
+            z-index: 100;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-nav-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 0.75rem;
+            padding-bottom: 0.5rem;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE and Edge */
+        }
+
+        .category-nav-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        .category-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            color: var(--light);
+            text-decoration: none;
+        }
+
+        .category-link:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .category-link.active {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: var(--dark);
+        }
+
+        .category-link i {
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            padding: 3rem 0;
+        }
+
+        footer h5 {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--primary);
+        }
+
+        footer .social-icon {
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        footer .social-icon:hover {
+            background-color: var(--primary);
+            color: var(--dark);
+        }
+
+        .copyright {
+            padding: 1.5rem 0;
+            background-color: #0a0a0a;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .training-image {
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-info {
+                display: none;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 120px;
+        }
+
+        .bg-secondary {
+            background-color: #111111 !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -20,7 +302,7 @@
             </a>
             <div class="contact-info d-none d-lg-flex">
                 <div>
-                    <i class="fas fa-phone"></i> 06-42266609
+                    <i class="fas fa-phone"></i> 06-12345678
                 </div>
                 <div>
                     <i class="fas fa-envelope"></i> info@marksluistraining.nl
@@ -53,13 +335,47 @@
         </div>
     </header>
 
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <div class="container category-nav-container">
+            <a href="#weerbaarheid" class="category-link active">
+                <i class="fas fa-users"></i>
+                <span>Weerbaarheid</span>
+            </a>
+            <a href="#buddy" class="category-link">
+                <i class="fas fa-user-plus"></i>
+                <span>Buddy 13+</span>
+            </a>
+            <a href="#voetbal" class="category-link">
+                <i class="fas fa-futbol"></i>
+                <span>Voetbal</span>
+            </a>
+            <a href="#peuter" class="category-link">
+                <i class="fas fa-baby"></i>
+                <span>Peutervoetbal</span>
+            </a>
+            <a href="#fit" class="category-link">
+                <i class="fas fa-dumbbell"></i>
+                <span>Fit door Voetbal</span>
+            </a>
+            <a href="#feestje" class="category-link">
+                <i class="fas fa-birthday-cake"></i>
+                <span>Kinderfeestje</span>
+            </a>
+            <a href="#workshops" class="category-link">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <span>Workshops</span>
+            </a>
+        </div>
+    </div>
+
     <!-- Weerbaarheidstraining Section -->
     <section class="training-section" id="weerbaarheid">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="img/training-1.jpg" alt="Weerbaarheidstraining" class="img-fluid">
+                        <img src="https://placehold.co/800x600" alt="Weerbaarheidstraining" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -76,22 +392,19 @@
                     <p>
                         Doordat de thema's zelfbeheersing, zelfreflectie, zelfvertrouwen en in actie kunnen en durven komen spelenderwijs worden aangeboden, spreekt het rots en waterprogramma ook wel over de gouden driehoek, die bestaat uit:
                     </p>
-                    <ul class="feature-list list-unstyled mb-4">
+                    <ul class="feature-list mb-4">
                         <li><i class="fas fa-check"></i> Lichaamsbewustzijn</li>
                         <li><i class="fas fa-check"></i> Emotioneel bewustzijn</li>
                         <li><i class="fas fa-check"></i> Zelfbewustzijn</li>
                     </ul>
                     <h5 class="text-primary">Algemene informatie</h5>
-                    <ul class="feature-list list-unstyled mb-4">
+                    <ul class="feature-list mb-4">
                         <li><i class="fas fa-check"></i> Kosten individueel: 70 euro per training</li>
                         <li><i class="fas fa-check"></i> Groepstraining: N.T.B.</li>
                         <li><i class="fas fa-check"></i> Trainingsduur: 1 uur (korter mogelijk)</li>
                         <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagmiddag, vrijdagmiddag, zondag overdag</li>
                     </ul>
                     <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
-                </div>
-            </div>
-          class="btn btn-primary">Inschrijven</a>
                 </div>
             </div>
         </div>
@@ -103,7 +416,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="img/training-2.jpg" alt="Buddy Systeem" class="img-fluid">
+                        <img src="https://placehold.co/800x600" alt="Buddy Systeem" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
@@ -113,18 +426,18 @@
                         Een buddy-systeem voor pubers op het voetbalveld werkt goed omdat het hen helpt sociaal en emotioneel te groeien. Hoe gaat het in zijn werk?
                     </p>
                     <h5 class="mt-4 text-primary">Voordelen</h5>
-                    <ul class="feature-list list-unstyled mb-4">
+                    <ul class="feature-list mb-4">
                         <li><i class="fas fa-check"></i> <strong>Sociale steun</strong> - Pubers vinden het vaak fijn om zich gesteund te voelen.</li>
                         <li><i class="fas fa-check"></i> <strong>Meer zelfvertrouwen</strong> - Door een mentor- of maatjesrol te vervullen, ontwikkelen pubers zelfvertrouwen en verantwoordelijkheid.</li>
                         <li><i class="fas fa-check"></i> <strong>Emotionele veiligheid</strong> - Pubers maken veel emotionele veranderingen door. Een buddy kan een vertrouwenspersoon zijn om mee te praten over problemen of stress.</li>
                     </ul>
                     <h5 class="text-primary">Voorbereiding en oudercontact</h5>
-                    <ul class="feature-list list-unstyled mb-4">
+                    <ul class="feature-list mb-4">
                         <li><i class="fas fa-check"></i> Voor de training een kort overleg met ouders over eventuele uitdagingen of aandachtspunten.</li>
                         <li><i class="fas fa-check"></i> Ouders kunnen input geven over hoe hun kind zich voelt en waar extra begeleiding nodig is.</li>
                     </ul>
                     <h5 class="text-primary">Algemene informatie</h5>
-                    <ul class="feature-list list-unstyled mb-4">
+                    <ul class="feature-list mb-4">
                         <li><i class="fas fa-check"></i> Kosten: 70 euro per training</li>
                         <li><i class="fas fa-check"></i> Locatie: DEV Doorn</li>
                         <li><i class="fas fa-check"></i> Trainingsduur: 1 uur (korter mogelijk)</li>
@@ -142,7 +455,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="img/training-3.jpg" alt="Voetbaltraining" class="img-fluid">
+                        <img src="https://placehold.co/800x600" alt="Voetbaltraining" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -152,7 +465,7 @@
                         Wil jij je techniek, reactievermogen, coördinatie, snelheid of spelinzicht naar een hoger niveau tillen? Bij Mark Sluis Training krijg je persoonlijke en doelgerichte voetbaltraining, volledig afgestemd op jouw ontwikkelingsbehoeften. Met gerichte oefeningen, professionele begeleiding en aandacht voor zowel fysieke als mentale aspecten van het spel, zorgen wij ervoor dat jij sterker, sneller en slimmer op het veld wordt.
                     </p>
                     <h5 class="mt-4 text-primary">Voordelen</h5>
-                    <ul class="feature-list list-unstyled mb-4">
+                    <ul class="feature-list mb-4">
                         <li><i class="fas fa-check"></i> Plezier en zelfvertrouwen – Trainen in een ontspannen setting zonder teamdruk</li>
                         <li><i class="fas fa-check"></i> Techniekverbetering – Gerichte oefeningen voor betere balcontrole en techniek</li>
                         <li><i class="fas fa-check"></i> Individuele aandacht – Volledige focus op jouw sterke en zwakke punten</li>
@@ -160,7 +473,7 @@
                         <li><i class="fas fa-check"></i> Maatwerk en ontwikkeling – Training afgestemd op jouw specifieke behoeften</li>
                     </ul>
                     <h5 class="text-primary">Algemene informatie</h5>
-                    <ul class="feature-list list-unstyled mb-4">
+                    <ul class="feature-list mb-4">
                         <li><i class="fas fa-check"></i> Kosten: 5 trainingen voor 250 euro</li>
                         <li><i class="fas fa-check"></i> Locatie: DEV Doorn</li>
                         <li><i class="fas fa-check"></i> Trainingsduur: 1 uur</li>
@@ -178,7 +491,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="img/training-5.jpg" alt="Peutervoetbal" class="img-fluid">
+                        <img src="https://placehold.co/800x600" alt="Peutervoetbal" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
@@ -196,7 +509,7 @@
                         Jij als ouder speelt een belangrijke rol in de ontwikkeling van je peuter. Door samen te bewegen, te spelen en te oefenen, bouw je een sterke band op met je kind. Je biedt niet alleen steun en aanmoediging, maar je bent ook een belangrijk voorbeeld in het leren van nieuwe bewegingen.
                     </p>
                     <h5 class="text-primary">Algemene informatie</h5>
-                    <ul class="feature-list list-unstyled mb-4">
+                    <ul class="feature-list mb-4">
                         <li><i class="fas fa-check"></i> Kosten: 75 euro voor 6 trainingen</li>
                         <li><i class="fas fa-check"></i> Locatie: DEV Doorn of gymzaal Beukenrode</li>
                         <li><i class="fas fa-check"></i> Trainingsduur: 45 minuten</li>
@@ -214,7 +527,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="img/training-4.jpg" alt="Fit door Voetbal" class="img-fluid">
+                        <img src="https://placehold.co/800x600" alt="Fit door Voetbal" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -224,12 +537,12 @@
                         "Fit door Voetbal is de ultieme training voor iedereen die zijn voetbalskills wil verbeteren en tegelijkertijd zijn conditie naar een hoger niveau wil tillen! Deze unieke combinatie van voetbal en bootcamp biedt de perfecte balans tussen techniek, uithoudingsvermogen en kracht. Of je nu je snelheid, kracht of lenigheid wilt versterken, Fit door Voetbal zorgt voor een uitdagende, dynamische en vooral leuke manier om fit te worden."
                     </p>
                     <h5 class="mt-4 text-primary">Waarom Fit door Voetbal?</h5>
-                    <ul class="feature-list list-unstyled mb-4">
+                    <ul class="feature-list mb-4">
                         <li><i class="fas fa-check"></i> <strong>Leuker en gevarieerder:</strong> Door de afwisseling van voetbal en bootcamp blijft de training interessant en gevarieerd, wat helpt om motivatie hoog te houden en verveling te voorkomen.</li>
                         <li><i class="fas fa-check"></i> <strong>Plezier en sociale interactie:</strong> Beide activiteiten zijn sociaal en leuk, waardoor je niet alleen fysiek sterker wordt, maar ook nieuwe mensen ontmoet en plezier hebt tijdens de training.</li>
                     </ul>
                     <h5 class="text-primary">Algemene informatie</h5>
-                    <ul class="feature-list list-unstyled mb-4">
+                    <ul class="feature-list mb-4">
                         <li><i class="fas fa-check"></i> Kosten: 125 euro voor een 10 rittenkaart</li>
                         <li><i class="fas fa-check"></i> Locatie: DEV Doorn</li>
                         <li><i class="fas fa-check"></i> Trainingsduur: 1 uur</li>
@@ -247,21 +560,21 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="img/training-1.jpg" alt="Kinderfeestje" class="img-fluid">
+                        <img src="https://placehold.co/800x600" alt="Kinderfeestje" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <h2 class="section-heading">Kinderfeestje</h2>
                     <div class="divider"></div>
                     <h5 class="mt-4 text-primary">Hoe gaat een feestje in zijn werk?</h5>
-                    <ul class="feature-list list-unstyled mb-4">
+                    <ul class="feature-list mb-4">
                         <li><i class="fas fa-check"></i> We zoeken eerst een geschikte datum</li>
                         <li><i class="fas fa-check"></i> Ouders en jarige overleggen over een thema. Alles is mogelijk. Dit kan een voetbalclub, voetbalspeler, tv-programma, YouTube held zijn of iets anders naar keuze</li>
                         <li><i class="fas fa-check"></i> Ouders en jarige mogen favoriete spelletjes doorgeven</li>
                         <li><i class="fas fa-check"></i> Hierna ga ik aan de slag met het uitwerken van het thema</li>
                     </ul>
                     <h5 class="text-primary">Algemene informatie</h5>
-                    <ul class="feature-list list-unstyled mb-4">
+                    <ul class="feature-list mb-4">
                         <li><i class="fas fa-check"></i> De kosten voor het feestje zijn 175,- euro. Het aantal deelnemers maakt niet uit</li>
                         <li><i class="fas fa-check"></i> Je krijgt hiervoor een feestje op locatie (DEV of Doornse gat), uitgewerkt thema en diploma's voor alle kinderen</li>
                         <li><i class="fas fa-check"></i> Het feestje duurt 1,5 uur. Tussendoor is er een pauze met een vrij spelmoment</li>
@@ -279,7 +592,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="img/training-2.jpg" alt="Workshops" class="img-fluid">
+                        <img src="https://placehold.co/800x600" alt="Workshops" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -308,7 +621,7 @@
                     <p>
                         <i class="fas fa-map-marker-alt me-2"></i> Sportlaan 123<br>
                         1234 AB Doorn<br>
-                        <i class="fas fa-phone me-2"></i> 06-42266609<br>
+                        <i class="fas fa-phone me-2"></i> 06-12345678<br>
                         <i class="fas fa-envelope me-2"></i> info@marksluistraining.nl
                     </p>
                 </div>
@@ -322,7 +635,7 @@
                 </div>
                 <div class="col-md-4">
                     <h5>Volg ons</h5>
-                    <div class="social-icons justify-content-start">
+                    <div class="social-icons d-flex gap-2">
                         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
@@ -340,18 +653,52 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Add scrolled class to navbar when scrolling
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
         // Set current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Add active class to current category link when scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.training-section');
+            const navLinks = document.querySelectorAll('.category-link');
+            
+            // Smooth scrolling for anchor links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 120,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Update active link on scroll
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 150;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (pageYOffset >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
