@@ -99,7 +99,9 @@
 
         /* Header */
         .training-header {
-            background-color: var(--secondary);
+            background-image: url('./img/3cef43d3-2d23-49fc-843c-dd3519fa2596.jpeg');
+            background-size: cover;
+            background-position: center;
             padding: 8rem 0 4rem;
             position: relative;
             overflow: hidden;
@@ -162,7 +164,6 @@
         }
 
         .feature-list li {
-            display: flex;
             align-items: flex-start;
             margin-bottom: 0.75rem;
         }
@@ -301,12 +302,7 @@
                 <span>Mark Sluis Training</span>
             </a>
             <div class="contact-info d-none d-lg-flex">
-                <div>
-                    <i class="fas fa-phone"></i> 06-12345678
-                </div>
-                <div>
-                    <i class="fas fa-envelope"></i> info@marksluistraining.nl
-                </div>
+                
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -322,6 +318,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="inschrijven.php">Inschrijven</a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -375,7 +372,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="https://placehold.co/800x600" alt="Weerbaarheidstraining" class="img-fluid">
+                        <img src="./img/weerbeheidstraining.png" alt="Weerbaarheidstraining" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -416,7 +413,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="https://placehold.co/800x600" alt="Buddy Systeem" class="img-fluid">
+                        <img src="./img/weerbeheidstraining13.png" alt="Buddy Systeem" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
@@ -455,7 +452,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="https://placehold.co/800x600" alt="Voetbaltraining" class="img-fluid">
+                        <img src="./img/training-4.jpg" alt="Voetbaltraining" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -491,7 +488,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="https://placehold.co/800x600" alt="Peutervoetbal" class="img-fluid">
+                        <img src="./img/peuters.jpg" alt="Peutervoetbal" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
@@ -527,7 +524,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="https://placehold.co/800x600" alt="Fit door Voetbal" class="img-fluid">
+                        <img src="./img/19a6344b-3ee7-4695-aa6f-71d245933e4a.jpeg" alt="Fit door Voetbal" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -560,7 +557,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="https://placehold.co/800x600" alt="Kinderfeestje" class="img-fluid">
+                        <img src="./img/kinderfeestje.jpg" alt="Kinderfeestje" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
@@ -592,7 +589,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="https://placehold.co/800x600" alt="Workshops" class="img-fluid">
+                        <img src="./img/9912a05d-56d1-47eb-a4cf-e2496cf01658.jpeg" alt="Workshops" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -605,7 +602,7 @@
                         Ik zorg voor meer beweging, wat bijdraagt aan de fysieke gezondheid van kinderen, en ondersteunen tegelijkertijd de sociaal-emotionele ontwikkeling. Door deze workshops en trainingen verbeter ik de groepsdynamiek, stimuleren ik samenwerking en weerbaarheid, en help ik kinderen met het ontwikkelen van belangrijke vaardigheden die hen helpen om zelfverzekerd en sociaal vaardig te zijn.
                     </p>
                     <div class="mt-4">
-                        <a href="index.php#contact" class="btn btn-primary">Neem vrijblijvend contact op</a>
+                        <a href="#footer" class="btn btn-primary">Neem vrijblijvend contact op</a>
                     </div>
                 </div>
             </div>
@@ -613,7 +610,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">

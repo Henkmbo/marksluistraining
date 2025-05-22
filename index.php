@@ -130,7 +130,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
-                            <img src="img/training-1.jpg" alt="Weerbaarheidstraining" class="img-fluid">
+                            <img src="img/weerbeheidstraining.png" alt="Weerbaarheidstraining" class="img-fluid">
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
@@ -168,7 +168,7 @@
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col-md-6 mb-4">
+                <div class="col-md-4 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
                             <img src="img/training-4.jpg" alt="Fit door Voetbal" class="img-fluid">
@@ -181,7 +181,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
+                <div class="col-md-4 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
                             <img src="img/kinderfeestje.jpg" alt="Kinderfeestjes" class="img-fluid">
@@ -191,6 +191,21 @@
                             <h5 class="training-card-title card-title">Kinderfeestjes</h5>
                             <p class="training-card-text card-text">Sportieve en thematische feestjes op maat voor een onvergetelijke verjaardag.</p>
                             <a href="trainingen.php#feestje" class="btn btn-primary">Meer Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="training-card custom-card h-100">
+                        <div class="training-card-img card-img-top position-relative overflow-hidden">
+                            <img src="img/weerbeheidstraining13.png" alt="Kinderfeestjes" class="img-fluid">
+                            <div class="card-img-overlay-gradient"></div>
+                        </div>
+                        <div class="training-card-body card-body">
+                            <h5 class="training-card-title card-title">Weerbaarheidstraining 13+</h5>
+                            <p class="training-card-text card-text">
+Een buddy-systeem werkt goed voor pubers omdat het hen helpt sociaal en emotioneel te groeien
+</p>
+                            <a href="trainingen.php#buddy" class="btn btn-primary">Meer Info</a>
                         </div>
                     </div>
                 </div>
