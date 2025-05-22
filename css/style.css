@@ -183,6 +183,101 @@ body {
   pointer-events: none;   
 }
 
+/* ...existing code... */
+
+/* Hero Banner Responsive */
+.banner-content-wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+}
+.banner-content {
+    padding: 2rem 1rem;
+}
+.banner-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.banner-title span {
+    color: #007bff;
+}
+.banner-text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.banner-contact {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+.banner-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 991.98px) {
+    .banner-content-wrapper,
+    .banner-img {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .banner-content {
+        padding: 1rem 0.5rem;
+    }
+    .banner-title {
+        font-size: 2rem;
+    }
+    .banner-contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-banner {
+        padding: 2rem 0 1rem 0;
+    }
+    .banner-title {
+        font-size: 1.5rem;
+    }
+    .banner-text {
+        font-size: 1rem;
+    }
+    .banner-content {
+        padding: 0.5rem 0.2rem;
+    }
+    .banner-img img {
+        max-width: 90vw;
+        border-radius: 0.5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .banner-title {
+        font-size: 1.2rem;
+    }
+    .banner-content {
+        padding: 0.2rem 0;
+    }
+    .banner-contact {
+        gap: 0.2rem;
+    }
+}
+
+
 
 .banner-title {
   font-size: 3.5rem;
@@ -774,3 +869,75 @@ footer .social-icon:hover {
   font-size: 1rem;
 }
 
+/* ...existing code... */
+
+/* Responsive Profile Section */
+.profile-flex {
+    gap: 2rem;
+}
+
+.profile-image-container {
+    width: 260px;
+    min-width: 180px;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+    .profile-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1.5rem;
+    }
+    .profile-image-container {
+        margin-bottom: 1rem;
+        width: 200px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .profile-section {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .profile-image-container {
+        width: 150px;
+    }
+    .profile-flex {
+        gap: 1rem;
+    }
+    .profile-section p {
+        font-size: 1rem;
+    }
+    .diploma-list {
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .profile-section {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .profile-image-container {
+        width: 110px;
+    }
+    .profile-section h4 {
+        font-size: 1.1rem;
+    }
+    .diploma-item span {
+        font-size: 0.95rem;
+    }
+    .diploma-list {
+        padding-left: 0.5rem;
+    }
+}
+
+/* ...existing code... */

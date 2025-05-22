@@ -96,44 +96,15 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.php">
-                <span>Mark Sluis Training</span>
-            </a>
-            <div class="contact-info d-none d-lg-flex">
-                <div>
-                    <i class="fas fa-phone"></i> 06-12345678
-                </div>
-                <div>
-                    <i class="fas fa-envelope"></i> info@marksluistraining.nl
-                </div>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="trainingen.php">Trainingen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="inschrijven.php">Inschrijven</a>
-                    </li>
+    <?php include './includes/header.php'?>
 
-                </ul>
-            </div>
-        </div>
-    </nav>
     <header class="registration-header">
         <div class="container">
             <h1 class="display-4 fw-bold">Inschrijven</h1>
             <p class="lead">Schrijf je in voor een van onze trainingen</p>
         </div>
     </header>
+
  <section class="form-section" id="inschrijfformulier">
         <div class="container">
             <div class="section-header">
@@ -376,43 +347,9 @@
     </section>
 
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>Contact</h5>
-                    <p>
-                        <i class="fas fa-map-marker-alt me-2"></i> Sportlaan 123<br>
-                        1234 AB Amsterdam<br>
-                        <i class="fas fa-phone me-2"></i> 06-12345678<br>
-                        <i class="fas fa-envelope me-2"></i> info@marksluistraining.nl
-                    </p>
-                </div>
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.php">Home</a></li>
-                        <li class="mb-2"><a href="trainingen.php">Trainingen</a></li>
-                        <li class="mb-2"><a href="inschrijven.php">Inschrijven</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Volg ons</h5>
-                    <div class="social-icons justify-content-start">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <div class="copyright text-center">
-        <div class="container">
-            <p class="mb-0">© Copyright Mark Sluis Training 2023</p>
-        </div>
-    </div>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <?php include './includes/footer.php'?> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script>
         // Add scrolled class to navbar when scrolling
