@@ -484,7 +484,7 @@
                         <li><i class="fas fa-check"></i> Kosten: 75 euro voor 6 trainingen</li>
                         <li><i class="fas fa-check"></i> Locatie: DEV Doorn of gymzaal Beukenrode</li>
                         <li><i class="fas fa-check"></i> Trainingsduur: 45 minuten</li>
-                        <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagochtend 9.15-10.00</li>
+                        <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagochtend 9.15 - 10.00</li>
                     </ul>
                     <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
                 </div>
@@ -586,20 +586,38 @@
     <!-- Footer -->
     <?php include './includes/footer.php'?>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>    <script>
         // Set current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+        if (document.getElementById('current-year')) {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        }
         
         // Add active class to current category link when scrolling
         document.addEventListener('DOMContentLoaded', function() {
+            // Debug info
+            console.log("DOM Loaded");
+            
             const sections = document.querySelectorAll('.training-section');
             const navLinks = document.querySelectorAll('.category-link');
+            
+            console.log("Found " + sections.length + " sections");
+            console.log("Found " + navLinks.length + " nav links");
+            
+            // Initialize with first section active
+            if (sections.length > 0 && navLinks.length > 0) {
+                navLinks[0].classList.add('active');
+            }
             
             // Smooth scrolling for anchor links
             navLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
+                    
+                    // Remove active class from all links
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
                     
                     const targetId = this.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
@@ -613,25 +631,50 @@
                 });
             });
             
-            // Update active link on scroll
-            window.addEventListener('scroll', function() {
-                let current = '';
+            // Function to determine which section is in the viewport
+            function setActiveSection() {
+                let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+                
+                // Debug 
+                console.log("Scroll position: " + scrollPosition);
+                
+                // Find the section that's currently in view
+                let activeSection = null;
                 
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop - 150;
-                    const sectionHeight = section.clientHeight;
+                    const sectionBottom = sectionTop + section.clientHeight;
                     
-                    if (pageYOffset >= sectionTop) {
-                        current = section.getAttribute('id');
+                    // Debug each section position
+                    console.log(section.id + " section: " + sectionTop + " to " + sectionBottom);
+                    
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                        activeSection = section;
                     }
                 });
                 
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === '#' + current) {
-                        link.classList.add('active');
-                    }
-                });
+                // Update active link
+                if (activeSection) {
+                    const activeId = activeSection.getAttribute('id');
+                    console.log("Active section: " + activeId);
+                    
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + activeId) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            }
+            
+            // Call once on load
+            setActiveSection();
+            
+            // Add throttled scroll listener
+            let scrollTimeout;
+            window.addEventListener('scroll', function() {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(setActiveSection, 50);
             });
         });
     </script>

@@ -23,11 +23,11 @@
                             <div class="social-icon-text">Sportlaan <br>1231AB Amsterdam</div>
                         </div>
                         <div class="icon-text">
-                            <a href="#" class="social-icon"><i class="fas fa-phone"></i></a>
-                            <div class="social-icon-text">06-123456789</div>
+                            <a href="tel:8882192787" class="social-icon"><i class="fas fa-phone"></i></a>
+                            <div class="social-icon-text">06121111</div>
                         </div>
                         <div class="icon-text">
-                            <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                            <a href="mailto:info@marksluistraining.nl" class="social-icon"><i class="fas fa-envelope"></i></a>
                             <div class="social-icon-text">info@marksluistraining.nl</div>
                         </div>
                     </div>
@@ -38,11 +38,11 @@
     
     <div class="copyright">
         <div class="container d-flex justify-content-between align-items-center">
-            <p class="mb-0">Copyright © www.hkunlimited.nl</p>
+            <a style="text-decoration: none; color:grey" href="http://www.hkunlimited.nl/"><p class="mb-0">Copyright © www.hkunlimited.nl</p></a>
             <div class="social-icons d-flex gap-3">
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/marksluistraining/?locale=nl_NL" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/mark-sluis-63ab3418b/?originalSubdomain=nl" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/marksluistraining/" class="social-icon"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="d-flex gap-3">
                 <p class="mb-0 links"><a href="./voorwaarden.php">Privacy Policy</a></p>
