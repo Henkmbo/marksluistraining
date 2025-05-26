@@ -674,7 +674,7 @@
             let scrollTimeout;
             window.addEventListener('scroll', function() {
                 clearTimeout(scrollTimeout);
-                scrollTimeout = setTimeout(setActiveSection, 50);
+                scrollTimeout = setTimeout(setActiveSection, 5);
             });
         });
     </script>
