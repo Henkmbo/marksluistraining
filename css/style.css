@@ -656,8 +656,48 @@ footer .social-icon:hover {
 
 .copyright .links a  {
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
 }
+
+/* ...existing code... */
+/* ...existing code... */
+
+/* Zorg dat social icons altijd horizontaal staan */
+.copyright .social-icons {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Footer copyright responsive */
+.copyright .container {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (max-width: 767.98px) {
+    .copyright .container {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left;
+        gap: 0.5rem;
+    }
+    .copyright .social-icons {
+        margin: 0.5rem 0;
+        /* flex-direction: row !important;  <-- deze regel mag blijven of weg, zie hierboven */
+    }
+    .copyright .d-flex.gap-3 {
+        flex-direction: column !important;
+        gap: 0.25rem !important;
+    }
+    .copyright p,
+    .copyright a {
+        font-size: 0.98rem;
+    }
+}
+
+/* ...existing code... */
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
