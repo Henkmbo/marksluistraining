@@ -202,9 +202,9 @@ Een buddy-systeem werkt goed voor pubers omdat het hen helpt sociaal en emotione
                         <div class="profile-image-container flex-shrink-0 flex-column d-flex align-items-center">
                             <img src="img/profile.jpg" alt="Mark Sluis" class="profile-image">
                             <div class="social-icon-lg justify-content-center mt-3">
-                            <a href="#" class="social-icon "><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon social-icon-lg"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-icon social-icon-lg"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/marksluistraining/?locale=nl_NL" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/mark-sluis-63ab3418b/?originalSubdomain=nl" class="social-icon social-icon-lg"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/marksluistraining/" class="social-icon social-icon-lg"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div>
