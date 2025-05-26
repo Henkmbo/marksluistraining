@@ -150,14 +150,12 @@ input[type="date"] {
 
 /* Checkbox styling improvements */
 .form-check {
-    padding: 8px 12px;
+    padding: 8px 25px;
     transition: all 0.3s ease;
     border-radius: 4px;
 }
 
-.form-check:hover {
-    background-color: rgba(42, 42, 42, 0.7);
-}
+
 
 /* Terms link styling */
 .terms-link {
