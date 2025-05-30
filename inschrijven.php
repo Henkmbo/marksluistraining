@@ -112,13 +112,13 @@
                 <div class="divider"></div>
                 <p class="section-description">
                     Vul het onderstaande formulier in om je in te schrijven voor onze activiteiten. 
-                    Wij nemen zo snel mogelijk contact met je op om je inschrijving te bevestigen.
+                    Ik neem zo snel mogelijk contact met je op om je inschrijving te bevestigen.
                 </p>
             </div>
               <div class="form-container">
                 <div id="success-message" class="success-message" style="display: none;">
                     <h3>Inschrijving Ontvangen!</h3>
-                    <p>Bedankt voor je inschrijving. We hebben je gegevens ontvangen en nemen zo snel mogelijk contact met je op.</p>
+                    <p>Bedankt voor je inschrijving. Ik heb je gegevens ontvangen en neem zo snel mogelijk contact met je op.</p>
                     <button type="button" class="btn btn-primary" id="newFormBtn">Nieuw formulier invullen</button>
                 </div>                <form id="registrationForm" method="post" action="process_form.php">
                     <!-- Server-side PHP will handle the form submission -->

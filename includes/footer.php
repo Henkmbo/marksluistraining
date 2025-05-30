@@ -19,7 +19,7 @@
                     <h5>Contact</h5>
                     <div class="social-icons justify-content-start">
                         <div class="icon-text">
-                            <a href="#" class="social-icon"><i class="fas fa-map-marker-alt"></i></a>
+                            <a href="https://www.google.com/maps/place/Doorn/@52.0404268,5.3006484,8571m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47c65b7b01dbe725:0xfbca18e6ba1d0d0d!8m2!3d52.0346547!4d5.3456721!16zL20vMHZrcXg?entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D  " class="social-icon"><i class="fas fa-map-marker-alt"></i></a>
                             <div class="social-icon-text">Doorn</div>
                         </div>
                         <div class="icon-text">
@@ -41,7 +41,7 @@
             <a style="text-decoration: none; color:grey" href="http://www.hkunlimited.nl/"><p class="mb-0">Copyright © www.hkunlimited.nl</p></a>
             <div class="social-icons d-flex gap-3">
                 <a href="https://www.facebook.com/marksluistraining/?locale=nl_NL" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/in/mark-sluis-63ab3418b/?originalSubdomain=nl" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/mark-sluis-63ab3418b/?originalSubdomain=nl" class="social-icon"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.instagram.com/marksluistraining/" class="social-icon"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="d-flex gap-3">
