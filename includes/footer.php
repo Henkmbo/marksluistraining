@@ -20,11 +20,11 @@
                     <div class="social-icons justify-content-start">
                         <div class="icon-text">
                             <a href="#" class="social-icon"><i class="fas fa-map-marker-alt"></i></a>
-                            <div class="social-icon-text">Sportlaan <br>1231AB Amsterdam</div>
+                            <div class="social-icon-text">Doorn</div>
                         </div>
                         <div class="icon-text">
                             <a href="tel:8882192787" class="social-icon"><i class="fas fa-phone"></i></a>
-                            <div class="social-icon-text">06121111</div>
+                            <div class="social-icon-text">+31 6 42266609</div>
                         </div>
                         <div class="icon-text">
                             <a href="mailto:info@marksluistraining.nl" class="social-icon"><i class="fas fa-envelope"></i></a>

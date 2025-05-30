@@ -1,0 +1,31 @@
+NIEUWE INSCHRIJVING - MARK SLUIS TRAINING
+
+PERSOONLIJKE GEGEVENS:
+Naam: henk
+Geboortedatum: 2004-10-07
+Adres: weidedreef 96
+Postcode: 3947NW
+Woonplaats: langbroek
+Telefoonnummer: 0612123
+E-mail: test@test.nl
+
+GESELECTEERDE ACTIVITEITEN:
+- Voetbaltraining
+
+MEDISCHE INFORMATIE:
+Heeft medische aandoeningen: ja
+Details: test
+Gebruikt medicatie: nee
+
+OUDER/VERZORGER INFORMATIE:
+Naam: henk
+Telefoonnummer: 061234566
+E-mail: test@test.nl
+
+TOESTEMMINGEN:
+Toestemming voor foto's en video's: nee
+Akkoord met algemene voorwaarden: Ja
+
+--
+Deze inschrijving is verzonden op 26-05-2025 14:12:06
+IP-adres: ::1
