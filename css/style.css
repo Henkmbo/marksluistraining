@@ -244,6 +244,12 @@ body {
         align-items: center;
         gap: 0.5rem;
     }
+    .banner-img {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  z-index: 48 !important;
+}
 }
 
 @media (max-width: 767.98px) {
@@ -981,3 +987,8 @@ footer .social-icon:hover {
 }
 
 /* ...existing code... */
+@media (max-width: 767.98px) {
+  .navbar.scrolled-navbar {
+    padding-top: 40px !important;
+  }
+}

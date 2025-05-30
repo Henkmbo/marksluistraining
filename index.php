@@ -96,7 +96,7 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h2 class="section-heading">Onze Trainingen</h2>
+                    <h2 class="section-heading">Trainingen</h2>
                     <div class="divider mx-auto"></div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
-                            <h5 class="training-card-title card-title">Voetbaltraining</h5>
+                            <h5 class="training-card-title card-title">Voetbaltraining en Keeperstraining</h5>
                             <p class="training-card-text card-text">Persoonlijke en doelgerichte voetbal- en keeperstraining voor alle niveaus.</p>
                             <a href="trainingen.php#voetbal" class="btn btn-primary">Meer Info</a>
                         </div>
@@ -177,7 +177,7 @@
                         <div class="training-card-body card-body">
                             <h5 class="training-card-title card-title">Weerbaarheidstraining 13+</h5>
                             <p class="training-card-text card-text">
-Een buddy-systeem werkt goed voor pubers omdat het hen helpt sociaal en emotioneel te groeien
+Een buddy-systeem werkt goed voor pubers omdat het hen helpt sociaal en emotioneel te groeien.
 </p>
                             <a href="trainingen.php#buddy" class="btn btn-primary">Meer Info</a>
                         </div>
@@ -214,11 +214,11 @@ Een buddy-systeem werkt goed voor pubers omdat het hen helpt sociaal en emotione
                         </p>
                         <p class="mt-3">
                             <i class="fas fa-lightbulb text-primary me-2"></i>
-                            <strong>Visie:</strong> Mijn visie is een wereld waarin ieder kind de kans krijgt om zich op een gezonde, gelukkige en zelfverzekerde manier te ontwikkelen." Door het aanbieden van diverse programma’s die beweging, creativiteit en sociale vaardigheden combineren, wil ik kinderen helpen hun volledige potentieel te ontdekken en te ontwikkelen in een ondersteunende en stimulerende omgeving.
+                            <strong>Visie:</strong> Mijn visie is een wereld waarin ieder kind en volwassen de kans krijgt om zich op een gezonde, gelukkige en zelfverzekerde manier te ontwikkelen." Door het aanbieden van diverse programma’s die beweging, creativiteit en sociale vaardigheden combineren, wil ik kinderen en volwassenen helpen hun volledige potentieel te ontdekken en te ontwikkelen in een ondersteunende en stimulerende omgeving.
                         </p>
                         <p class="mt-3">
                             <i class="fas fa-bullseye text-primary me-2"></i>
-                            <strong>Missie:</strong> Mijn missie is om kinderen op een speelse en uitdagende manier te laten groeien, zowel fysiek als mentaal." Ik bied een breed scala aan activiteiten die de zelfvertrouwen, motorische vaardigheden en sociale interactie bevorderen, zodat elk kind zich op zijn eigen tempo kan ontwikkelen en plezier kan beleven aan leren en bewegen.
+                            <strong>Missie:</strong> Mijn missie is om iedereen op een speelse en uitdagende manier te laten groeien, zowel fysiek als mentaal." Ik bied een breed scala aan activiteiten die de zelfvertrouwen, motorische vaardigheden en sociale interactie bevorderen, zodat iedereen zich op zijn eigen tempo kan ontwikkelen en plezier kan beleven aan leren en bewegen.
                         </p>
 
                 <h4 class="mt-4 text-primary"><i class="fas fa-graduation-cap me-2"></i>Diploma's</h4>
@@ -365,17 +365,28 @@ Een buddy-systeem werkt goed voor pubers omdat het hen helpt sociaal en emotione
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // Add scrolled class to navbar when scrolling
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Set current year in footer
+        document.addEventListener('DOMContentLoaded', function () {
+  let lastScrollY = window.scrollY;
+  function handleNavbarPadding() {
+    const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+    if (window.innerWidth <= 767.98) { // Alleen op mobiel
+      if (window.scrollY > lastScrollY && window.scrollY > 10) {
+        // Naar beneden scrollen
+        navbar.classList.add('scrolled-navbar');
+      } else {
+        // Naar boven scrollen of bovenaan
+        navbar.classList.remove('scrolled-navbar');
+      }
+      lastScrollY = window.scrollY;
+    } else {
+      navbar.classList.remove('scrolled-navbar');
+    }
+  }
+  window.addEventListener('scroll', handleNavbarPadding, { passive: true });
+  window.addEventListener('resize', handleNavbarPadding);
+  handleNavbarPadding();
+});
             document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
