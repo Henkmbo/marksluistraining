@@ -167,6 +167,7 @@
         .feature-list li {
             align-items: flex-start;
             margin-bottom: 0.75rem;
+            font-size: medium;
         }
 
         .feature-list i {
@@ -302,7 +303,7 @@
     <header class="training-header">
         <div class="container">
             <h1 class="display-4 fw-bold">Onze Trainingen</h1>
-            <p class="lead">Ontdek de verschillende trainingsmogelijkheden die wij aanbieden</p>
+            <p class="lead">Ontdek de verschillende trainingsmogelijkheden die ik aanbied</p>
         </div>
     </header>
 
@@ -433,15 +434,15 @@
                     <h2 class="section-heading">Voetbaltraining / Keeperstraining</h2>
                     <div class="divider"></div>
                     <p>
-                        Wil jij je techniek, reactievermogen, coördinatie, snelheid of spelinzicht naar een hoger niveau tillen? Bij Mark Sluis Training krijg je persoonlijke en doelgerichte voetbaltraining, volledig afgestemd op jouw ontwikkelingsbehoeften. Met gerichte oefeningen, professionele begeleiding en aandacht voor zowel fysieke als mentale aspecten van het spel, zorgen wij ervoor dat jij sterker, sneller en slimmer op het veld wordt.
+                        Wil jij je techniek, reactievermogen, coördinatie, snelheid of spelinzicht naar een hoger niveau tillen? Bij Mark Sluis Training krijg je persoonlijke en doelgerichte voetbaltraining, volledig afgestemd op jouw ontwikkelingsbehoeften. Met gerichte oefeningen, professionele begeleiding en aandacht voor zowel fysieke als mentale aspecten van het spel, zorg ik ervoor dat jij sterker, sneller en slimmer op het veld wordt.
                     </p>
                     <h5 class="mt-4 text-primary">Voordelen</h5>
                     <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> Plezier en zelfvertrouwen – Trainen in een ontspannen setting zonder teamdruk</li>
-                        <li><i class="fas fa-check"></i> Techniekverbetering – Gerichte oefeningen voor betere balcontrole en techniek</li>
-                        <li><i class="fas fa-check"></i> Individuele aandacht – Volledige focus op jouw sterke en zwakke punten</li>
-                        <li><i class="fas fa-check"></i> Veel balcontacten – Intensiever werken met de bal voor snellere vooruitgang</li>
-                        <li><i class="fas fa-check"></i> Maatwerk en ontwikkeling – Training afgestemd op jouw specifieke behoeften</li>
+                        <li><i class="fas fa-check"></i> Plezier en zelfvertrouwen – Trainen in een ontspannen setting zonder teamdruk.</li>
+                        <li><i class="fas fa-check"></i> Techniekverbetering – Gerichte oefeningen voor betere balcontrole en techniek.</li>
+                        <li><i class="fas fa-check"></i> Individuele aandacht – Volledige focus op jouw sterke en zwakke punten.</li>
+                        <li><i class="fas fa-check"></i> Veel balcontacten – Intensiever werken met de bal voor snellere vooruitgang.</li>
+                        <li><i class="fas fa-check"></i> Maatwerk en ontwikkeling – Training afgestemd op jouw specifieke behoeften.</li>
                     </ul>
                     <h5 class="text-primary">Algemene informatie</h5>
                     <ul class="feature-list mb-4">
@@ -539,17 +540,17 @@
                     <div class="divider"></div>
                     <h5 class="mt-4 text-primary">Hoe gaat een feestje in zijn werk?</h5>
                     <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> We zoeken eerst een geschikte datum</li>
-                        <li><i class="fas fa-check"></i> Ouders en jarige overleggen over een thema. Alles is mogelijk. Dit kan een voetbalclub, voetbalspeler, tv-programma, YouTube held zijn of iets anders naar keuze</li>
-                        <li><i class="fas fa-check"></i> Ouders en jarige mogen favoriete spelletjes doorgeven</li>
-                        <li><i class="fas fa-check"></i> Hierna ga ik aan de slag met het uitwerken van het thema</li>
+                        <li><i class="fas fa-check"></i> We zoeken eerst een geschikte datum.</li>
+                        <li><i class="fas fa-check"></i> Ouders en jarige overleggen over een thema. Alles is mogelijk. Dit kan een voetbalclub, voetbalspeler, tv-programma, YouTube held zijn of iets anders naar keuze.</li>
+                        <li><i class="fas fa-check"></i> Ouders en jarige mogen favoriete spelletjes doorgeven.</li>
+                        <li><i class="fas fa-check"></i> Hierna ga ik aan de slag met het uitwerken van het thema.</li>
                     </ul>
                     <h5 class="text-primary">Algemene informatie</h5>
                     <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> De kosten voor het feestje zijn 175,- euro. Het aantal deelnemers maakt niet uit</li>
-                        <li><i class="fas fa-check"></i> Je krijgt hiervoor een feestje op locatie (DEV of Doornse gat), uitgewerkt thema en diploma's voor alle kinderen</li>
-                        <li><i class="fas fa-check"></i> Het feestje duurt 1,5 uur. Tussendoor is er een pauze met een vrij spelmoment</li>
-                        <li><i class="fas fa-check"></i> Optioneel zijn medailles voor alle deelnemers en een beker voor de jarige. Kosten hiervoor zijn 240 euro</li>
+                        <li><i class="fas fa-check"></i> De kosten voor het feestje zijn 175,- euro. Het aantal deelnemers maakt niet uit.</li>
+                        <li><i class="fas fa-check"></i> Je krijgt hiervoor een feestje op locatie (DEV of Doornse gat), uitgewerkt thema en diploma's voor alle kinderen.</li>
+                        <li><i class="fas fa-check"></i> Het feestje duurt 1,5 uur. Tussendoor is er een pauze met een vrij spelmoment.</li>
+                        <li><i class="fas fa-check"></i> Optioneel zijn medailles voor alle deelnemers en een beker voor de jarige. Kosten hiervoor zijn 50 euro.</li>
                     </ul>
                     <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
                 </div>
