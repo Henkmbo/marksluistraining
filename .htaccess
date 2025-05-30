@@ -1,0 +1,48 @@
+# Custom error pages
+ErrorDocument 404 /mark_sluis/404.php
+
+# Enable URL rewriting
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /mark_sluis/
+    
+    # Special handling for Netlify-style URLs
+    RewriteCond %{QUERY_STRING} ^(.*)_block_id=(.*)$
+    RewriteRule ^(.*)$ redirect.php [L]
+    
+    # Redirect if the file or directory doesn't exist
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ redirect.php [L]
+    
+    # Prevent direct access to certain file types
+    <FilesMatch "(\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp)|~)$">
+        Order allow,deny
+        Deny from all
+        Satisfy All
+    </FilesMatch>
+</IfModule>
+
+# Protect against common vulnerabilities
+<IfModule mod_headers.c>
+    # Security headers
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Cache control for static assets
+    <FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|js|css)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+</IfModule>
+
+# PHP settings
+<IfModule mod_php7.c>
+    php_value upload_max_filesize 8M
+    php_value post_max_size 8M
+    php_value max_execution_time 120
+    php_value max_input_time 120
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
