@@ -38,7 +38,7 @@
             border: 1px solid #333;
         }
         
-        .form-container::after {
+        /* .form-container::after {
             content: '';
             position: absolute;
             top: 0;
@@ -47,7 +47,7 @@
             height: 30%;
             background-color: var(--primary);
             clip-path: polygon(100% 0, 0 0, 100% 100%);
-        }
+        } */
         
         .pricing-card {
             background-color: var(--secondary);

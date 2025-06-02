@@ -27,7 +27,7 @@
                             <div class="banner-contact">
                                 <div class="contact-item">
                                     <i class="fas fa-phone"></i>
-                                    <span>+31 6 42266609</span>
+                                    <span class="phoneNumber">+31 6 42266609</span>
                                 </div>
                                 <div class="contact-item">
                                     <i class="fas fa-envelope"></i>
