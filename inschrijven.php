@@ -120,7 +120,8 @@
                     <h3>Inschrijving Ontvangen!</h3>
                     <p>Bedankt voor je inschrijving. Ik heb je gegevens ontvangen en neem zo snel mogelijk contact met je op.</p>
                     <button type="button" class="btn btn-primary" id="newFormBtn">Nieuw formulier invullen</button>
-                </div>                <form id="registrationForm" method="post" action="process_form.php">
+                </div>                
+                <form id="registrationForm" method="post" action="process_form.php">
                     <!-- Server-side PHP will handle the form submission -->
                     <div id="form-status" class="alert" style="display: none;"></div>
                     <!-- Persoonlijke Gegevens -->
