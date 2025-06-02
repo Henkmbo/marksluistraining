@@ -373,28 +373,8 @@ Een buddy-systeem werkt goed voor pubers omdat het hen helpt sociaal en emotione
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-  let lastScrollY = window.scrollY;
-  function handleNavbarPadding() {
-    const navbar = document.querySelector('.navbar');
-    if (!navbar) return;
-    if (window.innerWidth <= 767.98) { // Alleen op mobiel
-      if (window.scrollY > lastScrollY && window.scrollY > 10) {
-        // Naar beneden scrollen
-        navbar.classList.add('scrolled-navbar');
-      } else {
-        // Naar boven scrollen of bovenaan
-        navbar.classList.remove('scrolled-navbar');
-      }
-      lastScrollY = window.scrollY;
-    } else {
-      navbar.classList.remove('scrolled-navbar');
-    }
-  }
-  window.addEventListener('scroll', handleNavbarPadding, { passive: true });
-  window.addEventListener('resize', handleNavbarPadding);
-  handleNavbarPadding();
-});
+        
+
             document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>

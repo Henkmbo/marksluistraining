@@ -320,6 +320,7 @@ body {
 }
 .contact-item .phoneNumber {
   text-decoration: none;
+  color: white;
 }
 .contact-item i {
   color: var(--primary);
@@ -685,12 +686,7 @@ footer .social-icon:hover {
 }
 
 @media (max-width: 767.98px) {
-    .copyright .container {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        text-align: left;
-        gap: 0.5rem;
-    }
+    
     .copyright .social-icons {
         margin: 0.5rem 0;
         /* flex-direction: row !important;  <-- deze regel mag blijven of weg, zie hierboven */
@@ -993,4 +989,20 @@ footer .social-icon:hover {
   .navbar.scrolled-navbar {
     padding-top: 40px !important;
   }
+  
 }
+
+@media (max-width: 767.98px) {
+    .copyright .d-flex.gap-3 {
+        flex-direction: row !important;
+        gap: 0.25rem !important;
+    }
+    .copyright .container {
+        flex-direction: column !important;
+        /* align-items: flex-start !important; */
+        text-align: center;
+        gap: 0.5rem;
+    }
+}
+
+
