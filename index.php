@@ -1,3 +1,11 @@
+<?php
+$allowed_ips = ['145.89.255.39', '::1', '127.0.0.1'];
+if (!in_array($_SERVER['REMOTE_ADDR'], $allowed_ips)) {
+    die('Toegang geweigerd: alleen toegestaan vanaf jouw IP');
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
