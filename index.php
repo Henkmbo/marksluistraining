@@ -139,8 +139,8 @@
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
-                            <h5 class="training-card-title card-title">Weerbaarheidstraining</h5>
-                            <p class="training-card-text card-text">Rots & Water training en Boksend Opvoeden voor kinderen van 5-12 jaar.</p>
+                            <h5 class="training-card-title card-title">Weerbaarheidstraining | Groepstraining (5-12 jaar)</h5>
+                            <p class="training-card-text card-text">Sociale vaardigheden, zoals grenzen aangeven en respect tonen, worden op een natuurlijke manier geoefend.</p>
                             <a href="trainingen.php#weerbaarheid" class="btn btn-primary">Meer Info</a>
                         </div>
                     </div>
@@ -204,9 +204,9 @@
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
-                            <h5 class="training-card-title card-title">Weerbaarheidstraining 13+</h5>
+                            <h5 class="training-card-title card-title">Individuele training 5-12 jaar / Buddysysteem 13+</h5>
                             <p class="training-card-text card-text">
-Een buddy systeem werkt goed voor pubers omdat het hen helpt sociaal en emotioneel te groeien.
+Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten of faalangst.
 </p>
                             <a href="trainingen.php#buddy" class="btn btn-primary">Meer Info</a>
                         </div>
