@@ -176,19 +176,6 @@
                 <div class="col-md-4 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
-                            <img src="img/training-4.jpg" alt="Fit door Voetbal" class="img-fluid">
-                            <div class="card-img-overlay-gradient"></div>
-                        </div>
-                        <div class="training-card-body card-body">
-                            <h5 class="training-card-title card-title">Fit door Voetbal</h5>
-                            <p class="training-card-text card-text">De ultieme combinatie van voetbal en bootcamp voor een betere conditie en techniek.</p>
-                            <a href="trainingen.php#fit" class="btn btn-primary">Meer Info</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="training-card custom-card h-100">
-                        <div class="training-card-img card-img-top position-relative overflow-hidden">
                             <img src="img/kinderfeestje.jpg" alt="Kinderfeestjes" class="img-fluid">
                             <div class="card-img-overlay-gradient"></div>
                         </div>

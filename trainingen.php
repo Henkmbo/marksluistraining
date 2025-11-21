@@ -326,10 +326,6 @@
                 <i class="fas fa-baby"></i>
                 <span>Peutervoetbal</span>
             </a>
-            <a href="#fit" class="category-link">
-                <i class="fas fa-dumbbell"></i>
-                <span>Fit door Voetbal</span>
-            </a>
             <a href="#feestje" class="category-link">
                 <i class="fas fa-birthday-cake"></i>
                 <span>Kinderfeestje</span>
@@ -493,38 +489,6 @@
         </div>
     </section>
 
-    <!-- Fit door Voetbal Section -->
-    <section class="training-section" id="fit">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="training-image">
-                        <img src="./img/19a6344b-3ee7-4695-aa6f-71d245933e4a.jpeg" alt="Fit door Voetbal" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="section-heading">Fit door Voetbal</h2>
-                    <div class="divider"></div>
-                    <p>
-                        "Fit door Voetbal is de ultieme training voor iedereen die zijn voetbalskills wil verbeteren en tegelijkertijd zijn conditie naar een hoger niveau wil tillen! Deze unieke combinatie van voetbal en bootcamp biedt de perfecte balans tussen techniek, uithoudingsvermogen en kracht. Of je nu je snelheid, kracht of lenigheid wilt versterken, Fit door Voetbal zorgt voor een uitdagende, dynamische en vooral leuke manier om fit te worden."
-                    </p>
-                    <h5 class="mt-4 text-primary">Waarom Fit door Voetbal?</h5>
-                    <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> <strong>Leuker en gevarieerder:</strong> Door de afwisseling van voetbal en bootcamp blijft de training interessant en gevarieerd, wat helpt om motivatie hoog te houden en verveling te voorkomen.</li>
-                        <li><i class="fas fa-check"></i> <strong>Plezier en sociale interactie:</strong> Beide activiteiten zijn sociaal en leuk, waardoor je niet alleen fysiek sterker wordt, maar ook nieuwe mensen ontmoet en plezier hebt tijdens de training.</li>
-                    </ul>
-                    <h5 class="text-primary">Algemene informatie</h5>
-                    <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> Kosten: 125 euro voor een 10 rittenkaart</li>
-                        <li><i class="fas fa-check"></i> Locatie: DEV Doorn</li>
-                        <li><i class="fas fa-check"></i> Trainingsduur: 1 uur</li>
-                        <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagavond 19.00-20.00</li>
-                    </ul>
-                    <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Kinderfeestje Section -->
     <section class="training-section bg-secondary" id="feestje">
