@@ -153,7 +153,7 @@
                         </div>
                         <div class="training-card-body card-body">
                             <h5 class="training-card-title card-title">Voetbaltraining en Keeperstraining</h5>
-                            <p class="training-card-text card-text">Persoonlijke en doelgerichte voetbal- en keeperstraining voor alle niveaus.</p>
+                            <p class="training-card-text card-text">Persoonlijke en doelgerichte voetbal en keeperstraining voor alle niveaus.</p>
                             <a href="trainingen.php#voetbal" class="btn btn-primary">Meer Info</a>
                         </div>
                     </div>
@@ -195,7 +195,7 @@
                         <div class="training-card-body card-body">
                             <h5 class="training-card-title card-title">Weerbaarheidstraining 13+</h5>
                             <p class="training-card-text card-text">
-Een buddy-systeem werkt goed voor pubers omdat het hen helpt sociaal en emotioneel te groeien.
+Een buddy systeem werkt goed voor pubers omdat het hen helpt sociaal en emotioneel te groeien.
 </p>
                             <a href="trainingen.php#buddy" class="btn btn-primary">Meer Info</a>
                         </div>
