@@ -22,16 +22,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     try {
         $mail->isSMTP();
-        $mail->Host       = 'secure.123-webserver.biz';
+        $mail->Host       = 'secure.123webserver.biz';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'admin@marksluistraining.nl';
-        $mail->Password   = 'Marksluis1';
+        $mail->Username   = 'info@hkunlimited.nl';
+        $mail->Password   = 'PuT4h6qGA56ethg9WS2z';
         $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465;
 
-        $mail->setFrom('admin@marksluistraining.nl', $fullName);
+        $mail->setFrom('info@hkunlimited.nl', $fullName);
         $mail->addReplyTo($email);
-        $mail->addAddress('admin@marksluistraining.nl', 'Mark Sluis Training');
+        $mail->addAddress('info@hkunlimited.nl', 'Mark Sluis Training');
 
         $mail->isHTML(true);
         $mail->Subject = 'Nieuwe inschrijving via het formulier';
