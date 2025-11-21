@@ -231,7 +231,7 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
             <div class="row align-items-center">
                 <div class="col-lg-10 mb-5 mb-lg-0">
                     <div class="profile-flex d-flex align-items-start gap-4">
-                        <div class="profile-image-container flex-shrink-0 flex-column d-flex align-items-center">
+                        <div class="  flex-column d-flex align-items-center">
                             <img src="img/profile.jpg" alt="Mark Sluis" class="profile-image">
                             <div class="social-icon-lg justify-content-center mt-3">
                             <a href="https://www.facebook.com/marksluistraining/?locale=nl_NL" class="social-icon"><i class="fab fa-facebook-f"></i></a>

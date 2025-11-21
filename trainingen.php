@@ -347,27 +347,17 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="section-heading">Weerbaarheidstraining 5-12 jaar</h2>
+                    <h2 class="section-heading">Weerbaarheidstraining | Groepstraining (5-12 jaar)</h2>
                     <div class="divider"></div>
-                    <p>
-                        Het is een psychofysieke training, waarin kinderen leren zich onafhankelijk op te stellen en eigen keuzes te maken (Rots), maar ook om met anderen samen te werken, te spelen en te leven (Water). Afhankelijk van de situatie leert het kind voor een rots of waterhouding te kiezen.
-                    </p>
-                    <h5 class="mt-4 text-primary">Wat is boksend opvoeden?</h5>
-                    <p>
-                        In een "boksend opvoeden" programma leren kinderen niet alleen de basisvaardigheden van boksen, zoals stoten en verdedigingstechnieken, maar ook belangrijke levensvaardigheden zoals zelfvertrouwen, doorzettingsvermogen en het vermogen om met uitdagingen om te gaan. Het doel is om kinderen te helpen zelfverzekerder en sterker te worden, zowel fysiek als mentaal.
-                    </p>
-                    <h5 class="mt-4 text-primary">Thema's</h5>
-                    <p>
-                        Doordat de thema's zelfbeheersing, zelfreflectie, zelfvertrouwen en in actie kunnen en durven komen spelenderwijs worden aangeboden, spreekt het rots en waterprogramma ook wel over de gouden driehoek, die bestaat uit:
-                    </p>
                     <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> Lichaamsbewustzijn</li>
-                        <li><i class="fas fa-check"></i> Emotioneel bewustzijn</li>
-                        <li><i class="fas fa-check"></i> Zelfbewustzijn</li>
+                        <li><i class="fas fa-check"></i> Kinderen leren samen te werken en elkaar te steunen.</li>
+                        <li><i class="fas fa-check"></i> Ze herkennen dat anderen met vergelijkbare dingen worstelen.</li>
+                        <li><i class="fas fa-check"></i> Sociale vaardigheden, zoals grenzen aangeven en respect tonen, worden op een natuurlijke manier geoefend.</li>
+                        <li><i class="fas fa-check"></i> De groepsdynamiek zorgt voor plezier, energie en motivatie.</li>
                     </ul>
                     <h5 class="text-primary">Algemene informatie</h5>
                     <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> Kosten individueel: 70 euro per training</li>
+                        <li><i class="fas fa-check"></i> Kosten individueel: 77,50 euro per training</li>
                         <li><i class="fas fa-check"></i> Groepstraining: N.T.B.</li>
                         <li><i class="fas fa-check"></i> Trainingsduur: 1 uur (korter mogelijk)</li>
                         <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagmiddag, vrijdagmiddag, zondag overdag</li>
