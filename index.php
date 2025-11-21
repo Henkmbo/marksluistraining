@@ -152,7 +152,20 @@
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
-                            <h5 class="training-card-title card-title">Voetbaltraining en Keeperstraining</h5>
+                            <h5 class="training-card-title card-title">Voetbaltraining</h5>
+                            <p class="training-card-text card-text">Persoonlijke en doelgerichte voetbal en keeperstraining voor alle niveaus.</p>
+                            <a href="trainingen.php#voetbal" class="btn btn-primary">Meer Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="training-card custom-card h-100">
+                        <div class="training-card-img card-img-top position-relative overflow-hidden">
+                            <img src="img/hero-bg.jpg" alt="Voetbaltraining" class="img-fluid">
+                            <div class="card-img-overlay-gradient"></div>
+                        </div>
+                        <div class="training-card-body card-body">
+                            <h5 class="training-card-title card-title">Keeperstraining</h5>
                             <p class="training-card-text card-text">Persoonlijke en doelgerichte voetbal en keeperstraining voor alle niveaus.</p>
                             <a href="trainingen.php#voetbal" class="btn btn-primary">Meer Info</a>
                         </div>
@@ -171,8 +184,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-4">
                 <div class="col-md-4 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
@@ -202,6 +213,9 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
                     </div>
                 </div>
             </div>
+            
+                
+            
         </div>
     </section>
 
