@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="contact-item">
                                     <i class="fas fa-envelope"></i>
-                                    <span>info@marksluistraining.nl</span>
+                                    <a style="text-decoration: none; color: inherit;" href="mailto:info@marksluistraining.nl">info@marksluistraining.nl</a>
                                 </div>
                             </div>
                         </div>

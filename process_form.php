@@ -16,14 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $phone              = $_POST['phone'] ?? '';
     $email              = $_POST['email'] ?? '';
     $activities         = isset($_POST['activities']) ? implode(', ', $_POST['activities']) : 'Geen geselecteerd';
-    $hasMedical         = $_POST['hasMedicalConditions'] ?? 'nee';
-    $medicalDetails     = $_POST['medicalDetails'] ?? '';
-    $usesMedication     = $_POST['usesMedication'] ?? 'nee';
-    $medicationDetails  = $_POST['medicationDetails'] ?? '';
-    $guardianName       = $_POST['guardianName'] ?? '';
-    $guardianPhone      = $_POST['guardianPhone'] ?? '';
-    $guardianEmail      = $_POST['guardianEmail'] ?? '';
-    $photoConsent       = $_POST['photoConsent'] ?? 'nee';
     $termsAgreed        = isset($_POST['termsAgreed']) ? 'Ja' : 'Nee';
 
     $mail = new PHPMailer(true);
@@ -52,16 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p><strong>Email:</strong> $email</p>
             <hr>
             <p><strong>Geselecteerde activiteit(en):</strong> $activities</p>
-            <p><strong>Medische aandoeningen:</strong> $hasMedical</p>" .
-            ($hasMedical === 'ja' ? "<p><strong>Details:</strong> $medicalDetails</p>" : '') .
-            "<p><strong>Medicatiegebruik:</strong> $usesMedication</p>" .
-            ($usesMedication === 'ja' ? "<p><strong>Details:</strong> $medicationDetails</p>" : '') .
-            "<hr>
-            <p><strong>Ouder/verzorger naam:</strong> $guardianName</p>
-            <p><strong>Ouder/verzorger telefoon:</strong> $guardianPhone</p>
-            <p><strong>Ouder/verzorger email:</strong> $guardianEmail</p>
-            <hr>
-            <p><strong>Toestemming foto's/video's:</strong> $photoConsent</p>
             <p><strong>Algemene voorwaarden geaccepteerd:</strong> $termsAgreed</p>
         ";
 

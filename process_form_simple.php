@@ -47,20 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $activitiesList = "Geen activiteiten geselecteerd";
     }
-    
-    // Medical information
-    $hasMedicalConditions = isset($_POST['hasMedicalConditions']) ? sanitize_input($_POST['hasMedicalConditions']) : "";
-    $medicalDetails = isset($_POST['medicalDetails']) ? sanitize_input($_POST['medicalDetails']) : "";
-    $usesMedication = isset($_POST['usesMedication']) ? sanitize_input($_POST['usesMedication']) : "";
-    $medicationDetails = isset($_POST['medicationDetails']) ? sanitize_input($_POST['medicationDetails']) : "";
-    
-    // Guardian information
-    $guardianName = isset($_POST['guardianName']) ? sanitize_input($_POST['guardianName']) : "";
-    $guardianPhone = isset($_POST['guardianPhone']) ? sanitize_input($_POST['guardianPhone']) : "";
-    $guardianEmail = isset($_POST['guardianEmail']) ? sanitize_input($_POST['guardianEmail']) : "";
-    
     // Permissions
-    $photoConsent = isset($_POST['photoConsent']) ? sanitize_input($_POST['photoConsent']) : "";
     $termsAgreed = isset($_POST['termsAgreed']) ? "Ja" : "Nee";
     
     // Validate required fields
@@ -78,9 +65,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors[] = "Ongeldig e-mailadres.";
     }
     if (empty($activities)) $errors[] = "Selecteer ten minste één activiteit.";
-    if (!isset($_POST['hasMedicalConditions'])) $errors[] = "Medische aandoeningen veld is verplicht.";
-    if (!isset($_POST['usesMedication'])) $errors[] = "Medicatie veld is verplicht.";
-    if (!isset($_POST['photoConsent'])) $errors[] = "Toestemming voor foto's veld is verplicht.";
     if (!isset($_POST['termsAgreed'])) $errors[] = "Je moet akkoord gaan met de algemene voorwaarden.";
     
     // If validation passes, build and send email
@@ -99,23 +83,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         $message .= "MEDISCHE INFORMATIE:\n";
         $message .= "Heeft medische aandoeningen: $hasMedicalConditions\n";
-        if ($hasMedicalConditions == "ja" && !empty($medicalDetails)) {
-            $message .= "Details: $medicalDetails\n";
-        }
-        $message .= "Gebruikt medicatie: $usesMedication\n";
-        if ($usesMedication == "ja" && !empty($medicationDetails)) {
-            $message .= "Details: $medicationDetails\n";
-        }
-        
-        if (!empty($guardianName) || !empty($guardianPhone) || !empty($guardianEmail)) {
-            $message .= "\nOUDER/VERZORGER INFORMATIE:\n";
-            if (!empty($guardianName)) $message .= "Naam: $guardianName\n";
-            if (!empty($guardianPhone)) $message .= "Telefoonnummer: $guardianPhone\n";
-            if (!empty($guardianEmail)) $message .= "E-mail: $guardianEmail\n";
-        }
         
         $message .= "\nTOESTEMMINGEN:\n";
-        $message .= "Toestemming voor foto's en video's: $photoConsent\n";
         $message .= "Akkoord met algemene voorwaarden: $termsAgreed\n";
         
         $message .= "\n--\nDeze inschrijving is verzonden op " . date("d-m-Y H:i:s") . "\n";

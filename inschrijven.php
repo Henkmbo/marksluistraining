@@ -193,11 +193,6 @@
                             </div>
                             
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="activity-bootcamp" name="activities[]" value="Bootcamp">
-                                <label class="form-check-label" for="activity-bootcamp">Bootcamp</label>
-                            </div>
-                            
-                            <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="activity-voetbaltraining" name="activities[]" value="Voetbaltraining">
                                 <label class="form-check-label" for="activity-voetbaltraining">Voetbaltraining</label>
                             </div>
@@ -220,108 +215,12 @@
                         <div class="error-message" id="activities-error"></div>
                     </div>
                       <!-- Gezondheid en Medische Gegevens -->
-                    <div class="form-section-block">
-                        <h3 class="form-section-title">Gezondheid en Medische Gegevens</h3>
-                        <p class="form-text">Indien van toepassing, vul hieronder je medische informatie in die relevant is voor deelname aan de activiteit.</p>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>Heeft u of uw kind medische aandoeningen waar wij van op de hoogte moeten zijn? <span class="required">*</span></label>
-                                <div class="radio-group">
-                                    <div class="form-radio">
-                                        <input type="radio" id="medicalConditions-yes" name="hasMedicalConditions" value="ja" required>
-                                        <label for="medicalConditions-yes">Ja</label>
-                                    </div>
-                                    <div class="form-radio">
-                                        <input type="radio" id="medicalConditions-no" name="hasMedicalConditions" value="nee" checked required>
-                                        <label for="medicalConditions-no">Nee</label>
-                                    </div>
-                                </div>
-                                <div class="error-message" id="hasMedicalConditions-error"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row" id="medical-details-container" style="display: none;">
-                            <div class="form-group">
-                                <label for="medicalDetails">Zo ja, graag specificeren:</label>
-                                <textarea class="form-control" id="medicalDetails" name="medicalDetails" rows="3"></textarea>
-                            </div>
-                        </div>
-                          <div class="form-row">
-                            <div class="form-group">
-                                <label>Gebruik je medicijnen die invloed kunnen hebben op deelname? <span class="required">*</span></label>
-                                <div class="radio-group">
-                                    <div class="form-radio">
-                                        <input type="radio" id="medication-yes" name="usesMedication" value="ja" required>
-                                        <label for="medication-yes">Ja</label>
-                                    </div>
-                                    <div class="form-radio">
-                                        <input type="radio" id="medication-no" name="usesMedication" value="nee" checked required>
-                                        <label for="medication-no">Nee</label>
-                                    </div>
-                                </div>
-                                <div class="error-message" id="usesMedication-error"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row" id="medication-details-container" style="display: none;">
-                            <div class="form-group">
-                                <label for="medicationDetails">Indien ja, graag specificeren:</label>
-                                <textarea class="form-control" id="medicationDetails" name="medicationDetails" rows="3"></textarea>
-                            </div>
-                        </div>
-                    </div>
                     
-                    <!-- Ouder/Verzorger Informatie -->
-                    <div class="form-section-block">
-                        <h3 class="form-section-title">Ouder/Verzorger Informatie</h3>
-                        <p>Voor minderjarige deelnemers is toestemming van een ouder of verzorger vereist.</p>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="guardianName">Naam ouder/verzorger</label>
-                                <input type="text" class="form-control" id="guardianName" name="guardianName">
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="guardianPhone">Telefoonnummer ouder/verzorger</label>
-                                <input type="tel" class="form-control" id="guardianPhone" name="guardianPhone">
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="guardianEmail">E-mailadres ouder/verzorger</label>
-                                <input type="email" class="form-control" id="guardianEmail" name="guardianEmail">
-                                <div class="error-message" id="guardianEmail-error"></div>
-                            </div>
-                        </div>
-                    </div>
                     
                       <!-- Toestemmingen en Verklaringen -->
                     <div class="form-section-block">
                         <h3 class="form-section-title">Toestemmingen en Verklaringen</h3>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>Toestemming voor gebruik van foto's en video's <span class="required">*</span></label>
-                                <p class="form-text">Tijdens de activiteiten kunnen foto's en video's worden gemaakt voor promotionele doeleinden.</p>
-                                <div class="radio-group">
-                                    <div class="form-radio">
-                                        <input type="radio" id="photo-yes" name="photoConsent" value="ja" required>
-                                        <label for="photo-yes">Ik geef toestemming voor het gebruik van foto's en video's waarin ik/ons kind te zien is.</label>
-                                    </div>
-                                    <div class="form-radio">
-                                        <input type="radio" id="photo-no" name="photoConsent" value="nee" checked required>
-                                        <label for="photo-no">Ik geef geen toestemming voor het gebruik van foto's en video's.</label>
-                                    </div>
-                                </div>
-                                <div class="error-message" id="photoConsent-error"></div>
-                            </div>
-                        </div>
-                        
+                                                
                         <div class="form-row">
                             <div class="form-group">                                <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="termsAgreed" name="termsAgreed" required>
