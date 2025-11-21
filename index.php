@@ -64,36 +64,63 @@
                         <h2 class="section-heading mb-3">Sporten bij Mark Sluis Training</h2>
                         <div class="divider mb-4"></div>
                         <p class="mb-4 text-light fs-5">
-                            Trainen bij Mark Sluis Training is speciaal omdat plezier voorop staat, ongeacht leeftijd of niveau.<br>
-                            De trainingen bieden:
-                        </p>
-                        <ul class="feature-list list-unstyled mb-4">
-                            <li class="mb-3 d-flex align-items-start">
-                                <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
-                                <span>Individuele aandacht &ndash; Persoonlijke begeleiding om het beste uit jezelf te halen.</span>
-                            </li>
-                            <li class="mb-3 d-flex align-items-start">
-                                <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
-                                <span>Succeservaringen &ndash; Focus op kleine &eacute;n grote overwinningen, zodat je met zelfvertrouwen groeit.</span>
-                            </li>
-                            <li class="mb-3 d-flex align-items-start">
-                                <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
-                                <span>Persoonlijke ontwikkeling &ndash; Niet alleen als sporter, maar ook als mens.</span>
-                            </li>
-                            <li class="mb-3 d-flex align-items-start">
-                                <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
-                                <span>Toegankelijk voor iedereen &ndash; Of je nu net begint of al gevorderd bent, er is altijd ruimte om te leren en te genieten.</span>
-                            </li>
-                        </ul>
-                        <p class="mb-4 text-light fs-5">
-                            Hier draait het om meer dan alleen trainen&ndash;het is een plek waar je groeit en met plezier sterker wordt!
-                        </p>
-                        <a href="trainingen.php" class="btn btn-primary btn-lg ">Meer informatie</a>
+    Trainen bij Mark Sluis Training is speciaal omdat plezier voorop staat, ongeacht leeftijd of niveau.<br>
+    De trainingen bieden:
+</p>
+
+<ul class="feature-list list-unstyled mb-4">
+    <li class="mb-3 d-flex align-items-start">
+        <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
+        <span>Individuele aandacht: Persoonlijke begeleiding om het beste uit jezelf te halen.</span>
+    </li>
+    <li class="mb-3 d-flex align-items-start">
+        <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
+        <span>Succeservaringen: Focus op kleine én grote overwinningen, zodat je met zelfvertrouwen groeit.</span>
+    </li>
+    <li class="mb-3 d-flex align-items-start">
+        <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
+        <span>Persoonlijke ontwikkeling: Niet alleen als sporter, maar ook als mens.</span>
+    </li>
+    <li class="mb-3 d-flex align-items-start">
+        <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
+        <span>Toegankelijk voor iedereen: Of je nu net begint of al gevorderd bent, er is altijd ruimte om te leren en te genieten.</span>
+    </li>
+</ul>
+
+<p class="mb-4 text-light fs-5">
+    Hier draait het om meer dan alleen trainen, het is een plek waar je groeit en met plezier sterker wordt!
+</p>
+
+<a href="trainingen.php" class="btn btn-primary btn-lg">Meer informatie</a>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
+<!-- Instagram Section -->
+<section class="instagram-section bg-dark" id="instagram">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <h2 class="section-heading">Volg Mark Sluis Training</h2>
+            <div class="divider mx-auto"></div>
+            <p class="text-light fs-5">
+                Blijf op de hoogte van trainingen, tips en mooie momenten.  
+                Bekijk de nieuwste updates op Instagram!
+            </p>
+        </div>
+
+        <div class="row g-4" id="instagram-feed">
+            <!-- Instagram posts worden hier automatisch geladen -->
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="https://www.instagram.com/marksluistraining/" class="btn btn-primary btn-lg" target="_blank">
+                Volg op Instagram
+            </a>
+        </div>
+    </div>
+</section>
 
     <!-- Training Cards -->
     <section class="trainingen bg-dark" id="trainingen">
@@ -365,11 +392,44 @@ Een buddy-systeem werkt goed voor pubers omdat het hen helpt sociaal en emotione
     <!-- Footer -->
     <?php include './includes/footer.php';?>
 
+<style>
+    .instagram-section .insta-post {
+    overflow: hidden;
+    transition: transform .3s ease;
+}
 
+.instagram-section .insta-post:hover {
+    transform: scale(1.03);
+}
+
+.instagram-section img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.insta-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.insta-post:hover .insta-caption {
+    opacity: 1;
+}
+
+</style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        
+    
 
             document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
