@@ -1,24 +1,20 @@
-<?php
-$allowed_ips = ['145.89.255.39', '::1', '127.0.0.1'];
-if (!in_array($_SERVER['REMOTE_ADDR'], $allowed_ips)) {
-    die('Toegang geweigerd: alleen toegestaan vanaf jouw IP');
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark Sluis Training</title>
+    <meta name="description" content="Mark Sluis Training biedt professionele coaching, trainingen en workshops voor persoonlijke groei, leiderschap en mentale kracht.">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
+
 <body>
     <!-- Navigation -->
     <?php include './includes/header.php'?>
@@ -31,11 +27,11 @@ if (!in_array($_SERVER['REMOTE_ADDR'], $allowed_ips)) {
                     <div class="container">
                         <div class="banner-content">
                             <h1 class="banner-title">Mark Sluis <span>Training</span></h1>
-                            <p class="banner-text">Bij Mark Sluis Training ben je aan het juiste adres voor peutervoetbal, bootcamp, kinderfeestjes, weerbaarheidstraining, workshops en nog veel meer – alles voor een actieve en plezierige ontwikkeling!</p>
+                            <p class="banner-text">Bij Mark Sluis Training ben je aan het juiste adres voor peutervoetbal, bootcamp, kinderfeestjes, weerbaarheidstraining, workshops en nog veel meer, alles voor een actieve en plezierige ontwikkeling!</p>
                             <div class="banner-contact">
                                 <div class="contact-item">
                                     <i class="fas fa-phone"></i>
-                                    <span class="phoneNumber">+31 6 42266609</span>
+                                      <a href="tel:0642266609" class="phoneNumber">+31 6 42266609</a>
                                 </div>
                                 <div class="contact-item">
                                     <i class="fas fa-envelope"></i>
@@ -74,23 +70,23 @@ if (!in_array($_SERVER['REMOTE_ADDR'], $allowed_ips)) {
                         <ul class="feature-list list-unstyled mb-4">
                             <li class="mb-3 d-flex align-items-start">
                                 <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
-                                <span>Individuele aandacht – Persoonlijke begeleiding om het beste uit jezelf te halen.</span>
+                                <span>Individuele aandacht &ndash; Persoonlijke begeleiding om het beste uit jezelf te halen.</span>
                             </li>
                             <li class="mb-3 d-flex align-items-start">
                                 <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
-                                <span>Succeservaringen – Focus op kleine én grote overwinningen, zodat je met zelfvertrouwen groeit.</span>
+                                <span>Succeservaringen &ndash; Focus op kleine &eacute;n grote overwinningen, zodat je met zelfvertrouwen groeit.</span>
                             </li>
                             <li class="mb-3 d-flex align-items-start">
                                 <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
-                                <span>Persoonlijke ontwikkeling – Niet alleen als sporter, maar ook als mens.</span>
+                                <span>Persoonlijke ontwikkeling &ndash; Niet alleen als sporter, maar ook als mens.</span>
                             </li>
                             <li class="mb-3 d-flex align-items-start">
                                 <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
-                                <span>Toegankelijk voor iedereen – Of je nu net begint of al gevorderd bent, er is altijd ruimte om te leren en te genieten.</span>
+                                <span>Toegankelijk voor iedereen &ndash; Of je nu net begint of al gevorderd bent, er is altijd ruimte om te leren en te genieten.</span>
                             </li>
                         </ul>
                         <p class="mb-4 text-light fs-5">
-                            Hier draait het om méér dan alleen trainen—het is een plek waar je groeit en met plezier sterker wordt!
+                            Hier draait het om meer dan alleen trainen&ndash;het is een plek waar je groeit en met plezier sterker wordt!
                         </p>
                         <a href="trainingen.php" class="btn btn-primary btn-lg ">Meer informatie</a>
                     </div>
@@ -222,7 +218,7 @@ Een buddy-systeem werkt goed voor pubers omdat het hen helpt sociaal en emotione
                         </p>
                         <p class="mt-3">
                             <i class="fas fa-lightbulb text-primary me-2"></i>
-                            <strong>Visie:</strong> Mijn visie is een wereld waarin ieder kind en volwassen de kans krijgt om zich op een gezonde, gelukkige en zelfverzekerde manier te ontwikkelen." Door het aanbieden van diverse programma’s die beweging, creativiteit en sociale vaardigheden combineren, wil ik kinderen en volwassenen helpen hun volledige potentieel te ontdekken en te ontwikkelen in een ondersteunende en stimulerende omgeving.
+                            <strong>Visie:</strong> Mijn visie is een wereld waarin ieder kind en volwassen de kans krijgt om zich op een gezonde, gelukkige en zelfverzekerde manier te ontwikkelen." Door het aanbieden van diverse programma&apos;s die beweging, creativiteit en sociale vaardigheden combineren, wil ik kinderen en volwassenen helpen hun volledige potentieel te ontdekken en te ontwikkelen in een ondersteunende en stimulerende omgeving.
                         </p>
                         <p class="mt-3">
                             <i class="fas fa-bullseye text-primary me-2"></i>
@@ -335,7 +331,7 @@ Een buddy-systeem werkt goed voor pubers omdat het hen helpt sociaal en emotione
                             <i class="fas fa-quote-left"></i>
                         </div>
                         <p class="review-text">
-                            "Al jaren volgen wij diverse trainingen van Mark. Zijn trainingen zijn variërend, leerzaam en erg goed opgebouwd. Naast de erg goede trainingen en lessen is Mark als mens heel prettig om mee te werken. Hij daagt je uit, motiveert en doet dit elke keer met vol enthousiasme en met 100% inzet."
+                            "Al jaren volgen wij diverse trainingen van Mark. Zijn trainingen zijn vari&euml;rend, leerzaam en erg goed opgebouwd. Naast de erg goede trainingen en lessen is Mark als mens heel prettig om mee te werken. Hij daagt je uit, motiveert en doet dit elke keer met vol enthousiasme en met 100% inzet."
                         </p>
                         <p class="review-author">- J. van der Heide</p>
                     </div>

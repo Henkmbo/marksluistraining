@@ -322,6 +322,24 @@ body {
   text-decoration: none;
   color: white;
 }
+
+.phoneNumber {
+  text-decoration: none;
+}
+
+a.phoneNumber {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.phoneNumber:visited {
+  color: inherit;
+}
+
+a.phoneNumber:hover {
+  text-decoration: none;
+}
+
 .contact-item i {
   color: var(--primary);
   font-size: 1.2rem;
