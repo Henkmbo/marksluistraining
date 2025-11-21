@@ -350,7 +350,7 @@
                     <h2 class="section-heading">Weerbaarheidstraining 5-12 jaar</h2>
                     <div class="divider"></div>
                     <p>
-                        Het is een psychofysieke training, waarin kinderen leren zich onafhankelijk op te stellen en eigen keuzes te maken (Rots), maar ook om met anderen samen te werken, te spelen en te leven (Water). Afhankelijk van de situatie leert het kind voor een rots- of waterhouding te kiezen.
+                        Het is een psychofysieke training, waarin kinderen leren zich onafhankelijk op te stellen en eigen keuzes te maken (Rots), maar ook om met anderen samen te werken, te spelen en te leven (Water). Afhankelijk van de situatie leert het kind voor een rots of waterhouding te kiezen.
                     </p>
                     <h5 class="mt-4 text-primary">Wat is boksend opvoeden?</h5>
                     <p>
@@ -388,16 +388,16 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
-                    <h2 class="section-heading">Weerbaarheidstraining 13+ - Buddy systeem</h2>
+                    <h2 class="section-heading">Weerbaarheidstraining 13+ Buddy systeem</h2>
                     <div class="divider"></div>
                     <p>
-                        Een buddy-systeem voor pubers op het voetbalveld werkt goed omdat het hen helpt sociaal en emotioneel te groeien. Hoe gaat het in zijn werk?
+                        Een buddy systeem voor pubers op het voetbalveld werkt goed omdat het hen helpt sociaal en emotioneel te groeien. Hoe gaat het in zijn werk?
                     </p>
                     <h5 class="mt-4 text-primary">Voordelen</h5>
                     <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> <strong>Sociale steun</strong> - Pubers vinden het vaak fijn om zich gesteund te voelen.</li>
-                        <li><i class="fas fa-check"></i> <strong>Meer zelfvertrouwen</strong> - Door een mentor- of maatjesrol te vervullen, ontwikkelen pubers zelfvertrouwen en verantwoordelijkheid.</li>
-                        <li><i class="fas fa-check"></i> <strong>Emotionele veiligheid</strong> - Pubers maken veel emotionele veranderingen door. Een buddy kan een vertrouwenspersoon zijn om mee te praten over problemen of stress.</li>
+                        <li><i class="fas fa-check"></i> <strong>Sociale steun:</strong> Pubers vinden het vaak fijn om zich gesteund te voelen.</li>
+                        <li><i class="fas fa-check"></i> <strong>Meer zelfvertrouwen:</strong>  Door een mentor of maatjesrol te vervullen, ontwikkelen pubers zelfvertrouwen en verantwoordelijkheid.</li>
+                        <li><i class="fas fa-check"></i> <strong>Emotionele veiligheid:</strong> Pubers maken veel emotionele veranderingen door. Een buddy kan een vertrouwenspersoon zijn om mee te praten over problemen of stress.</li>
                     </ul>
                     <h5 class="text-primary">Voorbereiding en oudercontact</h5>
                     <ul class="feature-list mb-4">
@@ -466,7 +466,7 @@
                     <h2 class="section-heading">Peutervoetbal: Samen Groeien door Beweging!</h2>
                     <div class="divider"></div>
                     <p>
-                        Welkom bij onze Peutervoetbal-activiteiten, waar plezier, beweging en de brede motorische ontwikkeling van jouw kind centraal staan! Bij ons draait alles om het ontwikkelen van de fysieke, sociale en cognitieve vaardigheden van peuters, en dit alles met een actieve rol voor ouders.
+                        Welkom bij onze Peutervoetbal activiteiten, waar plezier, beweging en de brede motorische ontwikkeling van jouw kind centraal staan! Bij ons draait alles om het ontwikkelen van de fysieke, sociale en cognitieve vaardigheden van peuters, en dit alles met een actieve rol voor ouders.
                     </p>
                     <h5 class="mt-4 text-primary">Waarom Peutervoetbal?</h5>
                     <p>
@@ -538,7 +538,7 @@
                         Mark Sluis Training biedt op maat gemaakte workshops en ondersteuning voor scholen, kinderopvang en onderwijsinstellingen. Of het nu gaat om het versterken van de groepsdynamiek, extra bewegingsonderwijs, het bevorderen van weerbaarheid of het bieden van praktische oplossingen voor lastige klassen.
                     </p>
                     <p class="mt-3">
-                        Ik zorg voor meer beweging, wat bijdraagt aan de fysieke gezondheid van kinderen, en ondersteunen tegelijkertijd de sociaal-emotionele ontwikkeling. Door deze workshops en trainingen verbeter ik de groepsdynamiek, stimuleren ik samenwerking en weerbaarheid, en help ik kinderen met het ontwikkelen van belangrijke vaardigheden die hen helpen om zelfverzekerd en sociaal vaardig te zijn.
+                        Ik zorg voor meer beweging, wat bijdraagt aan de fysieke gezondheid van kinderen, en ondersteunen tegelijkertijd de sociaal emotionele ontwikkeling. Door deze workshops en trainingen verbeter ik de groepsdynamiek, stimuleren ik samenwerking en weerbaarheid, en help ik kinderen met het ontwikkelen van belangrijke vaardigheden die hen helpen om zelfverzekerd en sociaal vaardig te zijn.
                     </p>
                     <div class="mt-4">
                         <a href="#footer" class="btn btn-primary">Neem vrijblijvend contact op</a>
