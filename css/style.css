@@ -217,7 +217,6 @@ body {
     font-size: 1rem;
 }
 .banner-img img {
-    max-width: 100%;
     height: auto;
     display: block;
     border-radius: 0rem;
@@ -271,6 +270,19 @@ body {
     }
 }
 
+@media (min-width:1640px){
+  .banner-img {
+    display: flex;
+  justify-content: flex-end;
+  }
+}
+
+@media (min-width:1200px){
+  .banner-text {
+    max-width: 80%;
+  }
+}
+
 @media (max-width: 575.98px) {
     .banner-title {
         font-size: 1.2rem;
@@ -302,7 +314,7 @@ body {
   color: var(--light);
   font-size: 1.1rem;
   margin-bottom: 2rem;
-  max-width: 80%;
+  
 }
 
 .banner-contact {
@@ -352,8 +364,7 @@ a.phoneNumber:hover {
 }
 
 .banner-img {
-  display: flex;
-  justify-content: flex-end;
+  
   padding: 0;
   z-index: 50;
 }
@@ -1022,5 +1033,7 @@ footer .social-icon:hover {
         gap: 0.5rem;
     }
 }
+
+
 
 
