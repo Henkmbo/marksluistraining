@@ -129,6 +129,7 @@
                 <div class="col-12 text-center">
                     <h2 class="section-heading">Trainingen</h2>
                     <div class="divider mx-auto"></div>
+
                 </div>
             </div>
             <div class="row">
@@ -161,7 +162,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
-                            <img src="img/hero-bg.jpg" alt="Voetbaltraining" class="img-fluid">
+                            <img src="img/training-3.jpg" alt="Voetbaltraining" class="img-fluid">
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
@@ -174,7 +175,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
-                            <img src="img/peuters.jpg" alt="Peutervoetbal" class="img-fluid">
+                            <img src="img/IMG_4243.jpeg" alt="Peutervoetbal" class="img-fluid">
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
@@ -231,7 +232,7 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
             <div class="row align-items-center">
                 <div class="col-lg-10 mb-5 mb-lg-0">
                     <div class="profile-flex d-flex align-items-start gap-4">
-                        <div class="  flex-column d-flex align-items-center">
+                        <div class="flex-column d-flex align-items-center">
                             <img src="img/profile.jpg" alt="Mark Sluis" class="profile-image">
                             <div class="social-icon-lg justify-content-center mt-3">
                             <a href="https://www.facebook.com/marksluistraining/?locale=nl_NL" class="social-icon"><i class="fab fa-facebook-f"></i></a>

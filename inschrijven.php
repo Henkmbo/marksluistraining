@@ -193,13 +193,13 @@
                             </div>
                             
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="activity-voetbaltraining" name="activities[]" value="Voetbaltraining">
+                                <input type="checkbox" class="form-check-input waitlist-activity" id="activity-voetbaltraining" name="activities[]" value="Voetbaltraining">
                                 <label class="form-check-label" for="activity-voetbaltraining">Voetbaltraining</label>
                             </div>
                             
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="activity-weerbaarheidstraining" name="activities[]" value="Weerbaarheidstraining">
-                                <label class="form-check-label" for="activity-weerbaarheidstraining">Weerbaarheidstraining</label>
+                                <input type="checkbox" class="form-check-input waitlist-activity" id="activity-weerbaarheidstraining" name="activities[]" value="Weerbaarheidstraining (5-12 jaar)">
+                                <label class="form-check-label" for="activity-weerbaarheidstraining">Weerbaarheidstraining (5-12 jaar)</label>
                             </div>
                             
                             <div class="form-check">
@@ -211,8 +211,40 @@
                                 <input type="checkbox" class="form-check-input" id="activity-kinderfeestje" name="activities[]" value="Kinderfeestje">
                                 <label class="form-check-label" for="activity-kinderfeestje">Kinderfeestje</label>
                             </div>
+                            
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input waitlist-activity" id="activity-buddy" name="activities[]" value="Buddy systeem (13+)">
+                                <label class="form-check-label" for="activity-buddy">Buddy systeem (13+)</label>
+                            </div>
+                            
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input waitlist-activity" id="activity-keeperstraining" name="activities[]" value="Keeperstraining">
+                                <label class="form-check-label" for="activity-keeperstraining">Keeperstraining</label>
+                            </div>
                         </div>
                         <div class="error-message" id="activities-error"></div>
+                        
+                        <!-- Wachtlijst waarschuwing -->
+                        <div class="alert alert-info mt-3" id="waitlist-warning" style="display: none;">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Opmerking:</strong> Voor de door jou geselecteerde training(en) werken we momenteel met een wachtlijst.
+                        </div>
+                    </div>
+                    
+                    <!-- Wachtlijst toestemming -->
+                    <div class="form-section-block" id="waitlist-consent-section" style="display: none;">
+                        <h3 class="form-section-title">Wachtlijst</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="waitlistAgreed" name="waitlistAgreed">
+                                    <label class="form-check-label" for="waitlistAgreed">
+                                        Ik ga akkoord om op de wachtlijst te worden geplaatst voor de geselecteerde training(en)
+                                    </label>
+                                    <div class="error-message" id="waitlistAgreed-error"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                       <!-- Gezondheid en Medische Gegevens -->
                     
@@ -260,6 +292,35 @@
             } else {
                 navbar.classList.remove('scrolled');
             }
+        });
+
+        // Handle waitlist activity selection
+        document.addEventListener('DOMContentLoaded', function() {
+            const waitlistActivities = document.querySelectorAll('.waitlist-activity');
+            const waitlistWarning = document.getElementById('waitlist-warning');
+            const waitlistConsentSection = document.getElementById('waitlist-consent-section');
+            const allActivities = document.querySelectorAll('input[name="activities[]"]');
+
+            function checkWaitlistActivities() {
+                const isWaitlistSelected = Array.from(allActivities).some(activity => {
+                    return activity.classList.contains('waitlist-activity') && activity.checked;
+                });
+
+                if (isWaitlistSelected) {
+                    waitlistWarning.style.display = 'block';
+                    waitlistConsentSection.style.display = 'block';
+                } else {
+                    waitlistWarning.style.display = 'none';
+                    waitlistConsentSection.style.display = 'none';
+                    // Uncheck the waitlist consent if no waitlist activities are selected
+                    document.getElementById('waitlistAgreed').checked = false;
+                }
+            }
+
+            // Add event listeners to all activity checkboxes
+            allActivities.forEach(activity => {
+                activity.addEventListener('change', checkWaitlistActivities);
+            });
         });
     </script>
 </body>

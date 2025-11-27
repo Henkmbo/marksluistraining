@@ -85,6 +85,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 isValid = false;
             }
             
+            // Check if waitlist consent is needed and agreed upon
+            const waitlistActivities = Array.from(document.querySelectorAll('.waitlist-activity')).some(activity => activity.checked);
+            if(waitlistActivities) {
+                const waitlistCheckbox = document.getElementById('waitlistAgreed');
+                if(!waitlistCheckbox || !waitlistCheckbox.checked) {
+                    document.getElementById('waitlistAgreed-error').textContent = 'Je moet akkoord gaan met de wachtlijst om je in te schrijven';
+                    isValid = false;
+                }
+            }
+            
             // Check terms agreement
             const termsCheckbox = document.getElementById('termsAgreed');
             if(!termsCheckbox.checked) {
