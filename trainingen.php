@@ -310,13 +310,13 @@
     <!-- Category Navigation -->
     <div class="category-nav">
         <div class="container category-nav-container">
-            <a href="#weerbaarheid" class="category-link active">
+            <a href="#weerbaarheid-groep" class="category-link active">
                 <i class="fas fa-users"></i>
-                <span>Weerbaarheid</span>
+                <span>Groepstraining 5-12</span>
             </a>
-            <a href="#buddy" class="category-link">
-                <i class="fas fa-user-plus"></i>
-                <span>Buddy 13+</span>
+            <a href="#weerbaarheid-individueel" class="category-link">
+                <i class="fas fa-user"></i>
+                <span>Individueel 5-12 / 13+</span>
             </a>
             <a href="#voetbal" class="category-link">
                 <i class="fas fa-futbol"></i>
@@ -337,17 +337,17 @@
         </div>
     </div>
 
-    <!-- Weerbaarheidstraining Section -->
-    <section class="training-section" id="weerbaarheid">
+    <!-- Groepstraining Section -->
+    <section class="training-section" id="weerbaarheid-groep">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="./img/weerbeheidstraining.png" alt="Weerbaarheidstraining" class="img-fluid">
+                        <img src="./img/weerbeheidstraining.png" alt="Groepstraining" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="section-heading">Weerbaarheidstraining | Groepstraining (5-12 jaar)</h2>
+                    <h2 class="section-heading">Groepstraining 5-12 jaar</h2>
                     <div class="divider"></div>
                     <ul class="feature-list mb-4">
                         <li><i class="fas fa-check"></i> Kinderen leren samen te werken en elkaar te steunen.</li>
@@ -357,46 +357,40 @@
                     </ul>
                     <h5 class="text-primary">Algemene informatie</h5>
                     <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> Kosten individueel: 77,50 euro per training</li>
                         <li><i class="fas fa-check"></i> Groepstraining: N.T.B.</li>
                         <li><i class="fas fa-check"></i> Trainingsduur: 1 uur (korter mogelijk)</li>
                         <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagmiddag, vrijdagmiddag, zondag overdag</li>
                     </ul>
+                    <p class="text-muted small">Voor aanmelding: <a href="mailto:weerbaarheidutrechtseheuvelrug@gmail.com">weerbaarheidutrechtseheuvelrug@gmail.com</a></p>
                     <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Buddy Systeem Section -->
-    <section class="training-section bg-secondary" id="buddy">
+    <!-- Individuele Training Section -->
+    <section class="training-section bg-secondary" id="weerbaarheid-individueel">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
                     <div class="training-image">
-                        <img src="./img/weerbeheidstraining13.png" alt="Buddy Systeem" class="img-fluid">
+                        <img src="./img/weerbeheidstraining13.png" alt="Individuele Training" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
-                    <h2 class="section-heading">Weerbaarheidstraining 13+ Buddy systeem</h2>
+                    <h2 class="section-heading">Individuele training 5-12 jaar / Buddy systeem (13+)</h2>
                     <div class="divider"></div>
+                    <ul class="feature-list mb-4">
+                        <li><i class="fas fa-check"></i> De training wordt volledig afgestemd op het kind: tempo, doelen en aanpak zijn persoonlijk.</li>
+                        <li><i class="fas fa-check"></i> Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten of faalangst.</li>
+                        <li><i class="fas fa-check"></i> Jullie krijgt alle aandacht, wat zorgt voor sneller en dieper resultaat.</li>
+                    </ul>
                     <p>
-                        Een buddy systeem voor pubers op het voetbalveld werkt goed omdat het hen helpt sociaal en emotioneel te groeien. Hoe gaat het in zijn werk?
+                        Bij een individuele weerbaarheidstraining gebruik ik voetbal als middel om te werken aan de weerbaarheid van kinderen. Door te bewegen, te spelen en te leren omgaan met winst en verlies, ervaren ze op een natuurlijke manier hoe ze sterker, zekerder en bewuster kunnen worden van hun eigen kracht.
                     </p>
-                    <h5 class="mt-4 text-primary">Voordelen</h5>
+                    <h5 class="text-primary mt-4">Algemene informatie</h5>
                     <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> <strong>Sociale steun:</strong> Pubers vinden het vaak fijn om zich gesteund te voelen.</li>
-                        <li><i class="fas fa-check"></i> <strong>Meer zelfvertrouwen:</strong>  Door een mentor of maatjesrol te vervullen, ontwikkelen pubers zelfvertrouwen en verantwoordelijkheid.</li>
-                        <li><i class="fas fa-check"></i> <strong>Emotionele veiligheid:</strong> Pubers maken veel emotionele veranderingen door. Een buddy kan een vertrouwenspersoon zijn om mee te praten over problemen of stress.</li>
-                    </ul>
-                    <h5 class="text-primary">Voorbereiding en oudercontact</h5>
-                    <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> Voor de training een kort overleg met ouders over eventuele uitdagingen of aandachtspunten.</li>
-                        <li><i class="fas fa-check"></i> Ouders kunnen input geven over hoe hun kind zich voelt en waar extra begeleiding nodig is.</li>
-                    </ul>
-                    <h5 class="text-primary">Algemene informatie</h5>
-                    <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> Kosten: 70 euro per training</li>
+                        <li><i class="fas fa-check"></i> Kosten: 77,50 euro per training</li>
                         <li><i class="fas fa-check"></i> Locatie: DEV Doorn</li>
                         <li><i class="fas fa-check"></i> Trainingsduur: 1 uur (korter mogelijk)</li>
                         <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagmiddag, vrijdagmiddag, zondag overdag</li>
