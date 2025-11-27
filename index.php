@@ -230,7 +230,7 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-10 mb-5 mb-lg-0">
+                <div class="mb-5 mb-lg-0">
                     <div class="profile-flex d-flex align-items-start gap-4">
                         <div class="flex-column d-flex align-items-center">
                             <img src="img/profile.jpg" alt="Mark Sluis" class="profile-image">
