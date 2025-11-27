@@ -44,9 +44,10 @@
             border-color: var(--primary);
             color: var(--dark);
             font-weight: 600;
-            padding: 0.75rem 1.5rem;
+            padding: 0.5rem 1rem;
             border-radius: 0;
             transition: all 0.3s ease;
+            font-size: 0.9rem;
         }
 
         .btn-primary:hover {
@@ -135,9 +136,228 @@
 
         /* Training Section */
         .training-section {
-            padding: 5rem 0;
+            padding: 1.5rem 0;
         }
 
+        .training-content-wrapper {
+            background: var(--secondary);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            max-width: 85%;
+            margin: 0 auto;
+        }
+
+        .training-content-wrapper:hover {
+            transform: translateY(-5px);
+        }
+
+        .training-image-wrapper {
+            position: relative;
+            height: 100%;
+            min-height: 150px;
+            overflow: hidden;
+        }
+
+        .training-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .training-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(212,175,55,0.2) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+        }
+
+        .training-badge {
+            background: var(--primary);
+            color: var(--dark);
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .training-details {
+            padding: 1.25rem;
+        }
+
+        .training-header-section {
+            margin-bottom: 0.75rem;
+        }
+
+        .training-category {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--primary);
+            padding: 0.4rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.75rem;
+        }
+
+        .training-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--light);
+            margin-bottom: 0.4rem;
+            line-height: 1.2;
+        }
+
+        .training-subtitle {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0;
+        }
+
+        .training-features {
+            margin-bottom: 0.75rem;
+        }
+
+        .features-title {
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.5rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-item:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: var(--primary);
+            transform: translateX(5px);
+        }
+
+        .feature-item i {
+            color: var(--primary);
+            font-size: 0.95rem;
+            flex-shrink: 0;
+        }
+
+        .feature-item span {
+            color: var(--light);
+            font-size: 0.8rem;
+            line-height: 1.3;
+        }
+
+        .training-description {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.6rem;
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+            border-left: 4px solid var(--primary);
+        }
+
+        .training-description p {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+            font-size: 0.85rem;
+        }
+
+        .training-info-box {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            padding: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .info-item.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .info-item i {
+            color: var(--primary);
+            font-size: 1.1rem;
+            width: 22px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .info-item div {
+            flex: 1;
+        }
+
+        .info-item small {
+            display: block;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.2rem;
+        }
+
+        .info-item strong {
+            display: block;
+            color: var(--light);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .alert-info {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid var(--primary);
+            color: var(--light);
+            border-radius: 8px;
+        }
+
+        .alert-link {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .alert-link:hover {
+            text-decoration: underline;
+        }
 
         .training-image {
             position: relative;
@@ -275,6 +495,28 @@
 
         /* Responsive Adjustments */
         @media (max-width: 992px) {
+            .training-image-wrapper {
+                min-height: 300px;
+            }
+
+            .training-details {
+                padding: 1.5rem;
+            }
+
+            .training-title {
+                font-size: 1.5rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+
+            .info-row {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+
             .training-image {
                 margin-bottom: 2rem;
             }
@@ -283,6 +525,22 @@
         @media (max-width: 768px) {
             .contact-info {
                 display: none;
+            }
+
+            .training-details {
+                padding: 1.25rem;
+            }
+
+            .training-title {
+                font-size: 1.35rem;
+            }
+
+            .training-image-wrapper {
+                min-height: 250px;
+            }
+
+            .training-section {
+                padding: 1.5rem 0;
             }
         }
 
@@ -340,29 +598,78 @@
     <!-- Groepstraining Section -->
     <section class="training-section" id="weerbaarheid-groep">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="training-image">
-                        <img src="./img/weerbeheidstraining.png" alt="Groepstraining" class="img-fluid">
+            <div class="training-content-wrapper">
+                <div class="row g-0">
+                    <div class="col-lg-5">
+                        <div class="training-image-wrapper">
+                            <img src="./img/weerbeheidstraining.png" alt="Groepstraining" class="img-fluid">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="section-heading">Groepstraining 5-12 jaar</h2>
-                    <div class="divider"></div>
-                    <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> Kinderen leren samen te werken en elkaar te steunen.</li>
-                        <li><i class="fas fa-check"></i> Ze herkennen dat anderen met vergelijkbare dingen worstelen.</li>
-                        <li><i class="fas fa-check"></i> Sociale vaardigheden, zoals grenzen aangeven en respect tonen, worden op een natuurlijke manier geoefend.</li>
-                        <li><i class="fas fa-check"></i> De groepsdynamiek zorgt voor plezier, energie en motivatie.</li>
-                    </ul>
-                    <h5 class="text-primary">Algemene informatie</h5>
-                    <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> Groepstraining: N.T.B.</li>
-                        <li><i class="fas fa-check"></i> Trainingsduur: 1 uur (korter mogelijk)</li>
-                        <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagmiddag, vrijdagmiddag, zondag overdag</li>
-                    </ul>
-                    <p class="text-muted small">Voor aanmelding: <a href="mailto:weerbaarheidutrechtseheuvelrug@gmail.com">weerbaarheidutrechtseheuvelrug@gmail.com</a></p>
-                    <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
+                    <div class="col-lg-7">
+                        <div class="training-details">
+                            <div class="training-header-section">
+                                <span class="training-category">Weerbaarheid</span>
+                                <h2 class="training-title">Groepstraining</h2>
+                                <p class="training-subtitle">Leer samen sterker te worden</p>
+                            </div>
+
+                            <div class="training-description">
+                                <p><i class="fas fa-users text-primary me-2"></i>In een groepstraining leren kinderen samen sterker te worden. Door samen te oefenen, ervaren ze herkenning bij anderen, leren ze grenzen aangeven en respect tonen, en bouwen ze aan hun zelfvertrouwen in een veilige en ondersteunende omgeving vol plezier en motivatie.</p>
+                            </div>
+
+                            <div class="training-features">
+                                <div class="features-grid">
+                                    <div class="feature-item">
+                                        <i class="fas fa-hands-helping"></i>
+                                        <span>Samen werken en elkaar steunen</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>Herkenning bij anderen</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Grenzen aangeven en respect tonen</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-smile"></i>
+                                        <span>Plezier, energie en motivatie</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="training-info-box">
+                                <div class="info-row">
+                                    <div class="info-item">
+                                        <i class="fas fa-euro-sign"></i>
+                                        <div>
+                                            <small>Kosten</small>
+                                            <strong>N.T.B.</strong>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <small>Duur</small>
+                                            <strong>1 uur</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-item full-width">
+                                    <i class="fas fa-calendar"></i>
+                                    <div>
+                                        <small>Training dagen</small>
+                                        <strong>Woensdagmiddag, vrijdagmiddag, zondag overdag</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-info mb-4">
+                                <i class="fas fa-envelope me-2"></i>
+                                <small>Voor aanmelding: <a href="mailto:weerbaarheidutrechtseheuvelrug@gmail.com" class="alert-link">weerbaarheidutrechtseheuvelrug@gmail.com</a></small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -371,31 +678,86 @@
     <!-- Individuele Training Section -->
     <section class="training-section bg-secondary" id="weerbaarheid-individueel">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-                    <div class="training-image">
-                        <img src="./img/weerbeheidstraining13.png" alt="Individuele Training" class="img-fluid">
+            <div class="training-content-wrapper">
+                <div class="row g-0">
+                    <div class="col-lg-7 order-lg-1">
+                        <div class="training-details">
+                            <div class="training-header-section">
+                                <span class="training-category">Weerbaarheid</span>
+                                <h2 class="training-title">Individuele Training</h2>
+                                <p class="training-subtitle">5-12 jaar / Buddy systeem (13+)</p>
+                            </div>
+
+                            <div class="training-features">
+                                <div class="features-grid">
+                                    <div class="feature-item">
+                                        <i class="fas fa-user-cog"></i>
+                                        <span>Volledig persoonlijk afgestemd</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-heart"></i>
+                                        <span>Ruimte voor specifieke situaties</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-eye"></i>
+                                        <span>100% aandacht voor jou</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span>Sneller en dieper resultaat</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="training-description">
+                                <p><i class="fas fa-futbol text-primary me-2"></i>Bij een individuele weerbaarheidstraining gebruik ik voetbal als middel om te werken aan de weerbaarheid van kinderen. Door te bewegen, te spelen en te leren omgaan met winst en verlies, ervaren ze op een natuurlijke manier hoe ze sterker, zekerder en bewuster kunnen worden van hun eigen kracht.</p>
+                            </div>
+
+                            <div class="training-info-box">
+                                <div class="info-row">
+                                    <div class="info-item">
+                                        <i class="fas fa-euro-sign"></i>
+                                        <div>
+                                            <small>Kosten</small>
+                                            <strong>€77,50 per training</strong>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <small>Duur</small>
+                                            <strong>1 uur</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <small>Locatie</small>
+                                            <strong>DEV Doorn</strong>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <div>
+                                            <small>Dagen</small>
+                                            <strong>Wo/Vr/Zo</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="inschrijven.php" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-user-plus me-2"></i>Inschrijven
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 order-lg-1">
-                    <h2 class="section-heading">Individuele training 5-12 jaar / Buddy systeem (13+)</h2>
-                    <div class="divider"></div>
-                    <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> De training wordt volledig afgestemd op het kind: tempo, doelen en aanpak zijn persoonlijk.</li>
-                        <li><i class="fas fa-check"></i> Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten of faalangst.</li>
-                        <li><i class="fas fa-check"></i> Jullie krijgt alle aandacht, wat zorgt voor sneller en dieper resultaat.</li>
-                    </ul>
-                    <p>
-                        Bij een individuele weerbaarheidstraining gebruik ik voetbal als middel om te werken aan de weerbaarheid van kinderen. Door te bewegen, te spelen en te leren omgaan met winst en verlies, ervaren ze op een natuurlijke manier hoe ze sterker, zekerder en bewuster kunnen worden van hun eigen kracht.
-                    </p>
-                    <h5 class="text-primary mt-4">Algemene informatie</h5>
-                    <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> Kosten: 77,50 euro per training</li>
-                        <li><i class="fas fa-check"></i> Locatie: DEV Doorn</li>
-                        <li><i class="fas fa-check"></i> Trainingsduur: 1 uur (korter mogelijk)</li>
-                        <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagmiddag, vrijdagmiddag, zondag overdag</li>
-                    </ul>
-                    <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
+                    <div class="col-lg-5 order-lg-2">
+                        <div class="training-image-wrapper">
+                            <img src="./img/weerbeheidstraining13.png" alt="Individuele Training" class="img-fluid">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -404,34 +766,86 @@
     <!-- Voetbaltraining Section -->
     <section class="training-section" id="voetbal">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="training-image">
-                        <img src="./img/training-4.jpg" alt="Voetbaltraining" class="img-fluid">
+            <div class="training-content-wrapper">
+                <div class="row g-0">
+                    <div class="col-lg-5">
+                        <div class="training-image-wrapper">
+                            <img src="./img/training-4.jpg" alt="Voetbaltraining" class="img-fluid">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="section-heading">Voetbaltraining / Keeperstraining</h2>
-                    <div class="divider"></div>
-                    <p>
-                        Wil jij je techniek, reactievermogen, coördinatie, snelheid of spelinzicht naar een hoger niveau tillen? Bij Mark Sluis Training krijg je persoonlijke en doelgerichte voetbaltraining, volledig afgestemd op jouw ontwikkelingsbehoeften. Met gerichte oefeningen, professionele begeleiding en aandacht voor zowel fysieke als mentale aspecten van het spel, zorg ik ervoor dat jij sterker, sneller en slimmer op het veld wordt.
-                    </p>
-                    <h5 class="mt-4 text-primary">Voordelen</h5>
-                    <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> Plezier en zelfvertrouwen – Trainen in een ontspannen setting zonder teamdruk.</li>
-                        <li><i class="fas fa-check"></i> Techniekverbetering – Gerichte oefeningen voor betere balcontrole en techniek.</li>
-                        <li><i class="fas fa-check"></i> Individuele aandacht – Volledige focus op jouw sterke en zwakke punten.</li>
-                        <li><i class="fas fa-check"></i> Veel balcontacten – Intensiever werken met de bal voor snellere vooruitgang.</li>
-                        <li><i class="fas fa-check"></i> Maatwerk en ontwikkeling – Training afgestemd op jouw specifieke behoeften.</li>
-                    </ul>
-                    <h5 class="text-primary">Algemene informatie</h5>
-                    <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> Kosten: 5 trainingen voor 250 euro</li>
-                        <li><i class="fas fa-check"></i> Locatie: DEV Doorn</li>
-                        <li><i class="fas fa-check"></i> Trainingsduur: 1 uur</li>
-                        <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagmiddag, vrijdagmiddag, zondag overdag</li>
-                    </ul>
-                    <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
+                    <div class="col-lg-7">
+                        <div class="training-details">
+                            <div class="training-header-section">
+                                <span class="training-category">Voetbal</span>
+                                <h2 class="training-title">Voetbal & Keeperstraining</h2>
+                                <p class="training-subtitle">Persoonlijke begeleiding voor alle niveaus</p>
+                            </div>
+
+                            <div class="training-description">
+                                <p><i class="fas fa-futbol text-primary me-2"></i>Persoonlijke voetbal- en keeperstraining voor alle niveaus. Of je nu je techniek wilt verbeteren, meer zelfvertrouwen wilt opbouwen, of aan specifieke vaardigheden wilt werken - in deze trainingen krijg je de individuele aandacht en begeleiding die je nodig hebt om te groeien als voetballer.</p>
+                            </div>
+
+                            <div class="training-features">
+                                <div class="features-grid">
+                                    <div class="feature-item">
+                                        <i class="fas fa-smile"></i>
+                                        <span>Plezier en zelfvertrouwen</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-running"></i>
+                                        <span>Techniekverbetering</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-user-check"></i>
+                                        <span>Individuele aandacht</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-futbol"></i>
+                                        <span>Veel balcontacten</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="training-info-box">
+                                <div class="info-row">
+                                    <div class="info-item">
+                                        <i class="fas fa-euro-sign"></i>
+                                        <div>
+                                            <small>Kosten</small>
+                                            <strong>5 trainingen €250</strong>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <small>Duur</small>
+                                            <strong>1 uur</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <small>Locatie</small>
+                                            <strong>DEV Doorn</strong>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <div>
+                                            <small>Dagen</small>
+                                            <strong>Wo/Vr/Zo</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="inschrijven.php?activity=voetbaltraining" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-user-plus me-2"></i>Inschrijven
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -440,34 +854,86 @@
     <!-- Peutervoetbal Section -->
     <section class="training-section bg-secondary" id="peuter">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-                    <div class="training-image">
-                        <img src="./img/peuters.jpg" alt="Peutervoetbal" class="img-fluid">
+            <div class="training-content-wrapper">
+                <div class="row g-0">
+                    <div class="col-lg-7 order-lg-1">
+                        <div class="training-details">
+                            <div class="training-header-section">
+                                <span class="training-category">Peutervoetbal</span>
+                                <h2 class="training-title">Samen Groeien</h2>
+                                <p class="training-subtitle">Beweging en ontwikkeling voor de kleintjes</p>
+                            </div>
+
+                            <div class="training-description">
+                                <p><i class="fas fa-baby text-primary me-2"></i>Peutervoetbal is speciaal ontwikkeld voor de allerkleinsten. Met ouders als spelmaatje ontdekken peuters op een speelse manier beweging en voetbal. We focussen op motorische ontwikkeling, sociale interactie en het opbouwen van zelfvertrouwen in een veilige en leuke omgeving.</p>
+                            </div>
+
+                            <div class="training-features">
+                                <div class="features-grid">
+                                    <div class="feature-item">
+                                        <i class="fas fa-child"></i>
+                                        <span>Motorische ontwikkeling</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>Sociale interactie</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-heart"></i>
+                                        <span>Zelfvertrouwen opbouwen</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-user-friends"></i>
+                                        <span>Ouders als spelmaatje</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="training-info-box">
+                                <div class="info-row">
+                                    <div class="info-item">
+                                        <i class="fas fa-euro-sign"></i>
+                                        <div>
+                                            <small>Kosten</small>
+                                            <strong>€75 voor 6 trainingen</strong>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <small>Duur</small>
+                                            <strong>45 minuten</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <small>Locatie</small>
+                                            <strong>DEV Doorn / Beukenrode</strong>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <div>
+                                            <small>Wanneer</small>
+                                            <strong>Woensdag 9:15-10:00</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="inschrijven.php?activity=peutervoetbal" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-user-plus me-2"></i>Inschrijven
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 order-lg-1">
-                    <h2 class="section-heading">Peutervoetbal: Samen Groeien door Beweging!</h2>
-                    <div class="divider"></div>
-                    <p>
-                        Welkom bij onze Peutervoetbal activiteiten, waar plezier, beweging en de brede motorische ontwikkeling van jouw kind centraal staan! Bij ons draait alles om het ontwikkelen van de fysieke, sociale en cognitieve vaardigheden van peuters, en dit alles met een actieve rol voor ouders.
-                    </p>
-                    <h5 class="mt-4 text-primary">Waarom Peutervoetbal?</h5>
-                    <p>
-                        Peutervoetbal is de perfecte manier voor jonge kinderen om hun eerste stappen te zetten in de wereld van beweging en sport. Tijdens onze sessies werken we niet alleen aan de fijne en grove motoriek, maar stimuleren we ook de sociale interactie en het zelfvertrouwen van jouw kind. En wat het nog beter maakt: ouders zijn actief betrokken bij het hele proces!
-                    </p>
-                    <h5 class="text-primary">Ouders als Spelmaatje</h5>
-                    <p>
-                        Jij als ouder speelt een belangrijke rol in de ontwikkeling van je peuter. Door samen te bewegen, te spelen en te oefenen, bouw je een sterke band op met je kind. Je biedt niet alleen steun en aanmoediging, maar je bent ook een belangrijk voorbeeld in het leren van nieuwe bewegingen.
-                    </p>
-                    <h5 class="text-primary">Algemene informatie</h5>
-                    <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> Kosten: 75 euro voor 6 trainingen</li>
-                        <li><i class="fas fa-check"></i> Locatie: DEV Doorn of gymzaal Beukenrode</li>
-                        <li><i class="fas fa-check"></i> Trainingsduur: 45 minuten</li>
-                        <li><i class="fas fa-check"></i> Trainingsdagen: Woensdagochtend 9.15 - 10.00</li>
-                    </ul>
-                    <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
+                    <div class="col-lg-5 order-lg-2">
+                        <div class="training-image-wrapper">
+                            <img src="./img/peuters.jpg" alt="Peutervoetbal" class="img-fluid">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -475,57 +941,136 @@
 
 
     <!-- Kinderfeestje Section -->
-    <section class="training-section bg-secondary" id="feestje">
+    <section class="training-section" id="feestje">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-                    <div class="training-image">
-                        <img src="./img/kinderfeestje.jpg" alt="Kinderfeestje" class="img-fluid">
+            <div class="training-content-wrapper">
+                <div class="row g-0">
+                    <div class="col-lg-5">
+                        <div class="training-image-wrapper">
+                            <img src="./img/kinderfeestje.jpg" alt="Kinderfeestje" class="img-fluid">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 order-lg-1">
-                    <h2 class="section-heading">Kinderfeestje</h2>
-                    <div class="divider"></div>
-                    <h5 class="mt-4 text-primary">Hoe gaat een feestje in zijn werk?</h5>
-                    <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> We zoeken eerst een geschikte datum.</li>
-                        <li><i class="fas fa-check"></i> Ouders en jarige overleggen over een thema. Alles is mogelijk. Dit kan een voetbalclub, voetbalspeler, tv-programma, YouTube held zijn of iets anders naar keuze.</li>
-                        <li><i class="fas fa-check"></i> Ouders en jarige mogen favoriete spelletjes doorgeven.</li>
-                        <li><i class="fas fa-check"></i> Hierna ga ik aan de slag met het uitwerken van het thema.</li>
-                    </ul>
-                    <h5 class="text-primary">Algemene informatie</h5>
-                    <ul class="feature-list mb-4">
-                        <li><i class="fas fa-check"></i> De kosten voor het feestje zijn 175,- euro. Het aantal deelnemers maakt niet uit.</li>
-                        <li><i class="fas fa-check"></i> Je krijgt hiervoor een feestje op locatie (DEV of Doornse gat), uitgewerkt thema en diploma's voor alle kinderen.</li>
-                        <li><i class="fas fa-check"></i> Het feestje duurt 1,5 uur. Tussendoor is er een pauze met een vrij spelmoment.</li>
-                        <li><i class="fas fa-check"></i> Optioneel zijn medailles voor alle deelnemers en een beker voor de jarige. Kosten hiervoor zijn 50 euro.</li>
-                    </ul>
-                    <a href="inschrijven.php" class="btn btn-primary">Inschrijven</a>
+                    <div class="col-lg-7">
+                        <div class="training-details">
+                            <div class="training-header-section">
+                                <span class="training-category">Kinderfeestje</span>
+                                <h2 class="training-title">Sportief Feestje</h2>
+                                <p class="training-subtitle">Onvergetelijke verjaardag op maat</p>
+                            </div>
+
+                            <div class="training-description">
+                                <p><i class="fas fa-birthday-cake text-primary me-2"></i>Maak de verjaardag van je kind onvergetelijk met een sportief kinderfeestje! We zorgen voor anderhalf uur vol actie, plezier en teamspellen. Het feestje wordt volledig op maat gemaakt met het thema en de favoriete spelletjes van de jarige. Alle kinderen krijgen aan het einde een diploma.</p>
+                            </div>
+
+                            <div class="training-features">
+                                <div class="features-grid">
+                                    <div class="feature-item">
+                                        <i class="fas fa-calendar-check"></i>
+                                        <span>Datum kiezen samen</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-palette"></i>
+                                        <span>Thema naar keuze</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-gamepad"></i>
+                                        <span>Favoriete spelletjes</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-certificate"></i>
+                                        <span>Diploma's voor iedereen</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="training-info-box">
+                                <div class="info-row">
+                                    <div class="info-item">
+                                        <i class="fas fa-euro-sign"></i>
+                                        <div>
+                                            <small>Kosten</small>
+                                            <strong>€175 (onbeperkt deelnemers)</strong>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <small>Duur</small>
+                                            <strong>1,5 uur</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-item full-width">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <small>Locatie</small>
+                                        <strong>DEV Doorn of Doornse gat</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-info mb-4">
+                                <i class="fas fa-gift me-2"></i>
+                                <small>Optie: Medailles + beker voor €50 extra</small>
+                            </div>
+
+                            <a href="inschrijven.php?activity=kinderfeestje" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-user-plus me-2"></i>Inschrijven
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Workshops Section -->
-    <section class="training-section" id="workshops">
+    <section class="training-section bg-secondary" id="workshops">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="training-image">
-                        <img src="./img/9912a05d-56d1-47eb-a4cf-e2496cf01658.jpeg" alt="Workshops" class="img-fluid">
+            <div class="training-content-wrapper">
+                <div class="row g-0">
+                    <div class="col-lg-7 order-lg-1">
+                        <div class="training-details">
+                            <div class="training-header-section">
+                                <span class="training-category">Workshops</span>
+                                <h2 class="training-title">Scholen & Kinderopvang</h2>
+                                <p class="training-subtitle">Op maat gemaakte workshops en ondersteuning</p>
+                            </div>
+
+                            <div class="training-features">
+                                <div class="features-grid">
+                                    <div class="feature-item">
+                                        <i class="fas fa-users-cog"></i>
+                                        <span>Groepsdynamiek versterken</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-running"></i>
+                                        <span>Extra bewegingsonderwijs</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Weerbaarheid bevorderen</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-chalkboard-teacher"></i>
+                                        <span>Praktische oplossingen</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="training-description">
+                                <p><i class="fas fa-lightbulb text-primary me-2"></i>Meer beweging voor fysieke gezondheid en sociaal-emotionele ontwikkeling. Verbeter de groepsdynamiek, stimuleer samenwerking en help kinderen zelfverzekerd en sociaal vaardig te worden.</p>
+                            </div>
+
+                            <a href="inschrijven.php?activity=workshop" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-envelope me-2"></i>Neem Contact Op
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="section-heading">Workshops Scholen en Kinderopvang</h2>
-                    <div class="divider"></div>
-                    <p>
-                        Mark Sluis Training biedt op maat gemaakte workshops en ondersteuning voor scholen, kinderopvang en onderwijsinstellingen. Of het nu gaat om het versterken van de groepsdynamiek, extra bewegingsonderwijs, het bevorderen van weerbaarheid of het bieden van praktische oplossingen voor lastige klassen.
-                    </p>
-                    <p class="mt-3">
-                        Ik zorg voor meer beweging, wat bijdraagt aan de fysieke gezondheid van kinderen, en ondersteunen tegelijkertijd de sociaal emotionele ontwikkeling. Door deze workshops en trainingen verbeter ik de groepsdynamiek, stimuleren ik samenwerking en weerbaarheid, en help ik kinderen met het ontwikkelen van belangrijke vaardigheden die hen helpen om zelfverzekerd en sociaal vaardig te zijn.
-                    </p>
-                    <div class="mt-4">
-                        <a href="#footer" class="btn btn-primary">Neem vrijblijvend contact op</a>
+                    <div class="col-lg-5 order-lg-2">
+                        <div class="training-image-wrapper">
+                            <img src="./img/9912a05d-56d1-47eb-a4cf-e2496cf01658.jpeg" alt="Workshops" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>

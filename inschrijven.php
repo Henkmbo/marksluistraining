@@ -296,6 +296,49 @@
 
         // Handle waitlist activity selection
         document.addEventListener('DOMContentLoaded', function() {
+            // Check for activity parameter in URL and pre-select checkbox
+            const urlParams = new URLSearchParams(window.location.search);
+            const activity = urlParams.get('activity');
+            
+            if (activity) {
+                let checkboxId = null;
+                
+                // Map activity parameter to checkbox ID
+                switch(activity) {
+                    case 'peutervoetbal':
+                        checkboxId = 'activity-peutervoetbal';
+                        break;
+                    case 'voetbaltraining':
+                        checkboxId = 'activity-voetbaltraining';
+                        break;
+                    case 'weerbaarheidstraining':
+                        checkboxId = 'activity-weerbaarheidstraining';
+                        break;
+                    case 'workshop':
+                        checkboxId = 'activity-workshop';
+                        break;
+                    case 'kinderfeestje':
+                        checkboxId = 'activity-kinderfeestje';
+                        break;
+                    case 'buddy':
+                        checkboxId = 'activity-buddy';
+                        break;
+                    case 'keeperstraining':
+                        checkboxId = 'activity-keeperstraining';
+                        break;
+                }
+                
+                // Check the appropriate checkbox if found
+                if (checkboxId) {
+                    const checkbox = document.getElementById(checkboxId);
+                    if (checkbox) {
+                        checkbox.checked = true;
+                        // Trigger change event to update waitlist warning if needed
+                        checkbox.dispatchEvent(new Event('change'));
+                    }
+                }
+            }
+            
             const waitlistActivities = document.querySelectorAll('.waitlist-activity');
             const waitlistWarning = document.getElementById('waitlist-warning');
             const waitlistConsentSection = document.getElementById('waitlist-consent-section');
