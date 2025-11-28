@@ -125,6 +125,12 @@
             z-index: 2;
         }
 
+        .container-training {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
         .training-header h1 {
             color: var(--primary);
         }
@@ -136,7 +142,7 @@
 
         /* Training Section */
         .training-section {
-            padding: 1.5rem 0;
+            padding: 6rem 0;
         }
 
         .training-content-wrapper {
@@ -597,7 +603,7 @@
 
     <!-- Groepstraining Section -->
     <section class="training-section" id="weerbaarheid-groep">
-        <div class="container">
+        <div class="container-training">
             <div class="training-content-wrapper">
                 <div class="row g-0">
                     <div class="col-lg-5">
@@ -677,7 +683,7 @@
 
     <!-- Individuele Training Section -->
     <section class="training-section bg-secondary" id="weerbaarheid-individueel">
-        <div class="container">
+        <div class="container-training">
             <div class="training-content-wrapper">
                 <div class="row g-0">
                     <div class="col-lg-7 order-lg-1">
@@ -765,7 +771,7 @@
 
     <!-- Voetbaltraining Section -->
     <section class="training-section" id="voetbal">
-        <div class="container">
+        <div class="container-training">
             <div class="training-content-wrapper">
                 <div class="row g-0">
                     <div class="col-lg-5">
@@ -853,7 +859,7 @@
 
     <!-- Peutervoetbal Section -->
     <section class="training-section bg-secondary" id="peuter">
-        <div class="container">
+        <div class="container-training">
             <div class="training-content-wrapper">
                 <div class="row g-0">
                     <div class="col-lg-7 order-lg-1">
@@ -942,7 +948,7 @@
 
     <!-- Kinderfeestje Section -->
     <section class="training-section" id="feestje">
-        <div class="container">
+        <div class="container-training">
             <div class="training-content-wrapper">
                 <div class="row g-0">
                     <div class="col-lg-5">
@@ -1026,7 +1032,7 @@
 
     <!-- Workshops Section -->
     <section class="training-section bg-secondary" id="workshops">
-        <div class="container">
+        <div class="container-training">
             <div class="training-content-wrapper">
                 <div class="row g-0">
                     <div class="col-lg-7 order-lg-1">
