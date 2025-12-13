@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/intro-insta.css">
+    <link rel="stylesheet" href="css/banner.css">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
 
@@ -25,20 +27,40 @@
             <div class="row">
                 <div class="col-lg-6 banner-content-wrapper">
                     <div class="container">
-                        <div class="banner-content">
-                            <h1 class="banner-title">Mark Sluis <span>Training</span></h1>
-                            <p class="banner-text">Bij Mark Sluis Training ben je aan het juiste adres voor peutervoetbal, bootcamp, kinderfeestjes, weerbaarheidstraining, workshops en nog veel meer, alles voor een actieve en plezierige ontwikkeling!</p>
-                            <div class="banner-contact">
-                                <div class="contact-item">
-                                    <i class="fas fa-phone"></i>
-                                      <a href="tel:0642266609" class="phoneNumber">+31 6 42266609</a>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="fas fa-envelope"></i>
-                                    <a style="text-decoration: none; color: inherit;" href="mailto:info@marksluistraining.nl">info@marksluistraining.nl</a>
-                                </div>
+                        <div class="hero-text">
+                    <div class="logo-text">Mark Sluis Training</div>
+                    
+                    <h1 class="hero-title">
+                        Mark Sluis
+                        <span class="highlight">Training</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Bij Mark Sluis Training ben je aan het <strong>juiste adres</strong> voor peutervoetbal, 
+                        bootcamp, kinderfeestjes, weerbaardheidstraining, workshops en nog veel 
+                        meer, alles voor een <strong>actieve en plezierige ontwikkeling!</strong>
+                    </p>
+
+                    <div class="contact-info">
+                        <a href="tel:+31642266609" class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
                             </div>
-                        </div>
+                            <span>+31 6 42266609</span>
+                        </a>
+
+                        <a href="mailto:info@marksluistraining.nl" class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </div>
+                            <span>info@marksluistraining.nl</span>
+                        </a>
+                    </div>
+                </div>
                     </div>
                     
                 </div>
@@ -49,78 +71,196 @@
         </div>
     </section>
 
-    <!-- Intro Section -->
-    <section class="intro-section bg-dark">
+<!-- Training en Intro Section -->
+    <section class="training-section">
+        <div class="decorative-shape-1"></div>
+
         <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="intro-image position-relative rounded-4 overflow-hidden shadow-lg">
-                        <img src="img/training-4.jpg" alt="Professionele training" class="img-fluid w-100" style="object-fit: cover; min-height: 320px;">
-                        <div class="intro-img-overlay"></div>
+            <div class="training-grid">
+                <!-- Image -->
+                <div class="image-container">
+                    <div class="training-image-wrapper">
+                        <img 
+                            src="img/training-4.jpg"
+                            alt="Training bij Mark Sluis Training"
+                            class="training-image"
+                        >
+                       
+
                     </div>
+                    <div class="image-accent-border"></div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="intro-content">
-                        <h2 class="section-heading mb-3">Sporten bij Mark Sluis Training</h2>
-                        <div class="divider mb-4"></div>
-                        <p class="mb-4 text-light fs-5">
-    Trainen bij Mark Sluis Training is speciaal omdat plezier voorop staat, ongeacht leeftijd of niveau.<br>
-    De trainingen bieden:
-</p>
 
-<ul class="feature-list list-unstyled mb-4">
-    <li class="mb-3 d-flex align-items-start">
-        <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
-        <span>Individuele aandacht: Persoonlijke begeleiding om het beste uit jezelf te halen.</span>
-    </li>
-    <li class="mb-3 d-flex align-items-start">
-        <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
-        <span>Succeservaringen: Focus op kleine én grote overwinningen, zodat je met zelfvertrouwen groeit.</span>
-    </li>
-    <li class="mb-3 d-flex align-items-start">
-        <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
-        <span>Persoonlijke ontwikkeling: Niet alleen als sporter, maar ook als mens.</span>
-    </li>
-    <li class="mb-3 d-flex align-items-start">
-        <span class="feature-icon me-3"><i class="fas fa-check-circle"></i></span>
-        <span>Toegankelijk voor iedereen: Of je nu net begint of al gevorderd bent, er is altijd ruimte om te leren en te genieten.</span>
-    </li>
-</ul>
-
-<p class="mb-4 text-light fs-5">
-    Hier draait het om meer dan alleen trainen, het is een plek waar je groeit en met plezier sterker wordt!
-</p>
-
-<a href="trainingen.php" class="btn btn-primary btn-lg">Meer informatie</a>
-
+                <!-- Content -->
+                <div class="training-content">
+                    <div>
+                        <h2 class="training-title">Sporten bij Mark Sluis Training</h2>
+                        <div class="title-underline"></div>
                     </div>
+
+                    <p class="training-text">
+                        Trainen bij Mark Sluis Training is speciaal omdat plezier voorop staat, ongeacht leeftijd of niveau.
+                    </p>
+
+                    <div>
+                        <p class="benefits-title">De trainingen bieden:</p>
+                    </div>
+
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <p class="benefit-text">
+                                <strong>Individuele aandacht:</strong> Persoonlijke begeleiding om het beste uit jezelf te halen.
+                            </p>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <p class="benefit-text">
+                                <strong>Succeservaringen:</strong> Focus op kleine én grote overwinningen, zodat je met zelfvertrouwen groeit.
+                            </p>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <p class="benefit-text">
+                                <strong>Persoonlijke ontwikkeling:</strong> Niet alleen als sporter, maar ook als mens.
+                            </p>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <p class="benefit-text">
+                                <strong>Toegankelijk voor iedereen:</strong> Of je nu net begint of al gevorderd bent, er is altijd ruimte om te leren en te genieten.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="training-text">
+                        Hier draait het om meer dan alleen trainen, het is een plek waar je groeit en met plezier sterker wordt!
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-<!-- Instagram Section -->
-<section class="instagram-section bg-dark" id="instagram">
-    <div class="container">
-        <div class="row text-center mb-5">
-            <h2 class="section-heading">Volg Mark Sluis Training</h2>
-            <div class="divider mx-auto"></div>
-            <p class="text-light fs-5">
-                Blijf op de hoogte van trainingen, tips en mooie momenten.  
-                Bekijk de nieuwste updates op Instagram!
-            </p>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section">
+        <div class="decorative-shape-top"></div>
+
+        <div class="instagram-container">
+            <!-- Header -->
+            <div class="instagram-header">
+                <h2 class="instagram-title">
+                    Volg mijn <span class="highlight">trainingsreis</span>
+                </h2>
+                <div class="center-underline"></div>
+                <p class="instagram-description">
+                    Op Instagram deel ik dagelijks trainingstips, motivatie en een kijkje achter de schermen. Sluit je aan bij de community en laat je inspireren!
+                </p>
+            </div>
+
+            <!-- Instagram Grid -->
+            <div class="instagram-grid">
+                <div class="instagram-item">
+                    <img src="./img/insta/insta1.png" alt="Instagram post 1">
+                    <div class="instagram-overlay">
+                        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="instagram-item">
+                    <img src="./img/insta/insta2.png" alt="Instagram post 2">
+                    <div class="instagram-overlay">
+                        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="instagram-item">
+                    <img src="./img/insta/insta3.png" alt="Instagram post 3">
+                    <div class="instagram-overlay">
+                        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="instagram-item">
+                    <img src="./img/insta/insta4.png" alt="Instagram post 4">
+                    <div class="instagram-overlay">
+                        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="instagram-item">
+                    <img src="./img/insta/insta5.png" alt="Instagram post 5">
+                    <div class="instagram-overlay">
+                        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="instagram-item">
+                    <img src="./img/insta/insta6.png" alt="Instagram post 6">
+                    <div class="instagram-overlay">
+                        <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="instagram-cta">
+                <a href="https://instagram.com/marksluistraining" target="_blank" rel="noopener noreferrer" class="instagram-button">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    Volg @marksluistraining
+                </a>
+                <p class="instagram-followers">Sluit je aan bij meer dan 1.000+ volgers</p>
+            </div>
         </div>
 
-        <div class="row g-4" id="instagram-feed">
-            <!-- Instagram posts worden hier automatisch geladen -->
-        </div>
-
-        <div class="text-center mt-4">
-            <a href="https://www.instagram.com/marksluistraining/" class="btn btn-primary btn-lg" target="_blank">
-                Volg op Instagram
-            </a>
-        </div>
-    </div>
-</section>
+        <div class="decorative-shape-bottom"></div>
+    </section>
 
     <!-- Training Cards -->
     <section class="trainingen bg-dark" id="trainingen">

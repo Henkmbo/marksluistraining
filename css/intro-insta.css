@@ -1,0 +1,378 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Training Section Styles */
+        .training-section {
+            position: relative;
+            background-color: #000000;
+            padding: 4rem 1rem;
+            overflow: hidden;
+        }
+
+        .training-section .decorative-shape-1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 16rem;
+            height: 16rem;
+            background-color: #FFD700;
+            opacity: 0.05;
+            transform: rotate(45deg) translate(8rem, -8rem);
+        }
+
+        .training-section .decorative-shape-2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 24rem;
+            height: 24rem;
+            background-color: #FFD700;
+            opacity: 0.05;
+            transform: rotate(-12deg) translate(-12rem, 12rem);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .training-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        @media (min-width: 1024px) {
+            .training-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .training-section {
+                padding: 6rem 1rem;
+            }
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .training-image-wrapper {
+            position: relative;
+            aspect-ratio: 4 / 3;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .training-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-accent-border {
+            position: absolute;
+            bottom: -1rem;
+            right: -1rem;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #FFD700;
+            border-radius: 1rem;
+            z-index: -1;
+        }
+
+        .training-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .training-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .training-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .training-title {
+                font-size: 3rem;
+            }
+        }
+
+        .title-underline {
+            width: 4rem;
+            height: 0.25rem;
+            background-color: #FFD700;
+            margin-bottom: 1.5rem;
+        }
+
+        .training-text {
+            color: #ffffff;
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+
+        .benefits-title {
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        .benefits-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .check-icon {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background-color: #FFD700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.25rem;
+        }
+
+        .check-icon svg {
+            width: 1rem;
+            height: 1rem;
+            stroke: #000000;
+            stroke-width: 3;
+            fill: none;
+        }
+
+        .benefit-text {
+            color: #ffffff;
+            flex: 1;
+        }
+
+        .benefit-text strong {
+            font-weight: 600;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #FFD700;
+            color: #000000;
+            font-weight: bold;
+            font-size: 1.125rem;
+            padding: 1rem 2rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #FFC700;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+            transform: scale(1.05);
+        }
+
+        /* Instagram Section Styles */
+        .instagram-section {
+            position: relative;
+            background-color: #000000;
+            padding: 4rem 1rem;
+            overflow: hidden;
+        }
+
+        @media (min-width: 768px) {
+            .instagram-section {
+                padding: 6rem 1rem;
+            }
+        }
+
+        .instagram-section .decorative-shape-top {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 24rem;
+            height: 24rem;
+            background-color: #FFD700;
+            opacity: 0.1;
+            transform: rotate(45deg) translate(12rem, -12rem);
+        }
+
+        .instagram-section .decorative-shape-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 24rem;
+            height: 24rem;
+            background-color: #FFD700;
+            opacity: 0.05;
+            transform: rotate(45deg) translate(-12rem, 12rem);
+        }
+
+        .instagram-container {
+            max-width: 56rem;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .instagram-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .instagram-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .instagram-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .instagram-title {
+                font-size: 3rem;
+            }
+        }
+
+        .instagram-title .highlight {
+            color: #FFD700;
+        }
+
+        .center-underline {
+            width: 4rem;
+            height: 0.25rem;
+            background-color: #FFD700;
+            margin: 0 auto 1.5rem;
+        }
+
+        .instagram-description {
+            color: #d1d5db;
+            font-size: 1.125rem;
+            line-height: 1.6;
+            max-width: 42rem;
+            margin: 0 auto;
+        }
+
+        .instagram-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .instagram-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .instagram-item {
+            position: relative;
+            background: linear-gradient(135deg, #1f2937, #111827);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .instagram-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .instagram-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .instagram-overlay {
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .instagram-item:hover .instagram-overlay {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .instagram-icon {
+            width: 2rem;
+            height: 2rem;
+            stroke: #ffffff;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .instagram-item:hover .instagram-icon {
+            opacity: 1;
+        }
+
+        .instagram-cta {
+            text-align: center;
+        }
+
+        .instagram-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #FFD700;
+            color: #000000;
+            font-weight: 600;
+            font-size: 1.125rem;
+            padding: 1rem 2rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+
+        .instagram-button:hover {
+            background-color: #FFC700;
+            transform: scale(1.05);
+        }
+
+        .instagram-button svg {
+            width: 1.25rem;
+            height: 1.25rem;
+            stroke: currentColor;
+        }
+
+        .instagram-followers {
+            color: #9ca3af;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+        }

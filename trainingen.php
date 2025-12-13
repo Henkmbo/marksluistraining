@@ -13,7 +13,7 @@
     <style>
         /* Global Styles */
         :root {
-            --primary: #d4af37;
+            --primary: #FFD700;
             --primary-dark: #c09c2c;
             --secondary: #1a1a1a;
             --light: #ffffff;

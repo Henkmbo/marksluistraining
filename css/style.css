@@ -1,6 +1,6 @@
 /* Global Styles */
 :root {
-  --primary: #d4af37;
+  --primary: #FFD700;
   --primary-dark: #c09c2c;
   --secondary: #1a1a1a;
   --light: #ffffff;
@@ -18,6 +18,19 @@ body {
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--primary);
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-heading {
+    font-size: 3rem;
+  }
 }
 
 .divider {
@@ -106,7 +119,6 @@ body {
 
 .contact-info {
   display: flex;
-  align-items: center;
   gap: 1rem;
   color: var(--light);
   font-size: 0.9rem;
@@ -122,7 +134,7 @@ body {
   background-color: #111111;
   overflow: hidden;
   padding: 0;
-  
+  z-index: 50;
 }
 
 .banner-content-wrapper {
@@ -131,6 +143,11 @@ body {
   padding-left: 10rem;
   padding-bottom: 10rem;
   padding-top: 10rem;
+}
+
+.banner-content-wrapper .container {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .banner-image-wrapper::after {
@@ -467,10 +484,10 @@ a.phoneNumber:hover {
 }
 
 .profile-section p {
-  font-size: 1.18rem;
+  font-size: 1.125rem;
   color: #f8f8f8;
   margin-bottom: 1.4rem;
-  line-height: 1.8;
+  line-height: 1.7;
   display: flex;
   align-items: flex-start;
   gap: 0.7rem;
@@ -849,7 +866,7 @@ footer .social-icon:hover {
 }
 
 .review-text {
-    font-size: 1.15rem;
+    font-size: 1.125rem;
     color: #fff;
     font-style: italic;
     margin-bottom: 1.2rem;

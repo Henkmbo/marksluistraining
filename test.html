@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Sluis Training - Hero Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .hero-banner {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        /* Decorative background shapes */
+        .hero-banner::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), transparent);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .hero-banner::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 10%;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), transparent);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .logo-text {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #FFD700;
+            margin-bottom: 30px;
+            display: inline-block;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .logo-text::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: #FFD700;
+        }
+
+        .hero-title {
+            font-size: 72px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-title .highlight {
+            display: block;
+            color: #fff;
+            -webkit-text-fill-color: #fff;
+        }
+
+        .hero-description {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #ddd;
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+
+        .hero-description strong {
+            color: #FFD700;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 12px 0;
+        }
+
+        .contact-item:hover {
+            color: #FFD700;
+            transform: translateX(5px);
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid #FFD700;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-icon svg {
+            width: 18px;
+            height: 18px;
+            fill: #FFD700;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            height: 600px;
+        }
+
+        .diagonal-clip {
+            position: absolute;
+            right: -100px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 800px;
+            height: 700px;
+            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+            overflow: hidden;
+        }
+
+        .diagonal-clip::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), transparent);
+            z-index: 2;
+            mix-blend-mode: overlay;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.9) contrast(1.1);
+        }
+
+        .accent-stripe {
+            position: absolute;
+            top: 20%;
+            right: 20%;
+            width: 150px;
+            height: 4px;
+            background: #FFD700;
+            transform: rotate(-45deg);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-title {
+                font-size: 56px;
+            }
+
+            .diagonal-clip {
+                position: relative;
+                right: 0;
+                width: 100%;
+                height: 500px;
+                clip-path: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 42px;
+            }
+
+            .hero-description {
+                font-size: 16px;
+            }
+
+            .hero-image-wrapper {
+                height: 400px;
+            }
+
+            .diagonal-clip {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-banner">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="logo-text">Mark Sluis Training</div>
+                    
+                    <h1 class="hero-title">
+                        Mark Sluis
+                        <span class="highlight">Training</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Bij Mark Sluis Training ben je aan het <strong>juiste adres</strong> voor peutervoetbal, 
+                        bootcamp, kinderfeestjes, weerbaardheidstraining, workshops en nog veel 
+                        meer, alles voor een <strong>actieve en plezierige ontwikkeling!</strong>
+                    </p>
+
+                    <div class="contact-info">
+                        <a href="tel:+31642266609" class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </div>
+                            <span>+31 6 42266609</span>
+                        </a>
+
+                        <a href="mailto:info@marksluistraining.nl" class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </div>
+                            <span>info@marksluistraining.nl</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="diagonal-clip">
+                        <img 
+                            src="/images/image.png" 
+                            alt="Mark Sluis Training in actie"
+                            class="hero-image"
+                        >
+                    </div>
+                    <div class="accent-stripe"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

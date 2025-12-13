@@ -112,7 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             padding: 20px;
         }
         .header {
-            background-color: #d4af37;
+            background-color: #FFD700;
             color: white;
             padding: 20px;
             text-align: center;
@@ -136,10 +136,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .section-title {
             font-size: 18px;
             font-weight: bold;
-            color: #d4af37;
+            color: #FFD700;
             margin-bottom: 15px;
             padding-bottom: 5px;
-            border-bottom: 2px solid #d4af37;
+            border-bottom: 2px solid #FFD700;
             display: inline-block;
         }
         .info-row {
@@ -163,7 +163,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         .activities-list li:before {
             content: "• ";
-            color: #d4af37;
+            color: #FFD700;
         }
         .footer {
             background-color: #f7f7f7;
