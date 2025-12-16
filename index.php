@@ -28,7 +28,7 @@
                 <div class="col-lg-6 banner-content-wrapper">
                     <div class="container">
                         <div class="hero-text">
-                    <div class="logo-text">Mark Sluis Training</div>
+                    <!-- <div class="logo-text">Mark Sluis Training</div> -->
                     
                     <h1 class="hero-title">
                         Mark Sluis
@@ -328,7 +328,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
-                            <img src="img/kinderfeestje.jpg" alt="Kinderfeestjes" class="img-fluid">
+                            <img src="img/IMG_4236.jpeg" alt="Kinderfeestjes" class="img-fluid">
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
@@ -341,7 +341,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
-                            <img src="img/weerbeheidstraining13.png" alt="Kinderfeestjes" class="img-fluid">
+                            <img src="img/IMG_4223.jpeg" alt="Kinderfeestjes" class="img-fluid">
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
@@ -489,9 +489,9 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
                             <i class="fas fa-quote-left"></i>
                         </div>
                         <p class="review-text">
-                            "Mijn zoon is altijd met veel plezier naar de rots&water training geweest. Er werd veel bewogen buiten en ondertussen groeide zijn zelfvertrouwen door de fijne aanpak van Mark!"
+                            Mark is een erg prettige trainer die kinderen echt verder helpt
                         </p>
-                        <p class="review-author">- N. Boon</p>
+                        <p class="review-author">- Patrick Oskamp</p>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -500,9 +500,9 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
                             <i class="fas fa-quote-left"></i>
                         </div>
                         <p class="review-text">
-                            "Al jaren volgen wij diverse trainingen van Mark. Zijn trainingen zijn vari&euml;rend, leerzaam en erg goed opgebouwd. Naast de erg goede trainingen en lessen is Mark als mens heel prettig om mee te werken. Hij daagt je uit, motiveert en doet dit elke keer met vol enthousiasme en met 100% inzet."
+                            Mark zet kinderen op een mooie manier in beweging. Hij laat zien waar een kind toe instaat is. Organiseert de geweldige leuke sportdag
                         </p>
-                        <p class="review-author">- J. van der Heide</p>
+                        <p class="review-author">- B-Better Rules</p>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -511,9 +511,9 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
                             <i class="fas fa-quote-left"></i>
                         </div>
                         <p class="review-text">
-                            "Bij Mark Sluis training & ontwikkeling kan je heel specifiek trainen en zal je binnen jou traject super goed begeleid worden. Als eerste echte klant van Mark kan ik met veel enthousiasme zeggen dat ik altijd top heb getraind, van keeperstrainingen, tot krachttrainingen in de zomerstop om fit te blijven en zelfs zo specifiek kunnen trainen dat ik vanuit de positie als keeper beter wilde worden in voetballen en we daarop getraind hebben. Mark heeft een positieve manier van coachen en begeleiden, ook motiveert hij je het beste uit jezelf te halen."
+                            Geweldig trainingen gegeven voor mijn zoon zijn team! Afwisselend, leuk, leerzaam! Aanrader
                         </p>
-                        <p class="review-author">- F. Copier</p>
+                        <p class="review-author">- Elmar Duiveman</p>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -522,9 +522,9 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
                             <i class="fas fa-quote-left"></i>
                         </div>
                         <p class="review-text">
-                            "Ons gezin maakt al jarenlang gebruik van Mark zijn diensten. Onze zoon heeft zowel individueel als in groepsverband Rots en Water training gevolgd. Mark heeft een magische uitwerking op kinderen. Zijn empathisch vermogen zorgt ervoor dat kinderen zich enorm bij hem op hun gemak voelen. Ze durven zich bij hem bloot te geven en vertrouwen hem volledig. Met dit vertrouwen gaat hij heel goed om en hij weet als hij geen ander bepaalde doelen samen met het kind te bereiken."
+                            Onze zoon traint nu een tijdje bij Mark en we zijn écht onder de indruk. De trainingen zijn intensief, maar hij wil ze nooit missen en gaat altijd stralend het veld op én eraf. Niet alleen technisch groeit hij enorm, maar vooral in zelfvertrouwen. De pedagogische, positieve manier van coachen — met echte aandacht voor het kind — maakt een wereld van verschil. Feedback wordt iets opbouwends, iets om trots op te zijn. Je ziet aan alles dat Mark van een passie zijn werk heeft gemaakt. De manier waarop hij situationeel coacht, communiceert en feedback geeft is uniek. Het voelt alsof hij precies ziet wat een kind nodig heeft om te groeien. Een absolute aanrader
                         </p>
-                        <p class="review-author">- C. Polak</p>
+                        <p class="review-author">- Stephanie</p>
                     </div>
                 </div>
             </div>

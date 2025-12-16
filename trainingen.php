@@ -151,7 +151,6 @@
             overflow: hidden;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease;
-            max-width: 85%;
             margin: 0 auto;
         }
 
@@ -526,6 +525,15 @@
             .training-image {
                 margin-bottom: 2rem;
             }
+
+            /* Zorg dat foto altijd eerst komt op mobiel */
+            .order-lg-1 {
+                order: 2;
+            }
+            
+            .order-lg-2 {
+                order: 1;
+            }
         }
 
         @media (max-width: 768px) {
@@ -584,7 +592,7 @@
             </a>
             <a href="#voetbal" class="category-link">
                 <i class="fas fa-futbol"></i>
-                <span>Voetbal</span>
+                <span>Voetbaltraining</span>
             </a>
             <a href="#peuter" class="category-link">
                 <i class="fas fa-baby"></i>
@@ -597,6 +605,10 @@
             <a href="#workshops" class="category-link">
                 <i class="fas fa-chalkboard-teacher"></i>
                 <span>Workshops</span>
+            </a>
+            <a href="#keeper" class="category-link">
+                <i class="fas fa-futbol"></i>
+                <span>keeperstraining</span>
             </a>
         </div>
     </div>
@@ -615,8 +627,8 @@
                         <div class="training-details">
                             <div class="training-header-section">
                                 <span class="training-category">Weerbaarheid</span>
-                                <h2 class="training-title">Groepstraining</h2>
-                                <p class="training-subtitle">Leer samen sterker te worden</p>
+                                <h2 class="training-title">Groepstraining </h2>
+                                <p class="training-subtitle">5-12 jaar</p>
                             </div>
 
                             <div class="training-description">
@@ -779,16 +791,16 @@
                             <img src="./img/training-4.jpg" alt="Voetbaltraining" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-7">
+    <div class="col-lg-7">
                         <div class="training-details">
                             <div class="training-header-section">
                                 <span class="training-category">Voetbal</span>
-                                <h2 class="training-title">Voetbal & Keeperstraining</h2>
+                                <h2 class="training-title">Voetbaltraining</h2>
                                 <p class="training-subtitle">Persoonlijke begeleiding voor alle niveaus</p>
                             </div>
 
                             <div class="training-description">
-                                <p><i class="fas fa-futbol text-primary me-2"></i>Persoonlijke voetbal- en keeperstraining voor alle niveaus. Of je nu je techniek wilt verbeteren, meer zelfvertrouwen wilt opbouwen, of aan specifieke vaardigheden wilt werken - in deze trainingen krijg je de individuele aandacht en begeleiding die je nodig hebt om te groeien als voetballer.</p>
+                                <p><i class="fas fa-futbol text-primary me-2"></i>Persoonlijke voetbaltraining voor alle niveaus. Of je nu je techniek wilt verbeteren, meer zelfvertrouwen wilt opbouwen, of aan specifieke vaardigheden wilt werken - in deze trainingen krijg je de individuele aandacht en begeleiding die je nodig hebt om te groeien als voetballer.</p>
                             </div>
 
                             <div class="training-features">
@@ -818,7 +830,7 @@
                                         <i class="fas fa-euro-sign"></i>
                                         <div>
                                             <small>Kosten</small>
-                                            <strong>5 trainingen €250</strong>
+                                            <strong>€57,50 per training </strong>
                                         </div>
                                     </div>
                                     <div class="info-item">
@@ -1075,7 +1087,95 @@
                     </div>
                     <div class="col-lg-5 order-lg-2">
                         <div class="training-image-wrapper">
-                            <img src="./img/9912a05d-56d1-47eb-a4cf-e2496cf01658.jpeg" alt="Workshops" class="img-fluid">
+                            <img src="./img/IMG_4236.jpeg" alt="Workshops" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keeperstraining Section -->
+    <section class="training-section" id="keeper">
+        <div class="container-training">
+            <div class="training-content-wrapper">
+                <div class="row g-0">
+                    <div class="col-lg-5">
+                        <div class="training-image-wrapper">
+                            <img src="./img/19a6344b-3ee7-4695-aa6f-71d245933e4a.jpeg" alt="Keeperstraining" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="training-details">
+                            <div class="training-header-section">
+                                <span class="training-category">Keeper</span>
+                                <h2 class="training-title">Keeperstraining</h2>
+                                <p class="training-subtitle">Gespecialiseerde keepertraining voor alle niveaus</p>
+                            </div>
+
+                            <div class="training-description">
+                                <p><i class="fas fa-hand-paper text-primary me-2"></i>Gespecialiseerde keeperstraining voor alle niveaus. Van positiespel tot reflexen, van duiken tot uitkomen - in deze trainingen krijg je de individuele aandacht en begeleiding die je nodig hebt om te groeien als keeper.</p>
+                            </div>
+
+                            <div class="training-features">
+                                <div class="features-grid">
+                                    <div class="feature-item">
+                                        <i class="fas fa-hand-paper"></i>
+                                        <span>Reflextraining</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-running"></i>
+                                        <span>Positiespel</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-user-check"></i>
+                                        <span>Individuele aandacht</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-hands"></i>
+                                        <span>Duik- en vangtraining</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="training-info-box">
+                                <div class="info-row">
+                                    <div class="info-item">
+                                        <i class="fas fa-euro-sign"></i>
+                                        <div>
+                                            <small>Kosten</small>
+                                            <strong>€57,50 per training </strong>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <small>Duur</small>
+                                            <strong>1 uur</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-row">
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <small>Locatie</small>
+                                            <strong>DEV Doorn</strong>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <div>
+                                            <small>Dagen</small>
+                                            <strong>Wo/Vr/Zo</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="inschrijven.php?activity=keeperstraining" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-user-plus me-2"></i>Inschrijven
+                            </a>
                         </div>
                     </div>
                 </div>
