@@ -395,74 +395,77 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
                         </p>
 
                 <h4 class="mt-4 text-primary"><i class="fas fa-graduation-cap me-2"></i>Diploma's</h4>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul class="diploma-list">
-                                <li class="diploma-item">
-                                    <i class="fas fa-certificate text-primary me-2"></i>
-                                    <span class="diploma-year">2025</span>
-                                    <span>Bootcamptrainer</span>
-                                </li>
-                                <li class="diploma-item">
-                                    <i class="fas fa-certificate text-primary me-2"></i>
-                                    <span class="diploma-year">2024</span>
-                                    <span>Boksend opvoeden BASIS</span>
-                                </li>
-                                <li class="diploma-item">
-                                    <i class="fas fa-certificate text-primary me-2"></i>
-                                    <span class="diploma-year">2023</span>
-                                    <span>Rots & Water Jongeren met een verstandelijke beperking</span>
-                                </li>
-                                <li class="diploma-item">
-                                    <i class="fas fa-certificate text-primary me-2"></i>
-                                    <span class="diploma-year">2023</span>
-                                    <span>Keepers deelstage FC Utrecht</span>
-                                </li>
-                                <li class="diploma-item">
-                                    <i class="fas fa-certificate text-primary me-2"></i>
-                                    <span class="diploma-year">2022</span>
-                                    <span>Uefa C Jeugd</span>
-                                </li>
-                                <li class="diploma-item">
-                                    <i class="fas fa-certificate text-primary me-2"></i>
-                                    <span class="diploma-year">2021</span>
-                                    <span>ASM Instructeur Brede Motorische Ontwikkeling</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="diploma-list">
-                                <li class="diploma-item">
-                                    <i class="fas fa-certificate text-primary me-2"></i>
-                                    <span class="diploma-year">2021</span>
-                                    <span>Creatief Bewegen met peuters en kleuters</span>
-                                </li>
-                                <li class="diploma-item">
-                                    <i class="fas fa-certificate text-primary me-2"></i>
-                                    <span class="diploma-year">2019</span>
-                                    <span>Pupillen trainer</span>
-                                </li>
-                                <li class="diploma-item">
-                                    <i class="fas fa-certificate text-primary me-2"></i>
-                                    <span class="diploma-year">2019</span>
-                                    <span>Jeugdvoetbal Trainer Coach</span>
-                                </li>
-                                <li class="diploma-item">
-                                    <i class="fas fa-certificate text-primary me-2"></i>
-                                    <span class="diploma-year">2015</span>
-                                    <span>Rots & Water basisschool breed</span>
-                                </li>
-                                <li class="diploma-item">
-                                    <i class="fas fa-certificate text-primary me-2"></i>
-                                    <span class="diploma-year">2013</span>
-                                    <span>Rots & Water basistraining</span>
-                                </li>
-                                <li class="diploma-item">
-                                    <i class="fas fa-certificate text-primary me-2"></i>
-                                    <span class="diploma-year">2009</span>
-                                    <span>Sociaal Pedagogisch werker niveau 4</span>
-                                </li>
-                            </ul>
+                    <!-- Diploma's Accordion -->
+                    <div class="accordion accordion-flush mt-4" id="diplomaAccordion">
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header" id="diplomaHeading">
+                                <button class="accordion-button collapsed bg-transparent text-light" type="button" data-bs-toggle="collapse" data-bs-target="#diplomaCollapse" aria-expanded="false" aria-controls="diplomaCollapse">
+                                    <i class="fas fa-graduation-cap text-primary me-2"></i>
+                                    <strong>Bekijk mijn diploma's en certificaten</strong>
+                                </button>
+                            </h2>
+                            <div id="diplomaCollapse" class="accordion-collapse collapse" aria-labelledby="diplomaHeading" data-bs-parent="#diplomaAccordion">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="diploma-list">
+                                                <li class="diploma-item">
+                                                    <span class="diploma-year">2025</span>
+                                                    <span>Bootcamptrainer</span>
+                                                </li>
+                                                <li class="diploma-item">
+                                                    <span class="diploma-year">2024</span>
+                                                    <span>Boksend opvoeden BASIS</span>
+                                                </li>
+                                                <li class="diploma-item">
+                                                    <span class="diploma-year">2023</span>
+                                                    <span>Rots & Water Jongeren met verstandelijke beperking</span>
+                                                </li>
+                                                <li class="diploma-item">
+                                                    <span class="diploma-year">2023</span>
+                                                    <span>Keepers deelstage FC Utrecht</span>
+                                                </li>
+                                                <li class="diploma-item">
+                                                    <span class="diploma-year">2022</span>
+                                                    <span>Uefa C Jeugd</span>
+                                                </li>
+                                                <li class="diploma-item">
+                                                    <span class="diploma-year">2021</span>
+                                                    <span>ASM Instructeur Brede Motorische Ontwikkeling</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="diploma-list">
+                                                <li class="diploma-item">
+                                                    <span class="diploma-year">2021</span>
+                                                    <span>Creatief Bewegen met peuters en kleuters</span>
+                                                </li>
+                                                <li class="diploma-item">
+                                                    <span class="diploma-year">2019</span>
+                                                    <span>Pupillen trainer</span>
+                                                </li>
+                                                <li class="diploma-item">
+                                                    <span class="diploma-year">2019</span>
+                                                    <span>Jeugdvoetbal Trainer Coach</span>
+                                                </li>
+                                                <li class="diploma-item">
+                                                    <span class="diploma-year">2015</span>
+                                                    <span>Rots & Water basisschool breed</span>
+                                                </li>
+                                                <li class="diploma-item">
+                                                    <span class="diploma-year">2013</span>
+                                                    <span>Rots & Water basistraining</span>
+                                                </li>
+                                                <li class="diploma-item">
+                                                    <span class="diploma-year">2009</span>
+                                                    <span>Sociaal Pedagogisch werker niveau 4</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -491,7 +494,7 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
                         <p class="review-text">
                             Mark is een erg prettige trainer die kinderen echt verder helpt
                         </p>
-                        <p class="review-author">- Patrick Oskamp</p>
+                        <p class="review-author">- Patrick</p>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -502,7 +505,7 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
                         <p class="review-text">
                             Mark zet kinderen op een mooie manier in beweging. Hij laat zien waar een kind toe instaat is. Organiseert de geweldige leuke sportdag
                         </p>
-                        <p class="review-author">- B-Better Rules</p>
+                        <p class="review-author">- B-Better</p>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -513,7 +516,7 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
                         <p class="review-text">
                             Geweldig trainingen gegeven voor mijn zoon zijn team! Afwisselend, leuk, leerzaam! Aanrader
                         </p>
-                        <p class="review-author">- Elmar Duiveman</p>
+                        <p class="review-author">- Elmar</p>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -526,6 +529,13 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
                         </p>
                         <p class="review-author">- Stephanie</p>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-4">
+                    <a href="https://share.google/DQPon1LAEC6wHV1jH" target="_blank" class="btn btn-primary">
+                        Bekijk meer
+                    </a>
                 </div>
             </div>
         </div>
@@ -565,6 +575,11 @@ Er is ruimte om in te gaan op specifieke situaties, zoals zelfvertrouwen, pesten
 
 .insta-post:hover .insta-caption {
     opacity: 1;
+}
+
+.accordion-button:focus {
+    outline: 0.5px solid #FFD700 !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25) !important;
 }
 
 </style>
