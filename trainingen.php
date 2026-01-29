@@ -620,7 +620,8 @@
                 <div class="row g-0">
                     <div class="col-lg-5">
                         <div class="training-image-wrapper">
-                            <img src="./img/weerbeheidstraining.png" alt="Groepstraining" class="img-fluid">
+                            <img src="./img/33ce619e-8326-4de4-8205-258ce734424c.jpeg" alt="Groepstraining" class="img-fluid" style="
+    max-height: 556.48px;">
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -677,7 +678,7 @@
                                     <i class="fas fa-calendar"></i>
                                     <div>
                                         <small>Training dagen</small>
-                                        <strong>Woensdagmiddag, vrijdagmiddag, zondag overdag</strong>
+                                        <strong>N.T.B</strong>
                                     </div>
                                 </div>
                             </div>
@@ -773,7 +774,7 @@
                     </div>
                     <div class="col-lg-5 order-lg-2">
                         <div class="training-image-wrapper">
-                            <img src="./img/weerbeheidstraining13.png" alt="Individuele Training" class="img-fluid">
+                            <img src="./img/IMG_1866.jpg" alt="Individuele Training" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -788,7 +789,7 @@
                 <div class="row g-0">
                     <div class="col-lg-5">
                         <div class="training-image-wrapper">
-                            <img src="./img/training-4.jpg" alt="Voetbaltraining" class="img-fluid">
+                            <img src="./img/training-5.jpg" alt="Voetbaltraining" class="img-fluid">
                         </div>
                     </div>
     <div class="col-lg-7">

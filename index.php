@@ -269,14 +269,23 @@
                 <div class="col-12 text-center">
                     <h2 class="section-heading">Trainingen</h2>
                     <div class="divider mx-auto"></div>
-
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="schedule-notice" style="background: rgba(255, 215, 0, 0.1); border-left: 3px solid #FFD700; padding: 12px 16px; border-radius: 4px; text-align: center;">
+                        <p style="margin: 0; font-size: 0.9rem; color: #f8f9fa;">
+                            <i class="fas fa-info-circle" style="color: #FFD700; margin-right: 8px;"></i>
+                            Op dit moment zit mijn agenda vol. Meld je gerust aan, dan plaats ik je op de wachtlijst.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
-                            <img src="img/weerbeheidstraining.png" alt="Weerbaarheidstraining" class="img-fluid">
+                            <img src="img/33ce619e-8326-4de4-8205-258ce734 (1).jpg" alt="Weerbaarheidstraining" class="img-fluid">
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
@@ -289,7 +298,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
-                            <img src="img/hero-bg.jpg" alt="Voetbaltraining" class="img-fluid">
+                            <img src="img/training-5.jpg" alt="Voetbaltraining" class="img-fluid">
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
@@ -341,7 +350,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="training-card custom-card h-100">
                         <div class="training-card-img card-img-top position-relative overflow-hidden">
-                            <img src="img/IMG_4223.jpeg" alt="Kinderfeestjes" class="img-fluid">
+                            <img src="img/IMG_1866.jpg" alt="Kinderfeestjes" class="img-fluid">
                             <div class="card-img-overlay-gradient"></div>
                         </div>
                         <div class="training-card-body card-body">
